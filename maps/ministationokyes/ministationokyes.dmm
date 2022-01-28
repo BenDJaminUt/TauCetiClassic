@@ -194,17 +194,606 @@
 	icon_state = "dark"
 	},
 /area/space)
+"aG" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"aI" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"bX" = (
+/obj/structure/stool/bar,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"cm" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/beer{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"cJ" = (
+/obj/structure/stool/bar,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"ds" = (
+/obj/structure/stool/bed/chair/metal/black,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"dy" = (
+/obj/machinery/door/window,
+/turf/simulated/floor{
+	icon_state = "wood"
+	},
+/area/space)
+"dN" = (
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"eU" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor,
+/area/space)
+"fo" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/basic,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space)
+"fB" = (
+/obj/structure/window/basic{
+	dir = 1
+	},
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "darkred"
+	},
+/area/space)
+"fV" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"gC" = (
+/obj/machinery/light/small/built,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "black"
+	},
+/area/space)
+"hb" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor{
+	icon_state = "wood"
+	},
+/area/space)
+"hf" = (
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"is" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "darkred"
+	},
+/area/space)
+"iU" = (
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/soda{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"jh" = (
+/obj/machinery/light/built{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"js" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/soda{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"kp" = (
+/obj/structure/window/basic{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkred"
+	},
+/area/space)
+"la" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/beer{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"li" = (
+/obj/machinery/door/window{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"lH" = (
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/beer{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"lK" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
+"mv" = (
+/obj/structure/table/holotable,
+/obj/machinery/light/built{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"my" = (
+/obj/machinery/vending/theater,
+/turf/simulated/floor,
+/area/space)
+"mz" = (
+/obj/structure/window/basic{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/light/small/built,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space)
 "mY" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
+"nM" = (
+/obj/machinery/door/window{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space)
+"nQ" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "black"
+	},
+/area/space)
+"of" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"og" = (
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/soda,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"or" = (
+/turf/simulated/floor{
+	icon_state = "blackchecker"
+	},
+/area/space)
+"oA" = (
+/obj/structure/reagent_dispensers/kvasstank{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"oV" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"qg" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"qX" = (
+/turf/simulated/floor/grass,
+/area/space)
 "rH" = (
+/turf/simulated/wall,
+/area/space)
+"sX" = (
+/obj/structure/stool/bar,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"tU" = (
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"wf" = (
+/obj/machinery/media/jukebox/bar,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"yp" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"yx" = (
+/obj/structure/closet/theatrecloset,
+/turf/simulated/floor,
+/area/space)
+"yy" = (
+/turf/simulated/floor/carpet/red,
+/area/space)
+"zu" = (
+/obj/machinery/media/jukebox,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"zv" = (
+/obj/structure/window/basic{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkred"
+	},
+/area/space)
+"zS" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/plating,
+/area/space)
+"Ac" = (
+/obj/structure/window/reinforced{
+	dir = 5
+	},
 /turf/simulated/wall,
 /area/space)
 "Bm" = (
 /turf/simulated/floor,
+/area/space)
+"BY" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"BZ" = (
+/obj/structure/closet/gmcloset,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"CC" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Ev" = (
+/obj/structure/closet/cabinet,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"EF" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"EK" = (
+/obj/structure/stool/bed/chair/metal/black{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Fe" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "black"
+	},
+/area/space)
+"FD" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"FG" = (
+/obj/structure/table/woodentable/fancy/black,
+/turf/simulated/floor/carpet/black,
+/area/space)
+"FT" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/black,
+/area/space)
+"FX" = (
+/obj/machinery/light/built{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Ga" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space)
+"GC" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "wood"
+	},
+/area/space)
+"GG" = (
+/obj/structure/table/holotable,
+/obj/machinery/chem_dispenser/beer,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Hg" = (
+/obj/structure/stool/bar,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Hi" = (
+/obj/structure/stool/bed/chair/comfy/brown,
+/turf/simulated/floor/carpet/black,
+/area/space)
+"HX" = (
+/obj/machinery/light/small/built{
+	dir = 1
+	},
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"Is" = (
+/obj/structure/window/basic{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "darkredcorners"
+	},
+/area/space)
+"OE" = (
+/obj/machinery/light/small/built{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "black"
+	},
+/area/space)
+"Pu" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/basic{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"PU" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
+/area/space)
+"Qy" = (
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"QX" = (
+/turf/simulated/floor{
+	icon_state = "hydrofloor"
+	},
+/area/space)
+"Sg" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Sq" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"SE" = (
+/turf/simulated/floor{
+	icon_state = "wood"
+	},
+/area/space)
+"Tq" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "Stairs_alone"
+	},
+/area/space)
+"TE" = (
+/obj/structure/device/piano,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"TI" = (
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Ue" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor{
+	icon_state = "wood"
+	},
+/area/space)
+"Uj" = (
+/obj/structure/stool/bed/chair/comfy/brown,
+/turf/simulated/floor/carpet/red,
+/area/space)
+"Uo" = (
+/obj/structure/table/holotable,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"Vl" = (
+/turf/simulated/floor{
+	icon_state = "freezerfloor2"
+	},
+/area/space)
+"We" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/space)
+"XM" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "medstairs_alone"
+	},
+/area/space)
+"YG" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/built,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/space)
+"ZY" = (
+/obj/structure/table/woodentable/fancy/black,
+/turf/simulated/floor/carpet/red,
 /area/space)
 
 (1,1,1) = {"
@@ -1809,12 +2398,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -1931,12 +2520,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+my
+eU
+eU
+yx
+rH
 aa
 aa
 aa
@@ -2053,12 +2642,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+Bm
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2175,12 +2764,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+Bm
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2296,24 +2885,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+aB
+rH
+rH
+aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -2418,24 +3007,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+SE
+SE
+hb
+TE
+ab
+ab
+ab
+mY
+af
+iU
+lH
+ab
+rH
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2540,24 +3129,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+SE
+SE
+hb
+aj
+ab
+ab
+aj
+mY
+ab
+ab
+ab
+ab
+aB
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2662,24 +3251,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+SE
+SE
+hb
+ab
+ab
+ab
+aj
+mY
+ab
+ab
+ab
+zu
+rH
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2784,24 +3373,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+SE
+SE
+dy
+ab
+ab
+ab
+ab
+aj
+mY
+mY
+mY
+mY
+rH
+Bm
+Bm
+Bm
+rH
 aa
 aa
 aa
@@ -2903,27 +3492,27 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+GC
+GC
+Ue
+ab
+ab
+ab
+ab
+ab
+aj
+aj
+aj
+aD
+rH
+rH
+aB
+rH
+rH
 aa
 aa
 aa
@@ -3025,28 +3614,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
 aa
 aa
 aa
@@ -3147,28 +3736,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
 aa
 aa
 aa
@@ -3269,28 +3858,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
+Bm
 aa
 aa
 aa
@@ -3390,28 +3979,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aD
+ab
+ab
+ab
+ab
+ab
+ab
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -3518,15 +4107,15 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+Qy
+Qy
+mY
+mY
+mY
+Qy
+Qy
+rH
 aa
 aa
 aa
@@ -3641,13 +4230,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+or
+or
+or
+or
+or
+or
+or
 aa
 aa
 aa
@@ -3763,13 +4352,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+or
+or
+or
+or
+or
+or
+or
 aa
 aa
 aa
@@ -3885,13 +4474,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+or
+or
+or
+or
+or
+or
+or
 aa
 aa
 aa
@@ -4007,13 +4596,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+or
+or
+or
+or
+or
+or
+or
 aa
 aa
 aa
@@ -5586,26 +6175,26 @@ aa
 aa
 aa
 aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -5708,26 +6297,26 @@ aa
 aa
 aa
 aa
+rH
+OE
+Hi
+FG
+FT
+nQ
+Fe
+nQ
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+Sq
+TI
+Sq
+jh
+FX
+TI
+We
+rH
 aa
 aa
 aa
@@ -5830,26 +6419,26 @@ aa
 aa
 aa
 aa
+Ac
+Fe
+nQ
+Fe
+nQ
+Fe
+nQ
+gC
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Ac
+aI
+fV
+dN
+EF
+Pu
+li
+CC
+rH
 aa
 aa
 aa
@@ -5952,26 +6541,26 @@ aa
 aa
 aa
 aa
+rH
+nQ
+Fe
+nQ
+Fe
+Hi
+FG
+FT
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+mv
+Sq
+Hg
+oV
+TI
+Sq
+GG
+rH
 aa
 aa
 aa
@@ -6074,26 +6663,26 @@ aa
 aa
 aa
 aa
+tU
+XM
+fB
+Is
+js
+cm
+Is
+is
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+EK
+dN
+cJ
+Sg
+fV
+dN
+og
+rH
 aa
 aa
 aa
@@ -6196,26 +6785,26 @@ aa
 aa
 aa
 aa
+tU
+XM
+zv
+ab
+ab
+ab
+ab
+ab
+aB
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+wf
+TI
+Sq
+yp
+Sq
+TI
+Sq
+aB
 aa
 aa
 aa
@@ -6318,26 +6907,26 @@ aa
 aa
 aa
 aa
+tU
+Tq
+kp
+ab
+ab
+ab
+ab
+as
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+aI
+fV
+sX
+EF
+Sg
+fV
+dN
+rH
 aa
 aa
 aa
@@ -6440,26 +7029,26 @@ aa
 aa
 aa
 aa
+rH
+ab
+FD
+Ga
+Ga
+fo
+nM
+mz
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+mv
+Sq
+TI
+bX
+yp
+oV
+YG
+rH
 aa
 aa
 aa
@@ -6562,26 +7151,26 @@ aa
 aa
 aa
 aa
+tU
+ab
+aj
+aj
+aj
+aj
+ab
+of
+tU
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+EK
+dN
+Sq
+dN
+fV
+sX
+cJ
+tU
 aa
 aa
 aa
@@ -6684,26 +7273,26 @@ aa
 aa
 aa
 aa
+tU
+hf
+ab
+ab
+ab
+ab
+ab
+ab
+zS
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+Sq
+TI
+Sq
+TI
+Sq
+TI
+Sq
+zS
 aa
 aa
 Bm
@@ -6806,26 +7395,26 @@ aa
 aa
 aa
 aa
+tU
+lK
+yy
+ab
+ab
+yy
+yy
+yy
+tU
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+dN
+BY
+dN
+fV
+dN
+fV
+dN
+tU
 aa
 aa
 Bm
@@ -6928,26 +7517,26 @@ aa
 aa
 aa
 aa
+tU
+ZY
+PU
+ab
+ab
+Uj
+ZY
+PU
+tU
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ds
+Uo
+aG
+Sq
+TI
+Sq
+TI
+tU
 aa
 aa
 Bm
@@ -7050,26 +7639,26 @@ aa
 aa
 aa
 aa
+rH
+tU
+tU
+rH
+aB
+rH
+tU
+tU
+rH
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+tU
+tU
+rH
+aB
+rH
+tU
+tU
+rH
 aa
 aa
 aa
@@ -9613,20 +10202,20 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -9735,28 +10324,28 @@ aa
 aa
 aa
 aa
+rH
+HX
+ab
+ab
+mY
+iU
+la
+ab
+af
+rH
+ab
+ab
+ab
+rH
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -9857,28 +10446,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Ac
+ab
+ab
+aj
+mY
+ab
+ab
+ab
+ab
+aB
+ab
+ab
+Ev
+rH
+rH
+rH
+rH
+rH
+qX
+qX
+qX
+tU
 aa
 aa
 aa
@@ -9979,28 +10568,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+ab
+ab
+aj
+mY
+ab
+ab
+ab
+as
+rH
+ab
+ab
+oA
+rH
+Vl
+Vl
+Vl
+rH
+qX
+qX
+qX
+tU
 aa
 aa
 aa
@@ -10101,28 +10690,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ab
+ab
+ab
+aj
+mY
+mY
+mY
+rH
+rH
+ab
+ab
+qg
+rH
+Vl
+Vl
+Vl
+aB
+qX
+qX
+qX
+tU
 aa
 aa
 aa
@@ -10223,28 +10812,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ab
+ab
+ab
+ab
+aj
+aj
+ab
+aB
+ab
+ab
+ab
+BZ
+rH
+Vl
+Vl
+Vl
+rH
+qX
+qX
+qX
+tU
 aa
 aa
 aa
@@ -10345,28 +10934,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+tU
+aB
+tU
+rH
 aa
 aa
 aa
@@ -10467,28 +11056,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+rH
+or
+or
+or
+or
+or
+rH
+QX
+QX
+QX
+QX
+QX
+QX
+tU
 aa
 aa
 aa
@@ -10589,28 +11178,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+tU
+or
+or
+or
+or
+or
+rH
+QX
+QX
+QX
+QX
+QX
+QX
+tU
 aa
 aa
 aa
@@ -10711,28 +11300,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+hf
+ab
+ab
+ab
+ab
+ab
+ab
+zS
+or
+or
+or
+or
+or
+zS
+QX
+QX
+QX
+QX
+QX
+QX
+tU
 aa
 aa
 aa
@@ -10833,28 +11422,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+lK
+yy
+ab
+ab
+yy
+yy
+yy
+tU
+or
+or
+or
+or
+or
+aB
+QX
+QX
+QX
+QX
+QX
+QX
+tU
 aa
 aa
 aa
@@ -10955,28 +11544,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+tU
+ZY
+PU
+ab
+ab
+Uj
+ZY
+PU
+tU
+or
+or
+or
+or
+or
+rH
+QX
+QX
+QX
+QX
+QX
+QX
+tU
 aa
 aa
 aa
@@ -11077,28 +11666,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+tU
+tU
+rH
+aB
+rH
+tU
+tU
+rH
+tU
+tU
+tU
+rH
+aB
+rH
+tU
+tU
+rH
+aB
+rH
+tU
+rH
 aa
 aa
 aa
