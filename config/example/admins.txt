@@ -1,4 +1,4 @@
-######################################################################
+﻿######################################################################
 # Basically, ckey goes first. Rank goes after the "-"                #
 # Case is not important for ckey.                                    #
 # Case IS important for the rank. However punctuation/spaces are not #
@@ -9,4 +9,4 @@
 
 bendjaminut - чертило лютый
 
-tap0r - чертило лютый
+Tap0r - чертило лютый
