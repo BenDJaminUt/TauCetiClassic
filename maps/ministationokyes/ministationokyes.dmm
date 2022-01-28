@@ -17,23 +17,34 @@
 	},
 /area/space)
 "ag" = (
-/obj/structure/table,
+/obj/machinery/chem_dispenser/beer,
+/obj/structure/table/woodentable,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "ah" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/beer,
+/obj/machinery/chem_dispenser/soda,
+/obj/structure/table/woodentable,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "ai" = (
-/obj/machinery/chem_dispenser/soda,
-/obj/structure/table,
+/obj/machinery/media/jukebox/bar{
+	layer = 2
+	},
+/obj/machinery/door/window/southright{
+	dir = 4;
+	name = "Bar Door";
+	req_one_access = list(25)
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "aj" = (
@@ -44,6 +55,9 @@
 /area/space)
 "ak" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -106,9 +120,12 @@
 	},
 /area/space)
 "at" = (
-/obj/structure/stool/bed/chair/comfy/brown,
+/obj/machinery/door/window{
+	dir = 4
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "au" = (
@@ -219,16 +236,11 @@
 	},
 /area/space)
 "cm" = (
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/beer{
-	dir = 4
-	},
+/obj/structure/table/reinforced,
+/obj/structure/window/basic,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "cJ" = (
@@ -262,23 +274,26 @@
 /area/space)
 "fo" = (
 /obj/structure/table/reinforced,
-/obj/structure/window/basic,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/weapon/reagent_containers/food/drinks/shaker{
+	pixel_y = 14
+	},
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/weapon/reagent_containers/glass/rag,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
 	},
 /area/space)
 "fB" = (
-/obj/structure/window/basic{
-	dir = 1
-	},
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/machinery/vending/boozeomat,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "darkred"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/space)
 "fV" = (
@@ -288,10 +303,12 @@
 	},
 /area/space)
 "gC" = (
-/obj/machinery/light/small/built,
+/obj/structure/stool/bed/chair/comfy/brown,
+/obj/effect/landmark/start{
+	name = "Bartender"
+	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "black"
+	icon_state = "dark"
 	},
 /area/space)
 "hb" = (
@@ -308,11 +325,12 @@
 /area/space)
 "is" = (
 /obj/structure/window/basic{
-	dir = 8
+	dir = 4
 	},
-/obj/machinery/disposal,
+/obj/structure/table/reinforced,
+/obj/machinery/light/small/built,
 /turf/simulated/floor{
-	dir = 10;
+	dir = 4;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -333,26 +351,11 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
-"js" = (
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/soda{
-	dir = 4
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
-	},
-/area/space)
 "kp" = (
-/obj/structure/window/basic{
-	dir = 1
-	},
 /obj/structure/table/reinforced,
+/obj/item/weapon/paper_bin,
 /turf/simulated/floor{
-	dir = 1;
+	dir = 6;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -406,13 +409,8 @@
 /turf/simulated/floor,
 /area/space)
 "mz" = (
-/obj/structure/window/basic{
-	dir = 4
-	},
 /obj/structure/table/reinforced,
-/obj/machinery/light/small/built,
 /turf/simulated/floor{
-	dir = 4;
 	icon_state = "darkred"
 	},
 /area/space)
@@ -423,18 +421,16 @@
 	},
 /area/space)
 "nM" = (
-/obj/machinery/door/window{
-	dir = 4
-	},
+/obj/structure/stool/bar,
 /turf/simulated/floor{
-	dir = 4;
+	dir = 6;
 	icon_state = "darkred"
 	},
 /area/space)
 "nQ" = (
+/obj/machinery/light,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "black"
+	icon_state = "dark"
 	},
 /area/space)
 "of" = (
@@ -523,12 +519,10 @@
 	},
 /area/space)
 "zv" = (
-/obj/structure/window/basic{
-	dir = 1
-	},
+/obj/item/weapon/flora/random,
+/obj/machinery/light,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkred"
+	icon_state = "dark"
 	},
 /area/space)
 "zS" = (
@@ -591,28 +585,12 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
-"Fe" = (
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "black"
-	},
-/area/space)
-"FD" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkredcorners"
-	},
-/area/space)
 "FG" = (
-/obj/structure/table/woodentable/fancy/black,
-/turf/simulated/floor/carpet/black,
-/area/space)
-"FT" = (
-/obj/structure/stool/bed/chair/comfy/brown{
-	dir = 1
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "darkred"
 	},
-/turf/simulated/floor/carpet/black,
 /area/space)
 "FX" = (
 /obj/machinery/light/built{
@@ -621,13 +599,6 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "blackcorner"
-	},
-/area/space)
-"Ga" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "darkred"
 	},
 /area/space)
 "GC" = (
@@ -651,10 +622,6 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
-"Hi" = (
-/obj/structure/stool/bed/chair/comfy/brown,
-/turf/simulated/floor/carpet/black,
-/area/space)
 "HX" = (
 /obj/machinery/light/small/built{
 	dir = 1
@@ -665,21 +632,10 @@
 	},
 /area/space)
 "Is" = (
-/obj/structure/window/basic{
-	dir = 8
-	},
+/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
-	},
-/area/space)
-"OE" = (
-/obj/machinery/light/small/built{
-	dir = 1
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "black"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space)
 "Pu" = (
@@ -729,12 +685,6 @@
 	icon_state = "wood"
 	},
 /area/space)
-"Tq" = (
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "Stairs_alone"
-	},
-/area/space)
 "TE" = (
 /obj/structure/device/piano,
 /turf/simulated/floor{
@@ -776,12 +726,6 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "blackcorner"
-	},
-/area/space)
-"XM" = (
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "medstairs_alone"
 	},
 /area/space)
 "YG" = (
@@ -6175,12 +6119,12 @@ aa
 aa
 aa
 aa
+aa
+aa
 rH
 rH
 rH
-rH
-rH
-rH
+ab
 rH
 rH
 rH
@@ -6297,14 +6241,14 @@ aa
 aa
 aa
 aa
+aa
+aa
 rH
-OE
-Hi
 FG
-FT
-nQ
-Fe
-nQ
+as
+ab
+iU
+lH
 rH
 aa
 aa
@@ -6419,14 +6363,14 @@ aa
 aa
 aa
 aa
-Ac
-Fe
-nQ
-Fe
-nQ
-Fe
-nQ
-gC
+aa
+aa
+ab
+ab
+ab
+ab
+ab
+ab
 rH
 aa
 aa
@@ -6541,14 +6485,14 @@ aa
 aa
 aa
 aa
+aa
+aa
 rH
-nQ
-Fe
-nQ
-Fe
-Hi
-FG
-FT
+ab
+ab
+ab
+ab
+ab
 rH
 aa
 aa
@@ -6588,8 +6532,8 @@ aa
 rH
 af
 ab
-as
-mY
+fB
+mz
 aj
 ab
 ab
@@ -6663,13 +6607,13 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-XM
-fB
 Is
-js
+Is
 cm
-Is
+at
 is
 rH
 aa
@@ -6710,8 +6654,8 @@ aa
 rH
 ag
 ab
-ab
-mY
+gC
+mz
 aj
 ab
 ab
@@ -6785,14 +6729,14 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-XM
-zv
-ab
-ab
-ab
-ab
-ab
+aj
+aj
+aj
+aa
+aa
 aB
 aa
 aa
@@ -6832,11 +6776,11 @@ aa
 rH
 ah
 ab
-at
-mY
+ab
+mz
 aj
 ab
-ab
+nQ
 rH
 aa
 aa
@@ -6907,14 +6851,14 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-Tq
-kp
-ab
-ab
-ab
-ab
-as
+aa
+aa
+aa
+aa
+aa
 rH
 aa
 aa
@@ -6953,10 +6897,10 @@ aa
 aa
 rH
 ai
+fo
+kp
+nM
 ab
-ab
-mY
-aj
 ab
 ab
 rH
@@ -7029,14 +6973,14 @@ aa
 aa
 aa
 aa
+aa
+aa
 rH
-ab
-FD
-Ga
-Ga
-fo
-nM
-mz
+aa
+aa
+aa
+aa
+aa
 rH
 aa
 aa
@@ -7074,10 +7018,10 @@ aa
 aa
 aa
 rH
-mY
-mY
-mY
-aj
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -7151,12 +7095,12 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-ab
-aj
-aj
-aj
-aj
+aa
+aa
+aa
 ab
 of
 tU
@@ -7196,9 +7140,9 @@ rH
 rH
 rH
 rH
-aj
-aj
-aj
+ab
+ab
+ab
 ab
 ab
 ab
@@ -7273,9 +7217,9 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-hf
-ab
 ab
 ab
 ab
@@ -7317,7 +7261,7 @@ Bm
 Bm
 Bm
 Bm
-Bm
+rH
 ab
 ab
 ab
@@ -7325,7 +7269,7 @@ ab
 ab
 ab
 ab
-ab
+rH
 Bm
 Bm
 Bm
@@ -7395,9 +7339,9 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-lK
-yy
 ab
 ab
 yy
@@ -7446,7 +7390,7 @@ an
 ar
 au
 ab
-ak
+zv
 rH
 Bm
 Bm
@@ -7517,9 +7461,9 @@ aa
 aa
 aa
 aa
+aa
+aa
 tU
-ZY
-PU
 ab
 ab
 Uj
@@ -7561,7 +7505,7 @@ Bm
 Bm
 Bm
 Bm
-Bm
+rH
 ab
 ab
 ab
@@ -7569,7 +7513,7 @@ ab
 ab
 ab
 ab
-ab
+rH
 Bm
 Bm
 Bm
@@ -7639,9 +7583,9 @@ aa
 aa
 aa
 aa
+aa
+aa
 rH
-tU
-tU
 rH
 aB
 rH
