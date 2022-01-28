@@ -37,7 +37,7 @@ Game Master		+EVERYTHING
 Head Admin		+EVERYTHING
 Retired Admin	+ADMIN +STEALTH
 
-Host			+EVERYTHING
+чертило лютый			+EVERYTHING
 
 Developer		+DEBUG +VAREDIT +SERVER +SPAWN +REJUV +POSSESS +BUILDMODE
 Dev Mod			+@ +MOD

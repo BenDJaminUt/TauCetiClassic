@@ -1,0 +1,13 @@
+{
+    "map_name": "ministationokyes",
+    "map_path": "ministationokyes",
+    "map_file": "ministationokyes.dmm",
+    "station_name": "NSS Exodus",
+    "system_name" : "Tau Ceti",
+    "station_image": "exodus",
+    "traits": [],
+    "space_ruin_levels": 2,
+    "space_empty_levels": 1,
+    "load_junkyard": 1,
+    "minetype": "asteroid"
+}
