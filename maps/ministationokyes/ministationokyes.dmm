@@ -188,6 +188,20 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"aQ" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space)
+"bj" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "bX" = (
 /obj/structure/table/woodentable,
 /obj/item/clothing/suit/santa,
@@ -248,6 +262,14 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "blackcorner"
+	},
+/area/space)
+"eW" = (
+/obj/machinery/door/airlock/glass{
+	name = "Bar"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "fa" = (
@@ -329,14 +351,15 @@
 /area/space)
 "gG" = (
 /obj/structure/table,
-/obj/machinery/chem_dispenser/soda,
+/obj/item/weapon/reagent_containers/food/snacks/pie,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
 	},
 /area/space)
 "gX" = (
-/obj/machinery/icecream_vat,
+/obj/machinery/chem_dispenser/soda,
+/obj/structure/table,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -434,10 +457,20 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
-"kQ" = (
+"kx" = (
+/obj/structure/stool/bed/chair/wood/normal,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "green"
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
+"kQ" = (
+/obj/machinery/door/airlock/glass{
+	name = "Bar"
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "la" = (
@@ -456,9 +489,13 @@
 	},
 /area/space)
 "lv" = (
+/obj/structure/stool/bar,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "greenfull"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "lH" = (
@@ -570,7 +607,8 @@
 	},
 /obj/item/weapon/reagent_containers/glass/rag,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkredfull"
 	},
 /area/space)
 "nT" = (
@@ -635,6 +673,12 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"pl" = (
+/obj/machinery/gibber,
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space)
 "po" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/effect/landmark/start{
@@ -668,8 +712,8 @@
 	pixel_y = 16
 	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkred"
+	dir = 5;
+	icon_state = "darkredfull"
 	},
 /area/space)
 "qB" = (
@@ -735,6 +779,9 @@
 	},
 /area/space)
 "tO" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken3"
 	},
@@ -810,6 +857,12 @@
 "wf" = (
 /turf/simulated/floor/carpet/purple,
 /area/space)
+"wm" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "wy" = (
 /obj/structure/closet/theatrecloset,
 /obj/item/device/violin,
@@ -834,6 +887,9 @@
 /obj/structure/stool/bed/chair/comfy/brown,
 /obj/effect/landmark/start{
 	name = "Bartender"
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -1014,7 +1070,8 @@
 /obj/machinery/chem_dispenser/beer,
 /obj/structure/table/woodentable,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkredfull"
 	},
 /area/space)
 "FD" = (
@@ -1036,7 +1093,7 @@
 /area/space)
 "FU" = (
 /obj/structure/table,
-/obj/item/weapon/reagent_containers/food/snacks/pie,
+/obj/item/weapon/reagent_containers/food/snacks/mint,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1054,6 +1111,9 @@
 /area/space)
 "Gn" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1078,6 +1138,12 @@
 	icon_state = "delivery"
 	},
 /area/space)
+"Hd" = (
+/obj/structure/stool/bed/chair/wood/normal,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "Hg" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor{
@@ -1089,7 +1155,8 @@
 /obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/soda,
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkredfull"
 	},
 /area/space)
 "HR" = (
@@ -1141,11 +1208,20 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"JB" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Ku" = (
 /obj/structure/closet/theatrecloset,
 /obj/item/device/camera_film,
 /obj/item/device/camera_film,
 /obj/item/device/camera,
+/obj/structure/noticeboard{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "Kx" = (
@@ -1181,10 +1257,7 @@
 	name = "Hydroponics";
 	req_access = list(35)
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "greenfull"
-	},
+/turf/simulated/floor,
 /area/space)
 "NA" = (
 /obj/effect/landmark/start{
@@ -1230,6 +1303,17 @@
 	icon_state = "dark"
 	},
 /area/space)
+"PA" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 1
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "PU" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/donkpockets{
@@ -1244,6 +1328,9 @@
 /area/space)
 "Qy" = (
 /obj/machinery/kitchen_machine/oven,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1281,7 +1368,7 @@
 /turf/simulated/floor/wood,
 /area/space)
 "SE" = (
-/obj/machinery/gibber,
+/obj/machinery/icecream_vat,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -1291,6 +1378,7 @@
 	dir = 8
 	},
 /obj/item/weapon/flora/random,
+/obj/machinery/light,
 /turf/simulated/floor/wood,
 /area/space)
 "Tq" = (
@@ -1346,6 +1434,9 @@
 /obj/item/weapon/poster/legit,
 /obj/item/weapon/poster/legit,
 /obj/item/weapon/poster/legit,
+/obj/structure/sign/poster/contraband/clown{
+	pixel_x = 32
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "Ue" = (
@@ -1384,6 +1475,7 @@
 /obj/item/device/eftpos{
 	eftpos_name = "Bar EFTPOS scanner"
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor/wood,
 /area/space)
 "Vl" = (
@@ -1401,6 +1493,12 @@
 	dir = 5;
 	icon_state = "vault"
 	},
+/area/space)
+"VI" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "VX" = (
 /obj/structure/sign/warning/securearea{
@@ -1462,6 +1560,9 @@
 /area/space)
 "YG" = (
 /obj/structure/closet/secure_closet/freezer/meat,
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -6834,7 +6935,7 @@ aB
 aB
 rH
 QX
-Uo
+aQ
 Uo
 vk
 rH
@@ -7015,7 +7116,7 @@ aB
 aB
 aB
 rH
-QX
+pl
 Uo
 Uo
 ud
@@ -8640,10 +8741,10 @@ rH
 rH
 rH
 rH
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
 rH
 rH
 rH
@@ -8657,14 +8758,14 @@ GC
 zN
 FD
 rd
-GC
+PA
 Lp
 QG
 eo
-lv
-lv
-lv
-lv
+cU
+cU
+cU
+cU
 rH
 rH
 rH
@@ -8829,25 +8930,25 @@ cU
 cU
 cU
 cU
-zN
-FT
-zN
-FT
-zN
-FT
-zN
-FT
-zN
-FT
-zN
-FT
-zN
-FT
 kQ
-kQ
-kQ
-kQ
-kQ
+FT
+zN
+FT
+zN
+FT
+zN
+FT
+zN
+FT
+zN
+FT
+zN
+eW
+mb
+mb
+mb
+mb
+mb
 mb
 mb
 mb
@@ -9023,7 +9124,7 @@ FT
 zN
 FT
 zN
-FT
+bj
 eo
 cU
 cU
@@ -9193,7 +9294,7 @@ cU
 cU
 cU
 cU
-zN
+kQ
 FT
 zN
 FT
@@ -9206,7 +9307,7 @@ FT
 zN
 FT
 zN
-FT
+eW
 tI
 tI
 tI
@@ -9376,21 +9477,21 @@ rH
 rH
 rH
 rH
-Ch
+lv
 nT
 Ch
 ai
 fD
 FT
-zN
-Sq
-Sq
+kx
+aI
+JB
 qB
 SK
 rH
 rH
 rH
-rH
+VI
 rH
 rH
 rH
@@ -9564,7 +9665,7 @@ Ct
 mQ
 vu
 zN
-FT
+Hd
 tO
 TI
 TI
@@ -9573,7 +9674,7 @@ rH
 aB
 aB
 aB
-aa
+rH
 aa
 aa
 aa
@@ -9746,8 +9847,8 @@ UF
 FT
 pL
 FT
-zN
-Sq
+kx
+aI
 TI
 TI
 jh
@@ -9755,7 +9856,7 @@ rH
 aB
 aB
 aB
-aa
+rH
 aa
 aa
 aa
@@ -9928,16 +10029,16 @@ FT
 FT
 Ex
 zN
-FT
+Hd
 aI
 fV
-Sq
+wm
 EF
 rH
 aB
 aB
-aB
-aa
+rH
+rH
 aa
 aa
 aa
@@ -10118,7 +10219,7 @@ rH
 rH
 aB
 aB
-aB
+rH
 aa
 aa
 aa
@@ -10300,7 +10401,7 @@ Sg
 rH
 aB
 aB
-aB
+rH
 aa
 aa
 aa
@@ -10482,7 +10583,7 @@ yp
 rH
 aB
 aB
-aB
+rH
 aa
 aa
 aa
@@ -10647,7 +10748,7 @@ aa
 aa
 aa
 aa
-aa
+aB
 aB
 aB
 rH
@@ -10664,7 +10765,7 @@ ms
 rH
 aB
 aB
-aB
+rH
 aa
 aa
 aa
@@ -10844,9 +10945,9 @@ TN
 fa
 bX
 rH
-aa
-aa
-aa
+aB
+aB
+rH
 aa
 aa
 aa
@@ -11026,9 +11127,9 @@ rH
 rH
 rH
 rH
-aa
-aa
-aa
+aB
+aB
+rH
 aa
 aa
 aa
@@ -11204,13 +11305,13 @@ aB
 aB
 aB
 aB
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+aB
+aB
+aB
+rH
 aa
 aa
 aa
@@ -11386,13 +11487,13 @@ aB
 aB
 aB
 aB
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+aB
+aB
+aB
+rH
 aa
 aa
 aa
