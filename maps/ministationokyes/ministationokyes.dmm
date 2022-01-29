@@ -4,6 +4,10 @@
 /area/space)
 "ab" = (
 /obj/structure/reagent_dispensers/beerkeg,
+/obj/machinery/camera{
+	c_tag = "Bar Backroom";
+	dir = 4
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "ac" = (
@@ -243,8 +247,25 @@
 /obj/item/weapon/coin/bananium{
 	pixel_x = -3
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/machinery/camera{
+	c_tag = "Theater Backroom";
+	dir = 10
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken3"
+	},
+/area/space)
+"ca" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -30
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "cm" = (
@@ -300,6 +321,10 @@
 /mob/living/simple_animal/chicken{
 	name = "Commander Clucky"
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -30
+	},
 /turf/simulated/floor/grass,
 /area/space)
 "ds" = (
@@ -330,6 +355,23 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"dJ" = (
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_x = -30
+	},
+/turf/simulated/wall,
+/area/space)
+"dM" = (
+/obj/machinery/alarm{
+	pixel_x = -28;
+	pixel_y = -5
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "dS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -371,6 +413,10 @@
 /obj/item/clothing/suit/superman,
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/power/apc{
+	name = "Honk Office APC";
+	pixel_x = 30
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -467,6 +513,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/machinery/alarm{
+	pixel_x = -28;
+	pixel_y = -5
+	},
 /turf/simulated/floor/grass,
 /area/space)
 "gv" = (
@@ -482,6 +532,10 @@
 "gG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/machinery/power/apc{
+	name = "Kitchen APC";
+	pixel_y = 28
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -607,6 +661,10 @@
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 6
 	},
+/obj/machinery/camera{
+	c_tag = "Hydroponics Pasture";
+	dir = 4
+	},
 /turf/simulated/floor/grass,
 /area/space)
 "iU" = (
@@ -641,6 +699,13 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"jJ" = (
+/obj/machinery/light_switch{
+	pixel_x = 11;
+	pixel_y = 5
+	},
+/turf/simulated/wall,
+/area/space)
 "kp" = (
 /obj/structure/stool/bar,
 /turf/simulated/floor{
@@ -651,7 +716,8 @@
 "kt" = (
 /obj/machinery/vending/dinnerware,
 /obj/machinery/light_switch{
-	pixel_x = 27
+	pixel_x = 23;
+	pixel_y = 2
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -714,6 +780,10 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = 20
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -758,6 +828,10 @@
 /obj/structure/closet/secure_closet/freezer/meat,
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 30
 	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
@@ -872,6 +946,10 @@
 "ow" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/snacks/pie,
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = 20
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1014,6 +1092,10 @@
 /area/space)
 "rl" = (
 /obj/machinery/disposal,
+/obj/machinery/camera{
+	c_tag = "Kitchen";
+	dir = 5
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1137,6 +1219,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/machinery/newscaster{
+	pixel_y = 30
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1157,6 +1242,9 @@
 /obj/item/weapon/storage/firstaid/regular,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/item/device/radio/intercom{
+	pixel_x = -25
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -1315,6 +1403,9 @@
 /area/space)
 "yS" = (
 /obj/machinery/seed_extractor,
+/obj/machinery/alarm{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1367,6 +1458,15 @@
 	},
 /area/space)
 "zN" = (
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space)
+"zR" = (
+/obj/machinery/newscaster{
+	pixel_x = 30
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1502,6 +1602,10 @@
 	icon_state = "vault"
 	},
 /area/space)
+"Ck" = (
+/obj/item/noticeboard_frame/wood,
+/turf/simulated/wall,
+/area/space)
 "Ct" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/paper_bin,
@@ -1522,6 +1626,10 @@
 /area/space)
 "Cy" = (
 /obj/machinery/biogenerator,
+/obj/machinery/camera{
+	c_tag = "Hydroponics Lobby";
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1585,6 +1693,13 @@
 	icon_state = "dark"
 	},
 /area/space)
+"En" = (
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/requests_console/hydroponics{
+	pixel_x = -32
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "Ev" = (
 /turf/simulated/floor/grass,
 /area/space)
@@ -1631,6 +1746,9 @@
 /obj/structure/table/glass,
 /obj/item/device/eftpos{
 	eftpos_name = "Botany EFTPOS scanner"
+	},
+/obj/machinery/power/apc{
+	pixel_y = -29
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -1733,9 +1851,19 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"Hh" = (
+/obj/machinery/light_switch{
+	pixel_x = 23;
+	pixel_y = 2
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "Hi" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/soda,
+/obj/machinery/camera,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkredfull"
@@ -1807,6 +1935,10 @@
 /obj/item/weapon/reagent_containers/food/condiment/peppermill,
 /obj/item/weapon/reagent_containers/food/condiment/rice,
 /obj/item/weapon/reagent_containers/food/condiment/ketchup,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -24
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1884,6 +2016,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "Lp" = (
@@ -1922,9 +2058,26 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"Mp" = (
+/obj/machinery/power/apc{
+	name = "Bar APC";
+	pixel_x = -28
+	},
+/obj/machinery/camera{
+	c_tag = "Bar West";
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "Mq" = (
 /obj/structure/kitchenspike,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/alarm{
+	pixel_x = -28;
+	pixel_y = -6
+	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -1947,6 +2100,14 @@
 /area/space)
 "NK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/grass,
+/area/space)
+"On" = (
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 32
+	},
 /turf/simulated/floor/grass,
 /area/space)
 "Ou" = (
@@ -2049,6 +2210,10 @@
 	dir = 8;
 	icon_state = "yellowsiding"
 	},
+/area/space)
+"Ra" = (
+/obj/structure/sign/double/barsign,
+/turf/simulated/wall,
 /area/space)
 "Ry" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -2183,6 +2348,10 @@
 "Ue" = (
 /obj/machinery/windowtint{
 	id = "kitchen";
+	pixel_y = 30
+	},
+/obj/machinery/firealarm{
+	pixel_x = 10;
 	pixel_y = 24
 	},
 /turf/simulated/floor{
@@ -2204,6 +2373,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Cold Room APC";
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -2211,6 +2385,9 @@
 "Uz" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/wiki/hydroponics,
+/obj/machinery/newscaster{
+	pixel_y = -30
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -2337,6 +2514,15 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"WU" = (
+/obj/machinery/camera{
+	c_tag = "Bar South";
+	dir = 10
+	},
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken7"
+	},
+/area/space)
 "WV" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/snacks/mint,
@@ -2344,6 +2530,13 @@
 	dir = 5;
 	icon_state = "cafeteria"
 	},
+/area/space)
+"Xr" = (
+/obj/machinery/light_switch{
+	pixel_x = -23;
+	pixel_y = 2
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "Xz" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -8554,7 +8747,7 @@ Zy
 Zy
 RC
 Fw
-rH
+jJ
 rH
 rH
 er
@@ -8730,7 +8923,7 @@ xN
 We
 rl
 AK
-AN
+En
 AN
 AN
 AN
@@ -9284,7 +9477,7 @@ hZ
 hD
 Tz
 Fn
-rH
+dJ
 er
 aB
 rH
@@ -9460,7 +9653,7 @@ kt
 rE
 AN
 AN
-AN
+On
 AN
 vz
 MV
@@ -9817,11 +10010,11 @@ FT
 zN
 FT
 zN
-FT
+Mp
 zN
 VJ
-zN
-FT
+dM
+ca
 zN
 FT
 kQ
@@ -10540,7 +10733,7 @@ aa
 aa
 er
 aB
-rH
+Ck
 qp
 HR
 Ct
@@ -10722,7 +10915,7 @@ aa
 aa
 er
 aB
-rH
+Ra
 nQ
 FT
 UF
@@ -10910,12 +11103,12 @@ FT
 VJ
 FT
 Ex
-zN
+zR
 Eh
 aI
 fV
 qm
-lg
+WU
 rH
 aB
 er
@@ -11088,7 +11281,7 @@ er
 aB
 rH
 Hi
-FT
+Hh
 VJ
 fW
 ac
@@ -11278,7 +11471,7 @@ rH
 tU
 EK
 TI
-Sq
+Xr
 Sg
 rH
 aB
