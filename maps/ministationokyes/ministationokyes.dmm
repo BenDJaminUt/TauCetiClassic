@@ -4,42 +4,68 @@
 /area/space)
 "ab" = (
 /obj/structure/reagent_dispensers/beerkeg,
-/obj/machinery/camera{
-	c_tag = "Bar Backroom";
-	dir = 4
+/obj/item/device/radio/intercom{
+	dir = 4;
+	name = "Station Intercom (General)";
+	pixel_x = -22
+	},
+/obj/machinery/alarm{
+	pixel_y = 23
 	},
 /turf/simulated/floor/wood,
 /area/space)
 "ac" = (
 /obj/machinery/vending/boozeomat,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
 /turf/simulated/floor{
 	icon_state = "darkred"
 	},
 /area/space)
 "ae" = (
-/obj/structure/window/reinforced{
-	dir = 5
+/turf/simulated/floor{
+	icon_state = "grimy"
 	},
-/turf/simulated/floor/plating,
 /area/space)
 "af" = (
-/obj/structure/window/reinforced{
-	dir = 5
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
+	name = "Confession Booth";
+	req_access = list(22)
 	},
-/turf/simulated/wall,
+/turf/simulated/floor/wood,
 /area/space)
 "ag" = (
-/obj/machinery/vending/boozeomat,
-/turf/simulated/floor{
-	dir = 9;
-	icon_state = "darkred"
+/obj/item/device/radio/intercom{
+	broadcasting = 1;
+	frequency = 1480;
+	name = "Confessional Intercom";
+	pixel_y = 22
 	},
+/obj/structure/stool/bed/chair/metal/black,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/wood,
 /area/space)
 "ah" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
+/obj/machinery/mass_driver{
 	dir = 4;
-	icon_state = "darkred"
+	id = "chapelgun"
+	},
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK";
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating{
+	dir = 4;
+	icon_state = "warnplate"
 	},
 /area/space)
 "ai" = (
@@ -49,81 +75,126 @@
 	},
 /area/space)
 "aj" = (
-/obj/machinery/light/small/built{
-	dir = 1
+/obj/machinery/door/poddoor{
+	id = "chapelgun";
+	name = "Chapel Launcher Door"
 	},
-/obj/machinery/disposal,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "ak" = (
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "darkredcorners"
+/obj/structure/grille,
+/obj/structure/window/reinforced/tinted{
+	dir = 1
 	},
-/area/space)
-"al" = (
-/obj/structure/stool/bed/chair/comfy/brown{
+/obj/structure/window/reinforced/tinted,
+/obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
-/turf/simulated/floor/carpet/red,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/space)
+"al" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warndark"
+	},
 /area/space)
 "am" = (
-/obj/structure/table/woodentable/fancy/black,
-/turf/simulated/floor/carpet/red,
+/obj/machinery/door/window{
+	dir = 1;
+	name = "Mass Driver";
+	req_access = list(22)
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warndark"
+	},
 /area/space)
 "an" = (
-/obj/machinery/media/jukebox/bar,
+/obj/machinery/door/airlock/glass{
+	name = "Chapel Office";
+	req_access = list(22)
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "grimy"
 	},
 /area/space)
 "ao" = (
-/turf/simulated/floor/carpet/red,
-/area/space)
-"ap" = (
-/obj/structure/stool/bed/chair/comfy/brown{
+/obj/item/device/radio/intercom{
+	broadcasting = 1;
+	dir = 4;
+	frequency = 1480;
+	name = "Confessional Intercom";
+	pixel_x = -22
+	},
+/obj/structure/stool/bed/chair/metal/black{
 	dir = 1
 	},
-/turf/simulated/floor/carpet/red,
+/obj/item/weapon/storage/bible,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/wood{
+	icon_state = "wood-broken"
+	},
+/area/space)
+"ap" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Chapel Maintenance";
+	req_one_access = list(12,22)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "aq" = (
-/obj/structure/stool/bed/chair/comfy/brown,
-/turf/simulated/floor/carpet/red,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window{
+	name = "Mass Driver";
+	req_access = list(22)
+	},
+/turf/simulated/floor{
+	icon_state = "warndark"
+	},
 /area/space)
 "ar" = (
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced,
 /turf/simulated/floor{
-	icon_state = "hydrofloor"
+	icon_state = "warndark"
 	},
 /area/space)
 "at" = (
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/soda{
-	dir = 4
+/obj/structure/window/reinforced{
+	dir = 5
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "au" = (
-/obj/machinery/door/window{
-	dir = 4
+/obj/machinery/door/firedoor,
+/obj/machinery/door/morgue{
+	dir = 1;
+	name = "Confession Booth"
 	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/wood,
 /area/space)
 "av" = (
-/obj/structure/table/reinforced,
+/obj/structure/big_bell,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "aw" = (
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/beer{
+/obj/structure/stool/bed/chair/metal/black{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -131,59 +202,55 @@
 	},
 /area/space)
 "ax" = (
-/obj/structure/window/basic{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/light/small/built,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/carpet/black,
 /area/space)
 "ay" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor/plating,
-/area/space)
-"az" = (
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/beer{
-	dir = 4
+/obj/machinery/door/airlock/glass{
+	name = "Chapel"
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
+	},
+/area/space)
+"az" = (
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "wood_stairs2"
 	},
 /area/space)
 "aA" = (
-/obj/machinery/vending/boozeomat,
-/turf/simulated/floor{
-	icon_state = "dark"
+/obj/structure/table/woodentable/fancy,
+/obj/item/weapon/storage/fancy/candle_box{
+	pixel_y = 10
 	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/black,
 /area/space)
 "aB" = (
 /turf/simulated/floor/plating,
 /area/space)
 "aC" = (
-/turf/simulated/floor{
-	icon_state = "blackchecker"
-	},
+/obj/structure/table/woodentable/fancy,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/carpet/black,
 /area/space)
 "aD" = (
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+/obj/structure/table/woodentable/fancy,
+/obj/item/weapon/storage/fancy/candle_box{
+	pixel_y = 10
 	},
-/area/space)
-"aG" = (
-/obj/structure/stool/bed/chair/metal/black{
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
+/turf/simulated/floor/carpet/black,
+/area/space)
+"aG" = (
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
+	icon_state = "wood_stairs2"
 	},
 /area/space)
 "aI" = (
@@ -228,6 +295,17 @@
 	icon_state = "showroomfloor"
 	},
 /area/space)
+"bP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
 "bW" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -251,36 +329,34 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/machinery/camera{
-	c_tag = "Theater Backroom";
-	dir = 10
-	},
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken3"
 	},
 /area/space)
 "ca" = (
 /obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -30
+	dir = 8;
+	pixel_x = -24
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "cm" = (
-/obj/structure/table/holotable,
-/obj/machinery/light/built{
-	dir = 1
-	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "cr" = (
 /obj/structure/flora/junglebush/large,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -22
 	},
 /turf/simulated/floor/grass,
 /area/space)
@@ -292,6 +368,11 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
+	},
+/area/space)
+"cK" = (
+/turf/simulated/floor{
+	icon_state = "asteroid3"
 	},
 /area/space)
 "cU" = (
@@ -311,6 +392,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -322,25 +407,21 @@
 	name = "Commander Clucky"
 	},
 /obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -30
+	dir = 8;
+	pixel_x = -24
 	},
 /turf/simulated/floor/grass,
 /area/space)
 "ds" = (
-/obj/structure/stool/bed/chair/metal/black{
-	dir = 8
-	},
+/obj/structure/stool/bed/chair/wood/normal,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "blackcorner"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "dy" = (
-/obj/machinery/media/jukebox/bar,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+	icon_state = "vault"
 	},
 /area/space)
 "dD" = (
@@ -357,16 +438,25 @@
 /turf/simulated/floor/plating,
 /area/space)
 "dJ" = (
-/obj/item/device/radio/intercom{
-	name = "Station Intercom (General)";
-	pixel_x = -30
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced/polarized{
+	id = "chapel"
 	},
-/turf/simulated/wall,
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "chapel"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "chapel"
+	},
+/obj/structure/grille,
+/turf/simulated/floor/plating,
 /area/space)
 "dM" = (
 /obj/machinery/alarm{
-	pixel_x = -28;
-	pixel_y = -5
+	dir = 4;
+	pixel_x = -22
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -392,10 +482,16 @@
 /turf/simulated/floor/plating,
 /area/space)
 "eU" = (
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced/polarized{
+	id = "chapel"
 	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "chapel"
+	},
+/obj/structure/grille,
+/turf/simulated/floor/plating,
 /area/space)
 "eW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -444,14 +540,31 @@
 /turf/simulated/floor/wood,
 /area/space)
 "fo" = (
-/obj/structure/stool/bed/chair/metal/black,
-/turf/simulated/floor{
-	icon_state = "blackcorner"
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced/polarized{
+	id = "chapel"
 	},
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "chapel"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "chapel"
+	},
+/obj/structure/grille,
+/turf/simulated/floor/plating,
 /area/space)
 "fB" = (
+/obj/structure/closet/coffin,
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	name = "Coffin Storage";
+	req_access = list(22)
+	},
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "fD" = (
@@ -463,6 +576,11 @@
 	dir = 5;
 	icon_state = "vault"
 	},
+/area/space)
+"fM" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/game_kit/random,
+/turf/simulated/floor/grass,
 /area/space)
 "fP" = (
 /obj/machinery/disposal,
@@ -506,6 +624,13 @@
 	icon_state = "delivery"
 	},
 /area/space)
+"gc" = (
+/obj/structure/flora/tree/jungle/small{
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/turf/simulated/floor/grass,
+/area/space)
 "gl" = (
 /obj/structure/flora/ausbushes/ppflowers{
 	pixel_x = 11
@@ -513,9 +638,14 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/machinery/alarm{
-	pixel_x = -28;
-	pixel_y = -5
+/obj/machinery/camera{
+	c_tag = "Hydroponics Pasture";
+	dir = 4
+	},
+/obj/item/device/radio/intercom{
+	dir = 4;
+	name = "Station Intercom (General)";
+	pixel_x = -20
 	},
 /turf/simulated/floor/grass,
 /area/space)
@@ -559,18 +689,29 @@
 /turf/simulated/floor,
 /area/space)
 "hb" = (
+/obj/structure/closet/coffin,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "blackcorner"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "hf" = (
-/obj/structure/stool/bed/chair/metal/black{
-	dir = 4
+/obj/structure/closet/crate,
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Altar APC";
+	pixel_x = -26
 	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "blackcorner"
+	icon_state = "dark"
+	},
+/area/space)
+"hh" = (
+/turf/simulated/floor{
+	icon_state = "asteroid7"
 	},
 /area/space)
 "hm" = (
@@ -581,6 +722,12 @@
 	icon_state = "warning"
 	},
 /area/space)
+"hr" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
 "hD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -588,12 +735,27 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor,
 /area/space)
+"hQ" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
+/area/space)
+"hX" = (
+/turf/simulated/floor{
+	icon_state = "asteroid2"
+	},
+/area/space)
 "hZ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "yellowcornersiding"
 	},
+/area/space)
+"id" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "ih" = (
 /obj/machinery/door/airlock{
@@ -609,11 +771,16 @@
 /turf/simulated/floor/plating,
 /area/space)
 "is" = (
-/obj/machinery/door/airlock{
-	name = "Bar Backroom";
-	req_access = list(25)
+/obj/structure/table/woodentable/fancy/black,
+/obj/item/weapon/storage/fancy/crayons{
+	pixel_y = 5
 	},
-/turf/simulated/floor/wood,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "iy" = (
 /obj/structure/table,
@@ -640,12 +807,13 @@
 /turf/simulated/floor,
 /area/space)
 "iF" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "neutral"
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
 /area/space)
 "iL" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -661,17 +829,12 @@
 /obj/structure/flora/ausbushes/reedbush{
 	pixel_y = 6
 	},
-/obj/machinery/camera{
-	c_tag = "Hydroponics Pasture";
-	dir = 4
-	},
 /turf/simulated/floor/grass,
 /area/space)
 "iU" = (
-/obj/structure/table/holotable,
+/obj/structure/table/woodentable/fancy/black,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+	icon_state = "dark"
 	},
 /area/space)
 "jf" = (
@@ -688,29 +851,35 @@
 /turf/simulated/floor/wood,
 /area/space)
 "jl" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access = list(12)
+/obj/structure/table/woodentable/fancy/black,
+/obj/item/device/camera,
+/obj/machinery/light/small{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "js" = (
-/obj/structure/stool/bar,
+/obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	icon_state = "dark"
 	},
 /area/space)
 "jJ" = (
-/obj/machinery/light_switch{
-	pixel_x = 11;
-	pixel_y = 5
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "vault"
 	},
-/turf/simulated/wall,
+/area/space)
+"jR" = (
+/obj/structure/flora/tree/jungle,
+/turf/simulated/floor/grass,
 /area/space)
 "kp" = (
-/obj/structure/stool/bar,
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "blackcorner"
+	icon_state = "vault"
 	},
 /area/space)
 "kt" = (
@@ -746,6 +915,12 @@
 	},
 /turf/simulated/floor,
 /area/space)
+"kG" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "kQ" = (
 /obj/machinery/door/airlock/glass{
 	name = "Bar"
@@ -756,10 +931,9 @@
 	},
 /area/space)
 "la" = (
-/obj/structure/stool/bar,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
+	dir = 4;
+	icon_state = "vault"
 	},
 /area/space)
 "lg" = (
@@ -768,11 +942,12 @@
 	},
 /area/space)
 "li" = (
-/obj/structure/stool/bed/chair/metal/black{
-	dir = 1
+/obj/machinery/door/morgue{
+	name = "Altar";
+	req_access = list(22)
 	},
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	icon_state = "dark"
 	},
 /area/space)
 "lv" = (
@@ -790,18 +965,25 @@
 	},
 /area/space)
 "lH" = (
-/obj/structure/closet/cabinet,
+/obj/structure/altar_of_gods,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "lK" = (
-/obj/structure/reagent_dispensers/kvasstank{
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/plating,
 /area/space)
 "lP" = (
 /obj/structure/stool,
@@ -815,12 +997,20 @@
 	icon_state = "neutral"
 	},
 /area/space)
+"ml" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
+/area/space)
 "mn" = (
 /obj/structure/sign/poster/official/random{
 	pixel_x = -32
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
+	},
+/obj/machinery/camera{
+	c_tag = "Bar Backroom";
+	dir = 4
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -830,8 +1020,12 @@
 	dir = 4
 	},
 /obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 30
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/machinery/camera{
+	c_tag = "Kitchen Cold Room";
+	dir = 8
 	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
@@ -861,9 +1055,12 @@
 	},
 /area/space)
 "my" = (
-/obj/structure/reagent_dispensers/beerkeg,
+/obj/machinery/door/airlock/glass{
+	name = "Chapel"
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/space)
 "mQ" = (
@@ -875,10 +1072,19 @@
 	},
 /area/space)
 "mY" = (
-/obj/structure/closet/gmcloset,
-/turf/simulated/floor{
-	icon_state = "dark"
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "nM" = (
 /obj/machinery/door/window/eastleft{
@@ -913,18 +1119,18 @@
 	},
 /area/space)
 "of" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Bar Maintenance";
-	req_one_access = list(25)
-	},
-/turf/simulated/floor/plating,
-/area/space)
-"og" = (
-/obj/machinery/light/built{
-	dir = 8
+/obj/machinery/newscaster{
+	pixel_y = -28
 	},
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	icon_state = "dark"
+	},
+/area/space)
+"og" = (
+/obj/machinery/light/small,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "vault"
 	},
 /area/space)
 "op" = (
@@ -937,10 +1143,18 @@
 /turf/simulated/floor/plating,
 /area/space)
 "or" = (
-/obj/structure/table/reinforced,
+/obj/machinery/camera{
+	c_tag = "Chapel Altar";
+	dir = 1
+	},
+/obj/item/device/radio/intercom{
+	dir = 1;
+	name = "Station Intercom (General)";
+	pixel_y = -21
+	},
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "blackcorner"
+	icon_state = "vault"
 	},
 /area/space)
 "ow" = (
@@ -956,10 +1170,10 @@
 	},
 /area/space)
 "oA" = (
-/obj/structure/table/reinforced,
+/obj/machinery/light/small,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/space)
 "oP" = (
@@ -995,11 +1209,8 @@
 /turf/simulated/floor/plating,
 /area/space)
 "oV" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
-	},
+/obj/item/weapon/flora/pottedplant/minitree,
+/turf/simulated/floor,
 /area/space)
 "po" = (
 /obj/structure/grille,
@@ -1035,6 +1246,12 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"pU" = (
+/obj/structure/stool/bed/chair/schair/wagon/bench,
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
 "pW" = (
 /obj/machinery/door/airlock/glass{
 	name = "Kitchen";
@@ -1052,10 +1269,11 @@
 	},
 /area/space)
 "qg" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor{
-	icon_state = "blackcorner"
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/requests_console/hydroponics{
+	pixel_x = 32
 	},
+/turf/simulated/floor/grass,
 /area/space)
 "qm" = (
 /obj/item/device/radio/intercom{
@@ -1067,6 +1285,12 @@
 /area/space)
 "qp" = (
 /obj/structure/table/reinforced,
+/obj/structure/noticeboard/bar{
+	pixel_y = 26
+	},
+/obj/machinery/camera{
+	c_tag = "Bar North"
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkredfull"
@@ -1079,11 +1303,19 @@
 	},
 /area/space)
 "qX" = (
-/obj/structure/stool/bar,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "rd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1092,10 +1324,6 @@
 /area/space)
 "rl" = (
 /obj/machinery/disposal,
-/obj/machinery/camera{
-	c_tag = "Kitchen";
-	dir = 5
-	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -1118,6 +1346,12 @@
 /area/space)
 "rH" = (
 /turf/simulated/wall,
+/area/space)
+"rL" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "rV" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -1148,8 +1382,17 @@
 	icon_state = "yellowsiding"
 	},
 /area/space)
+"ss" = (
+/turf/simulated/floor{
+	icon_state = "asteroid6"
+	},
+/area/space)
 "sE" = (
 /obj/structure/device/piano/royal,
+/obj/machinery/camera{
+	c_tag = "Bar South";
+	dir = 1
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "sX" = (
@@ -1167,6 +1410,24 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
+/area/space)
+"tj" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 4
+	},
+/turf/simulated/floor/grass,
+/area/space)
+"tF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
 /area/space)
 "tI" = (
 /turf/simulated/floor{
@@ -1243,9 +1504,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/item/device/radio/intercom{
-	pixel_x = -25
-	},
 /turf/simulated/floor/wood,
 /area/space)
 "uU" = (
@@ -1284,15 +1542,33 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/watertank,
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
+/area/space)
+"wc" = (
+/obj/structure/stool/bed/chair/comfy/brown,
+/turf/simulated/floor/wood,
 /area/space)
 "wf" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/purple,
+/area/space)
+"wh" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "asteroid2"
+	},
 /area/space)
 "wy" = (
 /obj/structure/closet/theatrecloset,
@@ -1312,6 +1588,17 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"xa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "asteroid3"
+	},
+/area/space)
 "xg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1325,7 +1612,15 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/sign/monkey_painting{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
+/area/space)
+"xp" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/simulated/floor/grass,
 /area/space)
 "xF" = (
 /obj/machinery/computer/arcade,
@@ -1344,8 +1639,7 @@
 /area/space)
 "xN" = (
 /obj/machinery/chem_master/condimaster{
-	name = "CondiMaster Neo";
-	pixel_x = -5
+	name = "CondiMaster Neo"
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -1383,28 +1677,27 @@
 /turf/simulated/floor/wood,
 /area/space)
 "yx" = (
-/obj/machinery/light/built{
-	dir = 8
+/obj/structure/closet/secure_closet/barber,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Barbershop APC";
+	pixel_y = 27
 	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "yy" = (
-/obj/structure/table/reinforced,
-/obj/structure/window/basic{
-	dir = 8
-	},
+/obj/machinery/color_mixer,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "yS" = (
 /obj/machinery/seed_extractor,
 /obj/machinery/alarm{
-	pixel_y = -32
+	dir = 1;
+	pixel_y = -22
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -1444,17 +1737,26 @@
 /turf/simulated/floor,
 /area/space)
 "zu" = (
+/obj/machinery/vending/barbervend,
+/obj/structure/sign/poster/official/soft_cap_pop_art{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
-	icon_state = "freezerfloor2"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "zv" = (
-/obj/machinery/door/window{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/glass{
+	name = "Barbershop"
 	},
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "blackcorner"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "zN" = (
@@ -1467,16 +1769,24 @@
 /obj/machinery/newscaster{
 	pixel_x = 30
 	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
 	},
 /area/space)
 "zS" = (
-/obj/machinery/disposal,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "blackcorner"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "Ai" = (
@@ -1500,6 +1810,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/turf/simulated/floor/grass,
+/area/space)
+"At" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/junglebush/large,
+/turf/simulated/floor/grass,
+/area/space)
+"AA" = (
 /turf/simulated/floor/grass,
 /area/space)
 "AH" = (
@@ -1551,14 +1869,17 @@
 	},
 /area/space)
 "Bm" = (
-/obj/structure/window/basic{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/obj/machinery/vending/boozeomat,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "blackcorner"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Barbershop Maintenance";
+	req_access = list(12, 69)
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "BC" = (
 /obj/machinery/door/firedoor,
@@ -1575,19 +1896,25 @@
 /turf/simulated/floor/plating,
 /area/space)
 "BY" = (
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/beer,
-/turf/simulated/floor{
-	icon_state = "blackcorner"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "BZ" = (
-/obj/structure/table/holotable,
-/obj/machinery/chem_dispenser/soda,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "blackcorner"
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/sign/barber{
+	pixel_x = 14
+	},
+/turf/simulated/floor,
 /area/space)
 "Ch" = (
 /obj/structure/stool/bar,
@@ -1603,8 +1930,18 @@
 	},
 /area/space)
 "Ck" = (
-/obj/item/noticeboard_frame/wood,
-/turf/simulated/wall,
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "Ct" = (
 /obj/structure/table/reinforced,
@@ -1626,29 +1963,26 @@
 /area/space)
 "Cy" = (
 /obj/machinery/biogenerator,
-/obj/machinery/camera{
-	c_tag = "Hydroponics Lobby";
-	dir = 1
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space)
 "CC" = (
-/obj/structure/table/reinforced,
-/obj/machinery/light/built,
+/obj/structure/stool/bed/chair/metal/white{
+	dir = 4
+	},
 /turf/simulated/floor{
-	icon_state = "blackcorner"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "CN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
+/turf/simulated/floor{
+	icon_state = "purplechecker"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor,
 /area/space)
 "Dj" = (
 /obj/structure/stool/bed/chair/comfy/black{
@@ -1669,6 +2003,10 @@
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken6"
 	},
+/area/space)
+"Eg" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/grass,
 /area/space)
 "Eh" = (
 /obj/structure/stool/bed/chair/metal/black,
@@ -1694,14 +2032,24 @@
 	},
 /area/space)
 "En" = (
-/obj/machinery/hydroponics/constructable,
-/obj/machinery/requests_console/hydroponics{
-	pixel_x = -32
+/obj/structure/table/glass,
+/obj/item/weapon/razor,
+/obj/item/weapon/reagent_containers/dropper/precision,
+/obj/structure/dryer{
+	dir = 8;
+	pixel_x = 6
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor{
+	icon_state = "purplechecker"
+	},
 /area/space)
 "Ev" = (
-/turf/simulated/floor/grass,
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	icon_state = "green"
+	},
 /area/space)
 "Ex" = (
 /obj/machinery/media/jukebox/bar{
@@ -1747,8 +2095,10 @@
 /obj/item/device/eftpos{
 	eftpos_name = "Botany EFTPOS scanner"
 	},
-/obj/machinery/power/apc{
-	pixel_y = -29
+/obj/item/device/radio/intercom{
+	dir = 1;
+	name = "Station Intercom (General)";
+	pixel_y = -22
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -1767,11 +2117,25 @@
 	},
 /turf/simulated/floor,
 /area/space)
-"FD" = (
-/obj/structure/stool/bed/chair/comfy/black,
-/turf/simulated/floor{
-	icon_state = "dark"
+"FB" = (
+/obj/machinery/door/airlock/glass{
+	name = "Garden"
 	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "greenfull"
+	},
+/area/space)
+"FD" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "FG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1799,24 +2163,39 @@
 	icon_state = "dark"
 	},
 /area/space)
+"FV" = (
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
 "FX" = (
-/obj/structure/stool/bed/chair/comfy/brown,
-/turf/simulated/floor/wood,
+/obj/item/weapon/flora/random,
+/turf/simulated/floor{
+	icon_state = "purplechecker"
+	},
 /area/space)
 "Ga" = (
-/obj/structure/table/woodentable/fancy/black,
+/obj/structure/stool/bed/chair/barber{
+	dir = 4
+	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "Gj" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor,
+/area/space)
+"Gl" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "green"
+	},
 /area/space)
 "Gn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1825,30 +2204,30 @@
 	icon_state = "dark"
 	},
 /area/space)
+"Gq" = (
+/obj/structure/flora/junglebush/b,
+/turf/simulated/floor/grass,
+/area/space)
 "GC" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 1
+/obj/item/weapon/haircomb,
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/dropper,
+/obj/structure/mirror{
+	pixel_x = 28
 	},
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "GG" = (
-/obj/machinery/door/window/eastleft{
-	req_access = list(25)
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /turf/simulated/floor{
-	icon_state = "delivery"
+	icon_state = "cult"
 	},
 /area/space)
 "Hg" = (
-/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "cafeteria"
+	dir = 8;
+	icon_state = "green"
 	},
 /area/space)
 "Hh" = (
@@ -1856,6 +2235,7 @@
 	pixel_x = 23;
 	pixel_y = 2
 	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1863,11 +2243,21 @@
 "Hi" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/soda,
-/obj/machinery/camera,
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 22
+	},
+/obj/structure/sign/poster/official/high_class_martini{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkredfull"
 	},
+/area/space)
+"Hl" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
 /area/space)
 "HR" = (
 /obj/structure/table/reinforced,
@@ -1901,12 +2291,10 @@
 	},
 /area/space)
 "Is" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/beer{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "greencorner"
 	},
 /area/space)
 "IZ" = (
@@ -1935,14 +2323,16 @@
 /obj/item/weapon/reagent_containers/food/condiment/peppermill,
 /obj/item/weapon/reagent_containers/food/condiment/rice,
 /obj/item/weapon/reagent_containers/food/condiment/ketchup,
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -24
-	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
 	},
+/area/space)
+"Ju" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
 /area/space)
 "Jz" = (
 /obj/structure/table,
@@ -1972,10 +2362,17 @@
 	pixel_y = 5
 	},
 /obj/structure/table/glass,
-/obj/item/weapon/book/manual/hydroponics_beekeeping,
+/obj/item/weapon/book/manual/hydroponics_beekeeping{
+	pixel_x = -4;
+	pixel_y = 1
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"Kc" = (
+/obj/structure/flora/rock/jungle,
+/turf/simulated/floor/grass,
 /area/space)
 "Ku" = (
 /obj/structure/closet/theatrecloset,
@@ -2006,6 +2403,17 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "wood_stairs"
+	},
+/area/space)
+"KR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/glass{
+	name = "Garden"
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "greenfull"
 	},
 /area/space)
 "Lg" = (
@@ -2075,8 +2483,8 @@
 /obj/structure/kitchenspike,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/machinery/alarm{
-	pixel_x = -28;
-	pixel_y = -6
+	dir = 4;
+	pixel_x = -22
 	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
@@ -2104,9 +2512,14 @@
 /area/space)
 "On" = (
 /obj/machinery/hydroponics/constructable,
-/obj/machinery/firealarm{
+/obj/item/device/radio/intercom{
 	dir = 8;
-	pixel_x = 32
+	name = "Station Intercom (General)";
+	pixel_x = 20
+	},
+/obj/machinery/camera{
+	c_tag = "Hydroponics";
+	dir = 8
 	},
 /turf/simulated/floor/grass,
 /area/space)
@@ -2132,12 +2545,16 @@
 	},
 /area/space)
 "OE" = (
-/obj/structure/stool/bed/chair/comfy/brown{
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "Pg" = (
 /obj/machinery/hologram/holopad,
@@ -2146,12 +2563,9 @@
 	},
 /area/space)
 "Pu" = (
-/obj/structure/table,
-/obj/machinery/chem_dispenser/soda{
-	dir = 4
-	},
+/obj/machinery/disposal,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "purplechecker"
 	},
 /area/space)
 "PQ" = (
@@ -2177,6 +2591,22 @@
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
+/area/space)
+"Qv" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
+"Qz" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "QG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -2260,6 +2690,10 @@
 /area/space)
 "SE" = (
 /obj/machinery/gibber,
+/obj/item/device/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = 20
+	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -2269,6 +2703,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor/wood,
 /area/space)
 "SR" = (
@@ -2280,6 +2715,10 @@
 /area/space)
 "Tq" = (
 /obj/machinery/kitchen_machine/candymaker,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -22
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -2343,16 +2782,16 @@
 /obj/structure/sign/poster/contraband/clown{
 	pixel_x = 32
 	},
+/obj/machinery/camera{
+	c_tag = "Theatre";
+	dir = 8
+	},
 /turf/simulated/floor/wood,
 /area/space)
 "Ue" = (
 /obj/machinery/windowtint{
 	id = "kitchen";
 	pixel_y = 30
-	},
-/obj/machinery/firealarm{
-	pixel_x = 10;
-	pixel_y = 24
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -2385,12 +2824,17 @@
 "Uz" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/wiki/hydroponics,
-/obj/machinery/newscaster{
-	pixel_y = -30
+/obj/machinery/power/apc{
+	pixel_y = -29
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"UD" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/simulated/floor/grass,
 /area/space)
 "UF" = (
 /obj/structure/stool/bed/chair/comfy/brown{
@@ -2471,6 +2915,10 @@
 /area/space)
 "VS" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/machinery/camera{
+	c_tag = "Kitchen";
+	dir = 5
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -2507,6 +2955,12 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"Wv" = (
+/obj/structure/bookcase{
+	name = "bookcase (Religious)"
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "WP" = (
 /obj/machinery/processor,
 /turf/simulated/floor{
@@ -2515,10 +2969,7 @@
 	},
 /area/space)
 "WU" = (
-/obj/machinery/camera{
-	c_tag = "Bar South";
-	dir = 10
-	},
+/obj/item/weapon/flora/random,
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken7"
 	},
@@ -2535,6 +2986,13 @@
 /obj/machinery/light_switch{
 	pixel_x = -23;
 	pixel_y = 2
+	},
+/obj/item/weapon/flora/random,
+/turf/simulated/floor/wood,
+/area/space)
+"Xt" = (
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 4
 	},
 /turf/simulated/floor/wood,
 /area/space)
@@ -2557,6 +3015,15 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/purple,
+/area/space)
+"XH" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/simulated/floor{
+	icon_state = "purplechecker"
+	},
 /area/space)
 "XM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -2609,6 +3076,20 @@
 	icon_state = "showroomfloor"
 	},
 /area/space)
+"YY" = (
+/obj/structure/stool/bed/chair/schair/wagon/bench{
+	icon_state = "bench_2"
+	},
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/space)
+"Zh" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/tree/jungle,
+/turf/simulated/floor/grass,
+/area/space)
 "Zy" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -2633,6 +3114,10 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"ZE" = (
+/obj/structure/table/woodentable/poker,
+/turf/simulated/floor/wood,
 /area/space)
 "ZH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -6214,20 +6699,20 @@ aa
 aa
 aa
 aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -6396,20 +6881,20 @@ aa
 aa
 aa
 aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -6578,21 +7063,21 @@ aa
 aa
 aa
 aa
-aB
-aB
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -6760,9 +7245,6 @@ aa
 aa
 aa
 aa
-aB
-aB
-rH
 aa
 aa
 aa
@@ -6771,10 +7253,13 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -6942,9 +7427,6 @@ aa
 aa
 aa
 aa
-aB
-aB
-rH
 aa
 aa
 aa
@@ -6953,10 +7435,13 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -7124,9 +7609,6 @@ aa
 aa
 aa
 aa
-aB
-aB
-rH
 aa
 aa
 aa
@@ -7135,10 +7617,13 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -7294,21 +7779,6 @@ aa
 aa
 aa
 aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-rH
 aa
 aa
 aa
@@ -7317,10 +7787,25 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -7459,37 +7944,25 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 rH
 aa
 aa
@@ -7499,10 +7972,22 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -7641,37 +8126,25 @@ aa
 aa
 aa
 aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-jl
-rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 rH
 aa
 aa
@@ -7681,10 +8154,22 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -7823,7 +8308,7 @@ aa
 aa
 aa
 aa
-aB
+rH
 aB
 dS
 xg
@@ -7851,10 +8336,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -7863,10 +8344,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8005,7 +8490,7 @@ aa
 aa
 aa
 aa
-aB
+rH
 aB
 er
 rH
@@ -8033,10 +8518,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8045,10 +8526,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8183,11 +8668,11 @@ aa
 aa
 aa
 rH
-aB
-aB
-aa
-aa
-aB
+rH
+rH
+rH
+rH
+rH
 aB
 er
 rH
@@ -8215,10 +8700,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8227,10 +8708,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8397,10 +8882,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8409,10 +8890,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8579,10 +9064,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8591,10 +9072,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8747,7 +9232,7 @@ Zy
 Zy
 RC
 Fw
-jJ
+rH
 rH
 rH
 er
@@ -8761,10 +9246,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8773,10 +9254,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -8923,13 +9408,13 @@ xN
 We
 rl
 AK
-En
+AN
 AN
 AN
 AN
 QK
 MV
-Tz
+Ev
 Cy
 rH
 er
@@ -8943,10 +9428,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -8955,10 +9436,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -9125,10 +9610,6 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
@@ -9137,10 +9618,14 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -9290,7 +9775,7 @@ uU
 cU
 te
 LE
-cU
+oV
 cU
 iD
 Tz
@@ -9299,17 +9784,14 @@ rH
 er
 aB
 rH
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
 aa
 aa
 rH
-cU
-cU
+rH
+rH
 rH
 aa
 aa
@@ -9319,10 +9801,13 @@ aa
 aa
 aa
 aa
-rH
-aB
-aB
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -9477,9 +9962,21 @@ hZ
 hD
 Tz
 Fn
-dJ
-er
-aB
+rH
+fk
+rH
+rH
+AA
+Eg
+Eg
+cK
+FV
+Hl
+AA
+Eg
+rH
+rH
+rH
 rH
 aa
 aa
@@ -9489,22 +9986,10 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-rH
-aB
-aB
-rH
 aa
 aa
 aa
@@ -9654,14 +10139,26 @@ rE
 AN
 AN
 On
-AN
+qg
 vz
 MV
 lP
 Uz
 rH
-er
-aB
+Qz
+Gq
+Eg
+Kc
+Eg
+pU
+hX
+FV
+Eg
+Eg
+Kc
+AA
+Eg
+AA
 rH
 aa
 aa
@@ -9671,22 +10168,10 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
 aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-rH
-aB
-aB
-rH
 aa
 aa
 aa
@@ -9836,13 +10321,26 @@ rH
 ZB
 Lp
 rH
-ZB
-Lp
+rH
+rH
 zk
 FR
 oS
 rH
-fk
+tF
+AA
+Eg
+gc
+NK
+YY
+FV
+FV
+Eg
+jR
+AA
+At
+Eg
+Gq
 rH
 rH
 rH
@@ -9854,19 +10352,6 @@ rH
 rH
 rH
 rH
-cU
-cU
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-jl
 rH
 rH
 rH
@@ -10022,24 +10507,24 @@ mb
 mb
 Bg
 mb
-mb
-mb
-Bg
-mb
-mb
-mb
-mb
-mb
-mb
-mb
-mb
-mb
-mb
-mb
-cU
-cU
-mb
-mb
+Hg
+FB
+bP
+FV
+hh
+Eg
+Eg
+hr
+FV
+FV
+Eg
+xp
+Eg
+FV
+FV
+ss
+FB
+Hg
 mb
 mb
 mb
@@ -10201,26 +10686,26 @@ oQ
 Ou
 oS
 cU
-CN
-Gj
-rd
-rd
-rd
+cU
 Gj
 cU
 cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
+rH
+xa
+FV
+FV
+FV
+FV
+FV
+FV
+cK
+FV
+hX
+FV
+hh
+FV
+FV
+rH
 cU
 cU
 cU
@@ -10384,26 +10869,26 @@ Gn
 tO
 ZH
 iF
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-cU
-cU
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
+BZ
+rd
+Is
+KR
+wh
+FV
+ss
+FV
+hX
+FV
+FV
+FV
+FV
+FV
+FV
+ss
+cK
+FV
+FB
+Gl
 tI
 tI
 tI
@@ -10564,28 +11049,26 @@ KJ
 qB
 SK
 rH
+qX
+zv
+Ck
+FD
+OE
 rH
-fk
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-cU
-cU
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-jl
+AA
+Zh
+FV
+FV
+FV
+ss
+cK
+tj
+Kc
+FV
+AA
+gc
+AA
+UD
 rH
 rH
 rH
@@ -10601,8 +11084,10 @@ rH
 rH
 rH
 rH
-cU
-cU
+rH
+rH
+rH
+rH
 rH
 rH
 rH
@@ -10730,10 +11215,10 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
-Ck
+rH
 qp
 HR
 Ct
@@ -10746,30 +11231,32 @@ TI
 lg
 sE
 rH
-aB
-er
+yx
+zS
+CC
+FX
+Pu
+rH
+Eg
+Eg
+Eg
+FV
+Qv
+hQ
+jR
+fM
+AA
+Eg
+Eg
+NK
+Eg
+Eg
 rH
 aa
 aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-aB
-aB
-rH
 aa
 aa
 aa
@@ -10782,10 +11269,8 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
 aa
 aa
 aa
@@ -10912,7 +11397,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 Ra
@@ -10928,30 +11413,32 @@ TI
 Sq
 jh
 rH
-aB
-er
+yy
+zS
+CN
+Ga
+CN
+rH
+rH
+rH
+rH
+FV
+FV
+Eg
+Eg
+id
+Eg
+Eg
+Eg
+rH
+rH
+rH
 rH
 aa
 aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-aB
-aB
-rH
 aa
 aa
 aa
@@ -10964,10 +11451,8 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
 aa
 aa
 aa
@@ -11094,7 +11579,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 rH
@@ -11110,30 +11595,27 @@ fV
 qm
 WU
 rH
-aB
-er
+zu
+zS
+En
+GC
+XH
 rH
-aa
-aa
-aa
-aa
-aa
+Sq
+Sq
 rH
-cU
-cU
+Sq
+Sq
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
 rH
 aB
 aB
-rH
+aB
 aa
 aa
 aa
@@ -11146,10 +11628,13 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -11276,7 +11761,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 rH
@@ -11292,30 +11777,27 @@ Yd
 rH
 rH
 rH
-aB
-er
 rH
-aa
-aa
-aa
-aa
-aa
+Bm
 rH
-cU
-cU
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+Sq
+Sq
+ml
+Sq
+Sq
+Wv
+Wv
 rH
 aB
 aB
-rH
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -11328,10 +11810,13 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -11458,7 +11943,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 rH
@@ -11475,29 +11960,26 @@ Xr
 Sg
 rH
 aB
-er
+BY
 rH
-aa
-aa
-aa
-aa
-aa
+GG
+GG
 rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Sq
+Sq
+ml
+Sq
+Sq
+Sq
+Sq
 rH
 aB
 aB
-rH
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -11510,10 +11992,13 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -11640,7 +12125,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 aB
@@ -11659,43 +12144,43 @@ rH
 aB
 er
 rH
-aa
-aa
-aa
-aa
-aa
-rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+GG
+GG
+GG
+Sq
+Sq
+Sq
+Sq
+Sq
+Sq
+Sq
 rH
 aB
 aB
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 rH
-cU
-cU
 rH
+rH
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -11822,7 +12307,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 aB
@@ -11841,23 +12326,16 @@ rH
 aB
 er
 rH
-aa
-aa
-aa
-aa
-aa
+GG
+GG
 rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Sq
+Sq
+ml
+Sq
+Sq
+Wv
+Wv
 rH
 aB
 aB
@@ -11874,10 +12352,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12004,7 +12489,7 @@ aa
 aa
 aa
 aa
-aa
+rH
 er
 aB
 aB
@@ -12023,23 +12508,16 @@ rH
 aB
 er
 rH
-aa
-aa
-aa
-aa
-aa
 rH
-cU
-cU
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+Sq
+Sq
+rH
+rH
 rH
 aB
 aB
@@ -12056,10 +12534,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12116,77 +12601,77 @@ aa
 "}
 (53,1,1) = {"
 aa
-rH
-rH
-rH
-FT
-rH
-rH
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-aa
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 er
 aB
 aB
@@ -12204,24 +12689,17 @@ rH
 rH
 aB
 er
+aB
+aB
+aB
+aB
 rH
-aa
-aa
-aa
-aa
-aa
-rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+Sq
+Sq
+Sq
+Sq
+Sq
+Sq
 rH
 aB
 aB
@@ -12238,10 +12716,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12298,77 +12783,77 @@ aa
 "}
 (54,1,1) = {"
 aa
-rH
-ag
-an
-FT
-at
-aw
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 rH
-aD
-fB
-aD
-og
-yx
-fB
-zS
-rH
-aa
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 op
 xg
 xg
@@ -12386,24 +12871,17 @@ xg
 xg
 xg
 KF
-rH
-aa
-aa
-aa
-aa
-aa
-rH
-cU
-cU
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+aB
+kG
+Sq
+Sq
+Xt
+Xt
+Sq
+Sq
 rH
 aB
 aB
@@ -12420,10 +12898,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12480,112 +12965,105 @@ aa
 "}
 (55,1,1) = {"
 aa
-FT
-FT
-FT
-FT
-FT
-FT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
-aa
-aa
-af
-aG
-hb
-eU
-or
-yy
-zv
-Bm
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 rH
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 rH
 cU
-cU
+aa
+aa
+aa
+aa
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+rH
+Sq
+wc
+ZE
+ZE
+Ju
+Sq
 rH
 aB
 aB
@@ -12602,10 +13080,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12662,112 +13147,105 @@ aa
 "}
 (56,1,1) = {"
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ae
+ae
 rH
-FT
-FT
-FT
-FT
-FT
-rH
+Sq
+Sq
+az
+zN
 aa
 aa
-rH
-cm
-aD
-js
-oA
-fB
-aD
-BY
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
+zN
+lK
 cU
-cU
+aa
+aa
+aa
+aa
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aB
+aB
+rH
+Sq
+wc
+ZE
+ZE
+Ju
+Sq
 rH
 aB
 aB
@@ -12784,10 +13262,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -12844,112 +13329,105 @@ aa
 "}
 (57,1,1) = {"
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ae
-ah
-ah
-ah
-au
+ae
+ae
+rH
+Sq
 ax
-rH
+aA
+dy
 aa
 aa
-ae
-ds
-eU
-kp
-oV
-hb
-eU
-BZ
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+FT
 rH
 cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+rH
+Sq
+Sq
+rL
+rL
+Sq
+Sq
 rH
 aB
 aB
@@ -12966,10 +13444,17 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13026,132 +13511,132 @@ aa
 "}
 (58,1,1) = {"
 aa
-ae
-ai
-ai
-ai
-FT
-FT
-aB
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ae
+ae
+ae
+an
+Sq
+ax
+aC
 dy
-fB
-aD
-qg
-aD
-fB
-aD
-aB
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-jl
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-aB
-aB
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
+FT
+my
 cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
+aB
+aB
+rH
+Sq
+Sq
+Sq
+Sq
+Sq
+Sq
+rH
+aB
+aB
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13208,132 +13693,132 @@ aa
 "}
 (59,1,1) = {"
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ae
-FT
-FT
-FT
-FT
-FT
-rH
-aa
-aa
 ae
-aG
-hb
-la
-or
-oV
-hb
-eU
+ae
 rH
+Sq
+ax
+aD
+dy
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+FT
 rH
 cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
+aB
+aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aB
+aB
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13390,132 +13875,132 @@ aa
 "}
 (60,1,1) = {"
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ae
+ae
+ae
 rH
-FT
-FT
-FT
-FT
-FT
-rH
+Sq
+Sq
+aG
+zN
 aa
 aa
-rH
-cm
-aD
-fB
-qX
-qg
-oA
-CC
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
+zN
+mY
 cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13572,62 +14057,6 @@ aa
 "}
 (61,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-FT
-FT
-ae
-aa
-aa
-ae
-ds
-eU
-aD
-eU
-hb
-la
-kp
-ae
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -13682,6 +14111,29 @@ aa
 aa
 aa
 rH
+af
+rH
+rH
+rH
+ay
+rH
+rH
+rH
+rH
+li
+rH
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13695,9 +14147,42 @@ aa
 aa
 aa
 rH
-cU
-cU
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13754,62 +14239,6 @@ aa
 "}
 (62,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-FT
-FT
-ay
-aa
-aa
-ae
-aD
-fB
-aD
-fB
-aD
-fB
-aD
-ay
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -13864,6 +14293,29 @@ aa
 aa
 aa
 rH
+ag
+ak
+ao
+au
+FT
+cm
+rH
+hf
+FT
+FT
+of
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13877,9 +14329,42 @@ aa
 aa
 aa
 rH
-cU
-cU
 rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -13936,62 +14421,6 @@ aa
 "}
 (63,1,1) = {"
 aa
-ae
-FT
-FT
-ao
-ao
-ao
-ae
-aa
-aa
-ae
-eU
-hf
-eU
-hb
-eU
-hb
-eU
-ae
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -14046,21 +14475,77 @@ aa
 aa
 aa
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 rH
-cU
-cU
+rH
+rH
+rH
+FT
+ds
+dJ
+is
+jJ
+kp
+og
+rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -14118,115 +14603,71 @@ aa
 "}
 (64,1,1) = {"
 aa
-ae
-FT
-FT
-aq
-am
-ap
-ae
 aa
 aa
-ae
-fo
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aB
+aB
+rH
+FT
+FT
+FT
+ds
+eU
 iU
-li
-aD
-fB
-aD
-fB
-ae
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+kp
+lH
+or
 rH
 aa
 aa
@@ -14240,9 +14681,53 @@ aa
 aa
 aa
 aa
-rH
-cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -14300,23 +14785,71 @@ aa
 "}
 (65,1,1) = {"
 aa
-rH
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aB
 aB
 rH
-ae
-ae
-rH
-aa
-aa
-rH
-ae
-ae
-rH
-aB
-rH
-ae
-ae
+FT
+av
+FT
+ds
+fo
+jl
+la
+kp
+oA
 rH
 aa
 aa
@@ -14377,54 +14910,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-rH
-cU
-cU
 aa
 aa
 aa
@@ -14506,107 +14991,107 @@ aa
 aa
 aa
 aa
-rH
-rH
-rH
-rH
-rH
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aB
 aB
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 rH
+FT
+FT
+FT
+cm
 rH
+js
+FT
+FT
+FT
 rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-cU
-cU
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -14664,20 +15149,6 @@ aa
 "}
 (67,1,1) = {"
 aa
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
 aa
 aa
 aa
@@ -14688,14 +15159,62 @@ aa
 aa
 aa
 aa
-rH
-Sq
-Sq
-Sq
-GG
-HX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aB
 aB
+rH
+rH
+rH
+ay
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -14755,40 +15274,6 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-cU
-cU
 aa
 aa
 aa
@@ -14846,72 +15331,72 @@ aa
 "}
 (68,1,1) = {"
 aa
-rH
-aj
-FT
-FT
-av
-at
-az
-FT
-aA
-rH
-FT
-FT
-FT
-rH
 aa
 aa
 aa
-rH
-rH
-rH
-rH
-rH
 aa
 aa
-rH
-FX
-Sq
-Sq
-Sq
-of
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aB
 aB
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+ap
+FT
+FT
+FT
+ap
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -15028,72 +15513,72 @@ aa
 "}
 (69,1,1) = {"
 aa
-af
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+rH
+rH
+rH
+rH
 FT
 FT
-ai
-av
 FT
-FT
-FT
-FT
+rH
+rH
 aB
-FT
-FT
-lH
-rH
-rH
-rH
-rH
-rH
-Ev
-Ev
-Ev
-ae
-aa
-aa
-rH
-Sq
-Sq
-Sq
-Sq
-rH
 aB
 aB
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
 aa
 aa
 aa
@@ -15210,72 +15695,72 @@ aa
 "}
 (70,1,1) = {"
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
+aB
+al
+aq
 FT
 FT
-ai
-av
 FT
-FT
-FT
-an
-rH
-FT
-FT
-lK
-rH
-zu
-zu
-zu
-rH
-Ev
-Ev
-Ev
-ae
-aa
-rH
-rH
-is
-rH
-rH
-is
+fB
 rH
 rH
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
 aa
 aa
 aa
@@ -15392,68 +15877,68 @@ aa
 "}
 (71,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-ai
-av
-av
-av
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
+ah
+am
+ar
+aw
+aw
+aw
+hb
 rH
-FT
-FT
-my
-rH
-zu
-zu
-zu
-aB
-Ev
-Ev
-Ev
-ae
-aa
-rH
-FT
-FT
-ai
-av
-FT
-Is
-Pu
-rH
-rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -15574,68 +16059,68 @@ aa
 "}
 (72,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-FT
-ai
-ai
-FT
-aB
-FT
-FT
-FT
-mY
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 rH
-zu
-zu
-zu
+aj
 rH
-Ev
-Ev
-Ev
-ae
-aa
+at
+at
+at
+at
 rH
-FT
-FT
-ai
-av
-FT
-FT
-FT
-aA
 rH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -15756,39 +16241,39 @@ aa
 "}
 (73,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-ae
-aB
-ae
-rH
 aa
-rH
-FT
-FT
-ai
-av
-FT
-OE
-FT
-an
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -15938,39 +16423,39 @@ aa
 "}
 (74,1,1) = {"
 aa
-rH
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-rH
-aC
-aC
-aC
-aC
-aC
-rH
-ar
-ar
-ar
-ar
-ar
-ar
-ae
 aa
-rH
-FT
-FT
-FT
-ai
-av
-av
-av
-rH
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16120,38 +16605,38 @@ aa
 "}
 (75,1,1) = {"
 aa
-ae
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-ae
-aC
-aC
-aC
-aC
-aC
-rH
-ar
-ar
-ar
-ar
-ar
-ar
-ae
 aa
-rH
-FT
-FT
-FT
-FT
-ai
-ai
-ai
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16302,38 +16787,38 @@ aa
 "}
 (76,1,1) = {"
 aa
-ae
-ak
-FT
-FT
-FT
-FT
-FT
-FT
-ay
-aC
-aC
-aC
-aC
-aC
-ay
-ar
-ar
-ar
-ar
-ar
-ar
-ae
 aa
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-FT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16484,38 +16969,38 @@ aa
 "}
 (77,1,1) = {"
 aa
-ae
-al
-ao
-FT
-FT
-ao
-ao
-ao
-ae
-aC
-aC
-aC
-aC
-aC
-aB
-ar
-ar
-ar
-ar
-ar
-ar
-ae
 aa
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-FT
-FT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16666,38 +17151,38 @@ aa
 "}
 (78,1,1) = {"
 aa
-ae
-am
-ap
-FT
-FT
-aq
-am
-ap
-ae
-aC
-aC
-aC
-aC
-aC
-rH
-ar
-ar
-ar
-ar
-ar
-ar
-ae
 aa
-rH
-FD
-Ga
-GC
-FT
-FT
-FT
-FT
-rH
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -16848,37 +17333,37 @@ aa
 "}
 (79,1,1) = {"
 aa
-rH
-ae
-ae
-rH
-aB
-rH
-ae
-ae
-rH
-ae
-ae
-ae
-rH
-aB
-rH
-ae
-ae
-rH
-aB
-rH
-ae
-rH
 aa
-rH
-rH
-rH
-rH
-rH
-Hg
-Hg
-Hg
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
