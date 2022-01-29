@@ -188,20 +188,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
-"aQ" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor{
-	icon_state = "showroomfloor"
-	},
-/area/space)
-"bj" = (
-/obj/machinery/disposal,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/space)
 "bX" = (
 /obj/structure/table/woodentable,
 /obj/item/clothing/suit/santa,
@@ -258,18 +244,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/space)
+"er" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space)
 "eU" = (
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "blackcorner"
-	},
-/area/space)
-"eW" = (
-/obj/machinery/door/airlock/glass{
-	name = "Bar"
-	},
-/turf/simulated/floor{
-	icon_state = "dark"
 	},
 /area/space)
 "fa" = (
@@ -445,6 +431,9 @@
 /area/space)
 "ke" = (
 /obj/machinery/vending/dinnerware,
+/obj/machinery/light_switch{
+	pixel_x = 27
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -455,13 +444,6 @@
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "blackcorner"
-	},
-/area/space)
-"kx" = (
-/obj/structure/stool/bed/chair/wood/normal,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
 	},
 /area/space)
 "kQ" = (
@@ -635,6 +617,12 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"op" = (
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "or" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor{
@@ -673,12 +661,6 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
-"pl" = (
-/obj/machinery/gibber,
-/turf/simulated/floor{
-	icon_state = "showroomfloor"
-	},
-/area/space)
 "po" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/effect/landmark/start{
@@ -705,6 +687,17 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"qm" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	dir = 8;
+	name = "Station Intercom (General)";
+	pixel_x = 20
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "qp" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/flora/pottedplant/shoot{
@@ -729,11 +722,11 @@
 	},
 /area/space)
 "rd" = (
-/obj/structure/table/woodentable/fancy/black,
 /obj/item/weapon/kitchen/utensil/fork{
 	pixel_x = 4
 	},
 /obj/item/weapon/kitchen/utensil/spoon,
+/obj/structure/table/woodentable,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -797,6 +790,12 @@
 	icon_state = "warning"
 	},
 /area/space)
+"uj" = (
+/obj/machinery/disposal,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "ux" = (
 /mob/living/carbon/monkey/punpun,
 /turf/simulated/floor/wood,
@@ -856,12 +855,6 @@
 /area/space)
 "wf" = (
 /turf/simulated/floor/carpet/purple,
-/area/space)
-"wm" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 8
-	},
-/turf/simulated/floor/wood,
 /area/space)
 "wy" = (
 /obj/structure/closet/theatrecloset,
@@ -1037,6 +1030,12 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"Eh" = (
+/obj/structure/stool/bed/chair/wood/normal,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
 "Ev" = (
 /turf/simulated/floor/grass,
 /area/space)
@@ -1138,12 +1137,6 @@
 	icon_state = "delivery"
 	},
 /area/space)
-"Hd" = (
-/obj/structure/stool/bed/chair/wood/normal,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/space)
 "Hg" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor{
@@ -1208,12 +1201,6 @@
 	},
 /turf/simulated/floor,
 /area/space)
-"JB" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 4
-	},
-/turf/simulated/floor/wood,
-/area/space)
 "Ku" = (
 /obj/structure/closet/theatrecloset,
 /obj/item/device/camera_film,
@@ -1238,6 +1225,12 @@
 	icon_state = "cafeteria"
 	},
 /area/space)
+"KJ" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/space)
 "Lg" = (
 /obj/structure/sink{
 	dir = 4;
@@ -1250,6 +1243,12 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
+	},
+/area/space)
+"Mq" = (
+/obj/machinery/gibber,
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
 	},
 /area/space)
 "MV" = (
@@ -1303,17 +1302,6 @@
 	icon_state = "dark"
 	},
 /area/space)
-"PA" = (
-/obj/structure/stool/bed/chair/comfy/black{
-	dir = 1
-	},
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/space)
 "PU" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/donkpockets{
@@ -1359,6 +1347,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"Rz" = (
+/obj/structure/stool/bed/chair/wood/normal,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space)
 "Sg" = (
 /obj/structure/dresser,
@@ -1494,12 +1489,6 @@
 	icon_state = "vault"
 	},
 /area/space)
-"VI" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access = list(12)
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "VX" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
@@ -1545,7 +1534,6 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Yp" = (
-/obj/structure/table/woodentable/fancy/black,
 /obj/item/weapon/kitchen/utensil/spoon,
 /obj/item/weapon/kitchen/utensil/fork{
 	pixel_x = 4
@@ -1553,6 +1541,7 @@
 /obj/structure/sign/poster/contraband/eat{
 	pixel_x = -32
 	},
+/obj/structure/table/woodentable,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1565,6 +1554,25 @@
 	},
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
+	},
+/area/space)
+"ZB" = (
+/obj/structure/stool/bed/chair/comfy/black{
+	dir = 1
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"ZH" = (
+/obj/machinery/door/airlock/glass{
+	name = "Bar"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space)
 "ZY" = (
@@ -6935,7 +6943,7 @@ aB
 aB
 rH
 QX
-aQ
+er
 Uo
 vk
 rH
@@ -7116,7 +7124,7 @@ aB
 aB
 aB
 rH
-pl
+Mq
 Uo
 Uo
 ud
@@ -8574,7 +8582,7 @@ eo
 rH
 eo
 We
-eo
+rH
 rH
 rH
 rH
@@ -8758,7 +8766,7 @@ GC
 zN
 FD
 rd
-PA
+ZB
 Lp
 QG
 eo
@@ -8943,7 +8951,7 @@ FT
 zN
 FT
 zN
-eW
+ZH
 mb
 mb
 mb
@@ -9124,7 +9132,7 @@ FT
 zN
 FT
 zN
-bj
+uj
 eo
 cU
 cU
@@ -9307,7 +9315,7 @@ FT
 zN
 FT
 zN
-eW
+ZH
 tI
 tI
 tI
@@ -9483,15 +9491,15 @@ Ch
 ai
 fD
 FT
-kx
+Rz
 aI
-JB
+KJ
 qB
 SK
 rH
 rH
 rH
-VI
+op
 rH
 rH
 rH
@@ -9665,7 +9673,7 @@ Ct
 mQ
 vu
 zN
-Hd
+Eh
 tO
 TI
 TI
@@ -9847,7 +9855,7 @@ UF
 FT
 pL
 FT
-kx
+Rz
 aI
 TI
 TI
@@ -10029,10 +10037,10 @@ FT
 FT
 Ex
 zN
-Hd
+Eh
 aI
 fV
-wm
+qm
 EF
 rH
 aB
