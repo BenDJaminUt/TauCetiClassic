@@ -228,6 +228,12 @@
 	icon_state = "blackcorner"
 	},
 /area/space)
+"dS" = (
+/obj/machinery/biogenerator,
+/turf/simulated/floor{
+	icon_state = "darkgreenfull"
+	},
+/area/space)
 "eo" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -386,6 +392,15 @@
 	icon_state = "warning"
 	},
 /area/space)
+"hZ" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor{
+	icon_state = "bot"
+	},
+/area/space)
 "ih" = (
 /obj/machinery/door/airlock{
 	name = "Honk Office";
@@ -417,6 +432,12 @@
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "blackcorner"
+	},
+/area/space)
+"jf" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "yellowcornersiding"
 	},
 /area/space)
 "jh" = (
@@ -493,6 +514,17 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
+/area/space)
+"lP" = (
+/obj/machinery/door/firedoor,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/northright{
+	dir = 8
+	},
+/obj/machinery/door/window/northright{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "mb" = (
 /turf/simulated/floor{
@@ -651,8 +683,19 @@
 	},
 /area/space)
 "oS" = (
+/obj/structure/grille,
 /obj/structure/window/reinforced,
-/turf/simulated/floor/grass,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
 /area/space)
 "oV" = (
 /obj/structure/table/reinforced,
@@ -744,7 +787,7 @@
 /area/space)
 "sq" = (
 /obj/machinery/hydroponics/constructable,
-/turf/simulated/floor,
+/turf/simulated/floor/grass,
 /area/space)
 "sE" = (
 /obj/structure/device/piano/royal,
@@ -756,6 +799,12 @@
 	name = "Clown"
 	},
 /turf/simulated/floor/carpet/purple,
+/area/space)
+"te" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
 /area/space)
 "tI" = (
 /turf/simulated/floor{
@@ -886,6 +935,13 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
+"xZ" = (
+/obj/machinery/door/airlock/glass{
+	name = "Hydroponics Pasture";
+	req_access = list(35)
+	},
+/turf/simulated/floor,
+/area/space)
 "yp" = (
 /obj/structure/table/woodentable,
 /obj/item/toy/sound_button,
@@ -917,6 +973,12 @@
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "blackcorner"
+	},
+/area/space)
+"yS" = (
+/obj/structure/table,
+/turf/simulated/floor{
+	icon_state = "darkgreenfull"
 	},
 /area/space)
 "zu" = (
@@ -1023,6 +1085,12 @@
 	icon_state = "darkred"
 	},
 /area/space)
+"Cy" = (
+/obj/machinery/seed_extractor,
+/turf/simulated/floor{
+	icon_state = "darkgreenfull"
+	},
+/area/space)
 "CC" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/built,
@@ -1071,6 +1139,12 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkredfull"
+	},
+/area/space)
+"Fn" = (
+/obj/machinery/vending/hydroseeds,
+/turf/simulated/floor{
+	icon_state = "darkgreenfull"
 	},
 /area/space)
 "FD" = (
@@ -1175,6 +1249,15 @@
 	icon_state = "bot"
 	},
 /area/space)
+"Ia" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/turf/simulated/floor{
+	icon_state = "green"
+	},
+/area/space)
 "Is" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/beer{
@@ -1200,6 +1283,12 @@
 	req_access = list(28)
 	},
 /turf/simulated/floor,
+/area/space)
+"JR" = (
+/obj/machinery/vending/hydronutrients,
+/turf/simulated/floor{
+	icon_state = "darkgreenfull"
+	},
 /area/space)
 "Ku" = (
 /obj/structure/closet/theatrecloset,
@@ -1330,6 +1419,22 @@
 	icon_state = "dark"
 	},
 /area/space)
+"QK" = (
+/obj/structure/closet/crate/hydroponics,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/screwdriver,
+/obj/item/weapon/shovel/spade,
+/obj/item/weapon/wrench,
+/obj/item/weapon/minihoe{
+	pixel_x = 3
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "bot"
+	},
+/area/space)
 "QX" = (
 /obj/structure/kitchenspike,
 /turf/simulated/floor{
@@ -1337,22 +1442,25 @@
 	},
 /area/space)
 "QY" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "yellowsiding"
 	},
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
 /area/space)
 "Rz" = (
 /obj/structure/stool/bed/chair/wood/normal,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
+	},
+/area/space)
+"RC" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/hydroponics,
+/turf/simulated/floor{
+	icon_state = "bot"
 	},
 /area/space)
 "Sg" = (
@@ -1400,6 +1508,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
+/area/space)
+"Tz" = (
+/turf/simulated/floor{
+	icon_state = "green"
+	},
 /area/space)
 "TE" = (
 /obj/structure/table,
@@ -1492,9 +1605,12 @@
 "VX" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "чето я тут даже не знаю"
+	name = а я кажется знаю ;)
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "yellowcornersiding"
+	},
 /area/space)
 "We" = (
 /obj/machinery/door/airlock/glass{
@@ -1517,6 +1633,18 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
+/area/space)
+"Xz" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "XM" = (
 /obj/machinery/door/airlock/maintenance{
@@ -6587,10 +6715,10 @@ rH
 rH
 rH
 rH
-rH
-rH
-rH
-rH
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -6765,13 +6893,13 @@ rH
 XM
 xg
 rH
-Ev
-Ev
-oS
-cU
-cU
-cU
-cU
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 rH
 aa
 aa
@@ -6949,11 +7077,11 @@ vk
 rH
 Ev
 Ev
-oS
-cU
-cU
-cU
-cU
+Ev
+Ev
+Ev
+Ev
+Ev
 rH
 aa
 aa
@@ -7132,10 +7260,10 @@ Jz
 Ev
 Ev
 Ev
-cU
-cU
-cU
-cU
+Ev
+Ev
+Ev
+Ev
 rH
 aa
 aa
@@ -7313,11 +7441,11 @@ hm
 rH
 Ev
 Ev
-oS
-cU
-cU
-cU
-cU
+Ev
+Ev
+Ev
+Ev
+Ev
 rH
 aa
 aa
@@ -7495,11 +7623,11 @@ rH
 rH
 BQ
 NK
-QY
-cU
-cU
-cU
-cU
+NK
+Xz
+xZ
+rH
+rH
 rH
 aa
 aa
@@ -7674,14 +7802,14 @@ Tq
 Ue
 ZY
 WV
-cU
 sq
 sq
 sq
 sq
+RC
 cU
-cU
-cU
+Ia
+dS
 rH
 aa
 aa
@@ -7856,14 +7984,14 @@ Ue
 Ue
 rl
 AK
+Ev
+Ev
+Ev
+Ev
+QK
 cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
+Tz
+Cy
 rH
 aa
 aa
@@ -8038,14 +8166,14 @@ TE
 Ue
 Ue
 tJ
-cU
-cU
-cU
-cU
+QY
+QY
+QY
+QY
 VX
 cU
-cU
-cU
+Tz
+yS
 rH
 aa
 aa
@@ -8220,14 +8348,14 @@ Ue
 Ue
 Ue
 uU
+te
+te
+te
+te
+jf
 cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
+Tz
+JR
 rH
 aa
 aa
@@ -8402,14 +8530,14 @@ Uj
 Ue
 ke
 Tv
-cU
 sq
 sq
 sq
 sq
+hZ
 cU
-cU
-cU
+Tz
+Fn
 rH
 aa
 aa
@@ -8588,10 +8716,10 @@ rH
 rH
 rH
 rH
-eo
+oS
 MV
-eo
-eo
+lP
+oS
 rH
 aa
 aa
@@ -8769,7 +8897,7 @@ rd
 ZB
 Lp
 QG
-eo
+oS
 cU
 cU
 cU
@@ -9120,7 +9248,7 @@ cU
 cU
 cU
 cU
-eo
+oS
 Vs
 FT
 zN
@@ -9133,7 +9261,7 @@ zN
 FT
 zN
 uj
-eo
+oS
 cU
 cU
 cU
