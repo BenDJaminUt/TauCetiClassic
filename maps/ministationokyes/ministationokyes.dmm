@@ -139,21 +139,39 @@
 /turf/simulated/floor/plating,
 /area/space)
 "bi" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
-/turf/simulated/floor,
+/obj/structure/closet/wardrobe/medic_white,
+/turf/simulated/floor{
+	icon_state = "whitebluefull"
+	},
 /area/space)
 "bl" = (
-/obj/machinery/optable,
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/firstaid/regular,
+/obj/structure/table/glass,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "bC" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/machinery/atmospherics/components/unary/portables_connector,
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/firstaid/o2,
+/obj/structure/table/glass,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "bF" = (
@@ -291,9 +309,9 @@
 /turf/simulated/floor,
 /area/space)
 "cA" = (
-/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 8;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "cC" = (
@@ -435,8 +453,10 @@
 /turf/simulated/floor/carpet/green,
 /area/space)
 "dw" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -694,12 +714,14 @@
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
 "ft" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "Medbay Storage APC";
+	pixel_x = 30
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warndark"
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "fx" = (
@@ -864,9 +886,17 @@
 /turf/simulated/floor/carpet/purple,
 /area/space)
 "gy" = (
-/obj/machinery/body_scanconsole,
+/obj/structure/table/glass,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "gA" = (
@@ -879,9 +909,10 @@
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/exit)
 "gC" = (
+/obj/machinery/life_assist/artificial_ventilation,
+/obj/machinery/iv_drip,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "warning"
+	icon_state = "whitebot"
 	},
 /area/space)
 "gD" = (
@@ -948,11 +979,12 @@
 	},
 /area/space)
 "gW" = (
-/obj/structure/sign/poster/official/do_not_question{
-	name = эта штука иногда бывать крайне необходима, но если она здесь будет мешать, то можно и убрать
+/obj/machinery/alarm{
+	pixel_x = 30
 	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "gX" = (
@@ -1194,12 +1226,6 @@
 	},
 /turf/simulated/floor/grass,
 /area/space)
-"iR" = (
-/obj/structure/closet/secure_closet/medical3,
-/turf/simulated/floor{
-	icon_state = "whiteblue"
-	},
-/area/space)
 "iS" = (
 /obj/structure/closet/emcloset,
 /turf/simulated/floor{
@@ -1234,7 +1260,16 @@
 /turf/simulated/floor/wood,
 /area/space)
 "jj" = (
-/obj/structure/closet/wardrobe/medic_white,
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/firstaid/adv,
+/obj/structure/table/glass,
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
 	},
@@ -1316,16 +1351,20 @@
 	},
 /area/station/cargo/storage)
 "jN" = (
-/obj/machinery/vending/medical,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "whitebluecorner"
 	},
 /area/space)
 "jP" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
+/obj/structure/rack,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/cane,
+/obj/item/weapon/cane,
+/obj/item/clothing/mask/muzzle,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "vault"
+	icon_state = "whiteblue"
 	},
 /area/space)
 "jR" = (
@@ -1457,10 +1496,24 @@
 	},
 /area/space)
 "kM" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/structure/rack,
+/obj/item/weapon/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/weapon/storage/belt/medical{
+	pixel_y = 2
+	},
+/obj/item/weapon/gun/syringe,
+/obj/item/weapon/medical/teleporter,
+/obj/item/weapon/medical/teleporter,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warning"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "kQ" = (
@@ -1473,12 +1526,9 @@
 	},
 /area/space)
 "kT" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6
-	},
+/obj/structure/closet/secure_closet/medical3,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "warndarkcorners"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "kU" = (
@@ -1537,11 +1587,9 @@
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
 "lk" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
+/obj/structure/closet/secure_closet/medical3,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "whiteblue"
 	},
 /area/space)
 "lo" = (
@@ -1612,12 +1660,10 @@
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
 "lN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteyellow"
@@ -1755,8 +1801,11 @@
 	},
 /area/asteroid/mine/dwarf)
 "mD" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
 /turf/simulated/floor{
-	icon_state = "whitebluecorner"
+	dir = 4;
+	icon_state = "warndark"
 	},
 /area/space)
 "mG" = (
@@ -1819,18 +1868,18 @@
 /turf/simulated/floor,
 /area/station/cargo/storage)
 "nx" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/simulated/floor{
 	dir = 8;
-	icon_state = "whiteblue"
+	icon_state = "vault"
 	},
 /area/space)
 "ny" = (
-/obj/machinery/door/airlock/medical/glass{
-	name = "Medbay Reception";
-	req_access = list(5)
-	},
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/space)
 "nz" = (
@@ -1946,10 +1995,12 @@
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
 "on" = (
-/obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 6
+	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 4;
+	icon_state = "warndarkcorners"
 	},
 /area/space)
 "oo" = (
@@ -1995,11 +2046,10 @@
 	},
 /area/asteroid/mine/dwarf)
 "ov" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible,
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 1;
+	icon_state = "warndark"
 	},
 /area/space)
 "ow" = (
@@ -2085,24 +2135,12 @@
 /turf/simulated/floor,
 /area/space)
 "oX" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/belt/medical{
-	pixel_y = 2
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9
 	},
-/obj/item/weapon/storage/belt/medical{
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/belt/medical{
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/belt/medical{
-	pixel_y = 2
-	},
-/obj/item/weapon/gun/syringe,
-/obj/item/weapon/medical/teleporter,
-/obj/item/weapon/medical/teleporter,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	dir = 1;
+	icon_state = "warndark"
 	},
 /area/space)
 "pb" = (
@@ -2302,15 +2340,15 @@
 /turf/simulated/floor/grass,
 /area/space)
 "qh" = (
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/weapon/storage/firstaid/toxin{
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/weapon/storage/firstaid/toxin{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/firstaid/regular,
+/obj/item/weapon/storage/firstaid/toxin,
 /obj/structure/table/glass,
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
@@ -2647,12 +2685,10 @@
 /turf/simulated/floor/grass,
 /area/space)
 "tl" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9
-	},
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor{
 	dir = 5;
-	icon_state = "warning"
+	icon_state = "vault"
 	},
 /area/space)
 "tn" = (
@@ -2841,13 +2877,9 @@
 	},
 /area/space)
 "uk" = (
-/obj/machinery/door/window/southright{
-	dir = 1;
-	name = "Medbay Reception";
-	req_access = list(5)
-	},
+/obj/machinery/atmospherics/components/unary/cryo_cell,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "platebot"
 	},
 /area/space)
 "uo" = (
@@ -2864,12 +2896,20 @@
 	},
 /area/space)
 "ur" = (
-/obj/machinery/alarm{
-	pixel_x = 30
+/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = 7;
+	pixel_y = 1
 	},
+/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
+/obj/item/device/radio/intercom{
+	frequency = 1485;
+	name = "Station Intercom (Medbay)";
+	pixel_y = 25
+	},
+/obj/structure/table,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "whiteblue"
+	dir = 9;
+	icon_state = "warning"
 	},
 /area/space)
 "us" = (
@@ -2904,8 +2944,9 @@
 	},
 /area/station/cargo/storage)
 "uv" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor{
-	dir = 10;
+	dir = 1;
 	icon_state = "warning"
 	},
 /area/space)
@@ -2948,15 +2989,15 @@
 /turf/simulated/floor,
 /area/space)
 "uR" = (
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/weapon/storage/firstaid/fire{
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/weapon/storage/firstaid/fire{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/firstaid/o2,
+/obj/item/weapon/storage/firstaid/fire,
 /obj/structure/table/glass,
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
@@ -3018,9 +3059,16 @@
 	},
 /area/space)
 "vl" = (
+/obj/item/weapon/defibrillator/loaded,
+/obj/machinery/recharger/wallcharger{
+	dir = 1;
+	pixel_x = 5;
+	pixel_y = 25
+	},
+/obj/structure/table,
 /turf/simulated/floor{
-	dir = 8;
-	icon_state = "barber"
+	dir = 5;
+	icon_state = "warning"
 	},
 /area/space)
 "vm" = (
@@ -3076,10 +3124,9 @@
 	},
 /area/space)
 "vE" = (
-/obj/structure/closet/secure_closet/medical1,
-/turf/simulated/floor{
-	icon_state = "white"
-	},
+/obj/structure/closet/secure_closet/medical2,
+/obj/item/clothing/under/patient_gown,
+/turf/simulated/floor,
 /area/space)
 "wc" = (
 /obj/machinery/mineral/processing_unit_console{
@@ -3182,18 +3229,9 @@
 /turf/simulated/floor/plating,
 /area/space)
 "wM" = (
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/firstaid/adv,
-/obj/structure/table/glass,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	dir = 1;
+	icon_state = "whiteblue"
 	},
 /area/space)
 "wN" = (
@@ -3250,10 +3288,7 @@
 	},
 /area/space)
 "xc" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/table/reinforced,
+/obj/machinery/bodyscanner,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -3416,12 +3451,9 @@
 	},
 /area/space)
 "ym" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
+/obj/machinery/body_scanconsole,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warningcorner"
+	icon_state = "white"
 	},
 /area/space)
 "yp" = (
@@ -3467,7 +3499,8 @@
 	},
 /area/space)
 "yH" = (
-/obj/machinery/bodyscanner,
+/obj/structure/stool/bed/roller,
+/obj/machinery/iv_drip,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -3522,9 +3555,11 @@
 	},
 /area/space)
 "zf" = (
-/obj/machinery/atmospherics/components/unary/cryo_cell,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/simulated/floor{
-	icon_state = "platebot"
+	icon_state = "white"
 	},
 /area/space)
 "zi" = (
@@ -3989,27 +4024,18 @@
 	},
 /area/asteroid/mine/dwarf)
 "Cr" = (
-/obj/structure/table/glass,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24
-	},
+/obj/machinery/life_assist/cardiopulmonary_bypass,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	icon_state = "whitebot"
 	},
 /area/space)
 "Cs" = (
-/obj/structure/stool/bed/roller,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
+	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 9;
+	icon_state = "warning"
 	},
 /area/space)
 "Ct" = (
@@ -4031,18 +4057,17 @@
 	},
 /area/space)
 "Cu" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "warndark"
+	icon_state = "warningcorner"
 	},
 /area/space)
 "Cw" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
-/turf/simulated/floor{
-	dir = 5;
-	icon_state = "vault"
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible,
+/turf/simulated/floor,
 /area/space)
 "Cy" = (
 /obj/machinery/biogenerator,
@@ -4073,8 +4098,29 @@
 	},
 /area/space)
 "CE" = (
+/obj/structure/rack,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/weapon/tank/emergency_oxygen/double,
+/obj/item/clothing/suit/space/rig/medical,
+/obj/item/clothing/head/helmet/space/rig/medical,
+/obj/item/device/sensor_device,
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Paramedic equipment";
+	req_access = list(70)
+	},
+/obj/item/weapon/storage/belt/medical,
+/obj/item/clothing/glasses/hud/health,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor{
-	icon_state = "whiteblue"
+	icon_state = "whitebluefull"
 	},
 /area/space)
 "CL" = (
@@ -4094,15 +4140,12 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Dh" = (
-/obj/structure/rack,
-/obj/item/bodybag/cryobag,
-/obj/item/bodybag/cryobag,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/cane,
-/obj/item/weapon/cane,
-/obj/item/clothing/mask/muzzle,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4
+	},
 /turf/simulated/floor{
-	icon_state = "whiteblue"
+	dir = 4;
+	icon_state = "warningcorner"
 	},
 /area/space)
 "Dj" = (
@@ -4141,10 +4184,12 @@
 /turf/simulated/floor/wood,
 /area/space)
 "DC" = (
-/obj/structure/stool/bed/roller,
-/obj/machinery/iv_drip,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9
+	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 5;
+	icon_state = "warning"
 	},
 /area/space)
 "DD" = (
@@ -4496,8 +4541,8 @@
 /area/space)
 "FZ" = (
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "whiteblue"
+	dir = 10;
+	icon_state = "warning"
 	},
 /area/space)
 "Ga" = (
@@ -4753,10 +4798,11 @@
 /turf/simulated/floor/plating,
 /area/station/cargo/storage)
 "IN" = (
-/obj/machinery/life_assist/artificial_ventilation,
-/obj/machinery/iv_drip,
+/obj/structure/sign/poster/official/do_not_question{
+	name = эта штука иногда бывать крайне необходима, но если она здесь будет мешать, то можно и убрать
+	},
 /turf/simulated/floor{
-	icon_state = "whitebot"
+	icon_state = "white"
 	},
 /area/space)
 "IY" = (
@@ -4782,9 +4828,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "whiteyellow"
@@ -4925,11 +4969,9 @@
 /turf/simulated/floor/wood,
 /area/space)
 "Kv" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "warndark"
+	dir = 6;
+	icon_state = "warning"
 	},
 /area/space)
 "Ky" = (
@@ -5051,12 +5093,9 @@
 	},
 /area/space)
 "LA" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
+/obj/machinery/optable,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "warningcorner"
+	icon_state = "white"
 	},
 /area/space)
 "LE" = (
@@ -5223,9 +5262,9 @@
 /turf/simulated/floor,
 /area/space)
 "MW" = (
-/obj/machinery/life_assist/cardiopulmonary_bypass,
+/obj/machinery/vending/medical,
 /turf/simulated/floor{
-	icon_state = "whitebot"
+	icon_state = "white"
 	},
 /area/space)
 "MZ" = (
@@ -5462,11 +5501,11 @@
 	},
 /area/space)
 "OQ" = (
-/obj/machinery/door/airlock/medical{
-	name = "Psychiatric Office";
-	req_access = list(64)
+/obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor{
+	icon_state = "white"
 	},
-/turf/simulated/floor/wood,
 /area/space)
 "OS" = (
 /obj/structure/cable{
@@ -5553,8 +5592,10 @@
 	},
 /area/space)
 "Ps" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -5829,9 +5870,10 @@
 	},
 /area/space)
 "RK" = (
-/obj/structure/closet/secure_closet/medical2,
-/obj/item/clothing/under/patient_gown,
-/turf/simulated/floor,
+/obj/structure/closet/secure_closet/medical1,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "RR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5924,9 +5966,8 @@
 	},
 /area/space)
 "SB" = (
-/obj/structure/closet/secure_closet/medical3,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	icon_state = "whiteblue"
 	},
 /area/space)
 "SD" = (
@@ -5948,18 +5989,9 @@
 	},
 /area/space)
 "SH" = (
-/obj/item/weapon/storage/firstaid/fire{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/firstaid/fire{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/firstaid/fire,
-/obj/structure/table/glass,
+/obj/structure/stool/bed/roller,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	icon_state = "white"
 	},
 /area/space)
 "SK" = (
@@ -5993,20 +6025,9 @@
 /turf/simulated/floor/grass,
 /area/space)
 "ST" = (
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 7;
-	pixel_y = 1
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
-/obj/item/device/radio/intercom{
-	frequency = 1485;
-	name = "Station Intercom (Medbay)";
-	pixel_y = 25
-	},
-/obj/structure/table,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "warning"
+	dir = 8;
+	icon_state = "barber"
 	},
 /area/space)
 "SV" = (
@@ -6026,8 +6047,8 @@
 	},
 /area/station/cargo/storage)
 "Tc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "white"
@@ -6106,16 +6127,13 @@
 /turf/simulated/floor/wood,
 /area/space)
 "TL" = (
-/obj/item/weapon/defibrillator/loaded,
-/obj/machinery/recharger/wallcharger{
+/obj/machinery/door/window/southright{
 	dir = 1;
-	pixel_x = 5;
-	pixel_y = 25
+	name = "Medbay Reception";
+	req_access = list(5)
 	},
-/obj/structure/table,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "warning"
+	icon_state = "white"
 	},
 /area/space)
 "TM" = (
@@ -6282,9 +6300,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteyellow"
@@ -6376,18 +6392,9 @@
 /turf/simulated/floor/carpet,
 /area/space)
 "VB" = (
-/obj/item/weapon/storage/firstaid/toxin{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/storage/firstaid/toxin{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/structure/table/glass,
+/obj/structure/stool/bed/chair/wheelchair,
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	icon_state = "whitedelivery"
 	},
 /area/space)
 "VD" = (
@@ -6496,9 +6503,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "whiteyellow"
@@ -6532,35 +6537,21 @@
 	},
 /area/space)
 "WJ" = (
-/obj/structure/stool/bed/chair/wheelchair,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	icon_state = "whitedelivery"
+	icon_state = "white"
 	},
 /area/space)
 "WL" = (
-/obj/structure/rack,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/weapon/tank/emergency_oxygen/double,
-/obj/item/clothing/suit/space/rig/medical,
-/obj/item/clothing/head/helmet/space/rig/medical,
-/obj/item/device/sensor_device,
-/obj/machinery/door/window/southright{
-	dir = 1;
-	name = "Paramedic equipment";
-	req_access = list(70)
-	},
-/obj/item/weapon/storage/belt/medical,
-/obj/item/clothing/glasses/hud/health,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay Reception";
+	req_access = list(5)
 	},
 /turf/simulated/floor{
-	icon_state = "whitebluefull"
+	icon_state = "white"
 	},
 /area/space)
 "WP" = (
@@ -6761,12 +6752,9 @@
 	},
 /area/space)
 "Yi" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 5
-	},
+/obj/structure/table/reinforced,
 /turf/simulated/floor{
-	dir = 9;
-	icon_state = "warning"
+	icon_state = "white"
 	},
 /area/space)
 "Yj" = (
@@ -6792,17 +6780,6 @@
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
-	},
-/area/space)
-"Yq" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "Medbay Storage APC";
-	pixel_x = 30
-	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "whiteblue"
 	},
 /area/space)
 "Yu" = (
@@ -6849,14 +6826,6 @@
 /obj/machinery/mineral/stacking_machine,
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
-"YN" = (
-/obj/machinery/sleeper{
-	dir = 8
-	},
-/turf/simulated/floor{
-	icon_state = "white"
-	},
-/area/space)
 "YY" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/stool/bed/chair/schair/wagon/bench{
@@ -14953,28 +14922,28 @@ Nz
 im
 pO
 pO
-rH
-rH
-rH
-rH
-rH
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-rH
-rH
-rH
-rH
-rH
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
-cU
 cU
 cU
 rH
@@ -15135,27 +15104,27 @@ Wk
 lN
 VL
 pO
-yH
-lQ
-jN
-Pq
-rH
 lQ
 lQ
-Cs
-ov
 lQ
 lQ
-cA
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
 aB
 rH
@@ -15313,11 +15282,10 @@ ys
 pO
 pz
 Xm
-Tc
+lQ
 Ps
 RH
 pO
-gy
 lQ
 lQ
 lQ
@@ -15325,20 +15293,21 @@ lQ
 lQ
 lQ
 lQ
-uk
 lQ
 lQ
-cA
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -15495,11 +15464,10 @@ eC
 pO
 Ar
 lx
-lk
+lQ
 dw
 jH
 pO
-DC
 lQ
 lQ
 lQ
@@ -15507,20 +15475,21 @@ lQ
 lQ
 lQ
 lQ
-xc
 lQ
 lQ
-cA
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -15681,28 +15650,28 @@ Jd
 UU
 kV
 pO
-YN
 lQ
 lQ
-DC
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-lQ
-lQ
-lQ
-xc
-lQ
-lQ
-cA
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
 aB
 aB
 rH
@@ -15863,28 +15832,28 @@ OY
 im
 TO
 pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-lQ
-lQ
-rH
-rH
-lQ
-lQ
-rH
-rH
-rH
-ny
-rH
-pO
-lQ
-lQ
-lQ
-pO
-lQ
-lQ
-lQ
-lQ
-pO
 aB
 aB
 rH
@@ -16039,6 +16008,12 @@ fF
 PR
 XU
 rH
+bi
+cA
+gy
+cA
+kT
+rH
 lQ
 lQ
 lQ
@@ -16060,13 +16035,7 @@ lQ
 lQ
 lQ
 lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-pO
+rH
 aB
 aB
 rH
@@ -16220,7 +16189,13 @@ KS
 bU
 Ep
 Sq
-OQ
+rH
+bl
+lQ
+lQ
+lQ
+lk
+rH
 lQ
 lQ
 lQ
@@ -16239,16 +16214,10 @@ lQ
 lQ
 lQ
 lQ
-pO
 lQ
 lQ
 lQ
-pO
-lQ
-lQ
-lQ
-lQ
-pO
+rH
 aB
 aB
 rH
@@ -16403,34 +16372,34 @@ dp
 uH
 wm
 rH
-rH
+bC
+lQ
+gC
+lQ
+SB
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 lQ
 rH
-lQ
-rH
-rH
-rH
-lQ
-lQ
-rH
-rH
-lQ
-lQ
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-lQ
-lQ
-lQ
-lQ
-pO
 aB
 aB
 rH
@@ -16586,33 +16555,33 @@ KS
 VZ
 rH
 jj
-nx
+lQ
 Cr
-nx
+lQ
 SB
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-yH
-lQ
-lQ
-yH
-rH
-lQ
-lQ
-pO
-vl
-vl
-vl
-vl
-vl
-pO
-lQ
-lQ
-rH
-lQ
-lQ
-lQ
-lQ
-pO
 aB
 aB
 rH
@@ -16769,24 +16738,12 @@ rH
 rH
 qh
 lQ
+gC
 lQ
-lQ
-iR
-rH
-gy
-lQ
-lQ
-gy
+CE
 rH
 lQ
 lQ
-pO
-vl
-vl
-vl
-vl
-vl
-pO
 lQ
 lQ
 lQ
@@ -16794,7 +16751,19 @@ lQ
 lQ
 lQ
 lQ
-pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
 aB
 aB
 rH
@@ -16952,31 +16921,31 @@ rH
 uR
 lQ
 IN
-lQ
+jN
 CE
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-pO
-vl
-vl
-vl
-vl
-vl
-pO
-rH
-rH
 rH
 lQ
 lQ
 lQ
 lQ
-pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
 aB
 aB
 rH
@@ -17133,32 +17102,32 @@ Cm
 rH
 wM
 lQ
-MW
 lQ
-CE
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-pO
-vl
-vl
-vl
-vl
-vl
-pO
-lQ
-lQ
+jP
+rH
 rH
 lQ
 lQ
 lQ
 lQ
-pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
 aB
 aB
 rH
@@ -17314,25 +17283,12 @@ rH
 rH
 rH
 VB
-lQ
-IN
-lQ
-WL
-rH
-DC
-lQ
-lQ
-DC
+ft
+gW
+kM
 rH
 lQ
 lQ
-pO
-pO
-pO
-pO
-pO
-pO
-pO
 lQ
 lQ
 lQ
@@ -17340,7 +17296,20 @@ lQ
 lQ
 lQ
 lQ
-pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
 aB
 aB
 rH
@@ -17495,34 +17464,34 @@ aB
 aB
 aB
 rH
-SH
-lQ
-gW
-mD
-WL
 rH
-YN
-lQ
-lQ
-YN
 rH
-lQ
-lQ
+rH
+rH
 rH
 lQ
 lQ
 lQ
 lQ
 lQ
-pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 lQ
 lQ
 rH
-lQ
-lQ
-lQ
-lQ
-pO
 aB
 aB
 rH
@@ -17676,35 +17645,35 @@ aB
 aB
 aB
 aB
-aB
-FZ
-lQ
-lQ
-Dh
-rH
-rH
 rH
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-rH
-lQ
-lQ
-rH
-lQ
-lQ
-bl
-lQ
-lQ
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
-pO
 aB
 aB
 rH
@@ -17859,34 +17828,34 @@ rH
 aB
 aB
 rH
-WJ
-Yq
-ur
-oX
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-zf
-Yi
-uv
-lQ
-jN
-rH
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-lQ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -18041,34 +18010,34 @@ aB
 aB
 aB
 rH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-rH
-rH
-rH
-rH
-ST
-ym
-lx
-lQ
-lQ
-lQ
-lQ
-lQ
-rH
-RK
-lQ
-lQ
-lQ
-lQ
-rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -18222,35 +18191,35 @@ aB
 aB
 aB
 aB
-aB
-aB
 rH
-Kv
-kT
-Cw
-kM
-bi
-lx
 lQ
 lQ
 lQ
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-rH
-rH
-rH
-rH
-rH
-rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -18404,35 +18373,35 @@ aB
 aB
 aB
 aB
-aB
-aB
-rH
-bC
-Cu
-rH
-TL
-LA
-lx
-lQ
-lQ
-lQ
-lQ
-lQ
 rH
 lQ
 lQ
 lQ
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -18586,17 +18555,6 @@ aB
 aB
 aB
 aB
-aB
-aB
-rH
-jP
-Cu
-rH
-zf
-tl
-gC
-on
-vE
 rH
 lQ
 lQ
@@ -18606,15 +18564,26 @@ lQ
 lQ
 lQ
 lQ
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
 aB
 aB
 rH
@@ -18768,11 +18737,6 @@ aB
 aB
 aB
 aB
-aB
-aB
-rH
-bC
-ft
 rH
 rH
 rH
@@ -18782,21 +18746,26 @@ rH
 rH
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-lQ
-lQ
-bl
-lQ
-lQ
-rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -18952,33 +18921,33 @@ aB
 aB
 aB
 aB
-rH
-rH
-rH
-rH
-aB
 aB
 aB
 aB
 aB
 rH
-aB
 rH
 rH
-RK
+rH
+rH
+rH
+rH
+rH
+rH
 lQ
 lQ
 lQ
 lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
 aB
 aB
 rH
@@ -19152,15 +19121,15 @@ rH
 rH
 rH
 rH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
 rH
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+rH
+rH
 aB
 aB
 rH
@@ -19333,14 +19302,14 @@ aB
 aB
 aB
 aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
-aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aB
 aB
 aB
@@ -24819,28 +24788,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+rH
+lQ
+lQ
+rH
+rH
+rH
+rH
+rH
+rH
+cU
+cU
+cU
+cU
+cU
+cU
+cU
+cU
+cU
 aa
 aa
 aa
@@ -25001,28 +24970,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+xc
+lQ
+MW
+Pq
+rH
+lQ
+lQ
+SH
+Tc
+lQ
+lQ
+Yi
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
 aa
 aa
 aa
@@ -25183,28 +25152,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ym
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+TL
+lQ
+lQ
+Yi
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -25365,28 +25334,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+yH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+WJ
+lQ
+lQ
+Yi
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -25547,28 +25516,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+zf
+lQ
+lQ
+yH
+rH
+lQ
+lQ
+lQ
+WJ
+lQ
+lQ
+Yi
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
 aa
 aa
 aa
@@ -25729,28 +25698,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+lQ
+lQ
+rH
+rH
+lQ
+lQ
+rH
+rH
+rH
+WL
+rH
+pO
+lQ
+lQ
+lQ
+pO
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -25911,28 +25880,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+xc
+lQ
+lQ
+xc
+rH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -26093,28 +26062,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ym
+lQ
+lQ
+ym
+rH
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
+lQ
+lQ
+lQ
+pO
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -26275,28 +26244,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -26457,28 +26426,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
+ST
+ST
+ST
+ST
+ST
+pO
+lQ
+lQ
+rH
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -26639,28 +26608,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+yH
+lQ
+lQ
+yH
+rH
+lQ
+lQ
+ST
+ST
+ST
+ST
+ST
+ST
+pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -26821,28 +26790,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+zf
+lQ
+lQ
+zf
+rH
+lQ
+lQ
+pO
+ST
+ST
+ST
+ST
+ST
+pO
+rH
+rH
+rH
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -27003,28 +26972,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+lQ
+lQ
+rH
+rH
+lQ
+lQ
+pO
+ST
+ST
+ST
+ST
+ST
+pO
+lQ
+lQ
+rH
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -27184,29 +27153,29 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+uk
+Cs
+FZ
+lQ
+MW
+rH
+lQ
+lQ
+pO
+pO
+pO
+pO
+pO
+pO
+pO
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -27366,29 +27335,29 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ur
+Cu
+lx
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
+FT
+FT
+FT
+FT
+FT
+pO
+pO
+pO
+pO
+lQ
+lQ
+lQ
+lQ
+pO
 aa
 aa
 aa
@@ -27544,33 +27513,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+mD
+on
+tl
+uv
+Cw
+lx
+lQ
+lQ
+lQ
+lQ
+lQ
+FT
+FT
+FT
+FT
+FT
+FT
+FT
+lQ
+lQ
+pO
+pO
+pO
+pO
+pO
+pO
 aa
 aa
 aa
@@ -27726,33 +27695,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+nx
+ov
+rH
+vl
+Dh
+lx
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
+FT
+FT
+FT
+FT
+FT
+FT
+lQ
+LA
+rH
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -27908,33 +27877,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+ny
+ov
+rH
+uk
+DC
+Kv
+OQ
+RK
+rH
+lQ
+lQ
+rH
+FT
+FT
+FT
+FT
+FT
+FT
+lQ
+lQ
+rH
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -28090,33 +28059,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+nx
+oX
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+lQ
+lQ
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -28272,33 +28241,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rH
+rH
+rH
+rH
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
+lQ
+lQ
+rH
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -28454,33 +28423,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+aB
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+lQ
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -28636,33 +28605,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+rH
+lQ
+lQ
+LA
+lQ
+lQ
+rH
+lQ
+lQ
+rH
+lQ
+lQ
+LA
+lQ
+lQ
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -28818,33 +28787,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+rH
+vE
+lQ
+lQ
+lQ
+lQ
+rH
+rH
+rH
+rH
+lQ
+lQ
+lQ
+lQ
+lQ
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
@@ -29000,33 +28969,33 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aB
+aB
+aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aB
+aB
+rH
+rH
+rH
+rH
+rH
+rH
+rH
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 aa
 aa
 aa
