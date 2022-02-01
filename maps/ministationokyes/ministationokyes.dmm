@@ -451,23 +451,6 @@
 	icon_state = "dark"
 	},
 /area/station/civilian/bar)
-"cc" = (
-/obj/structure/window/reinforced/polarized{
-	dir = 1;
-	id = "Patients"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "Patients"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "Patients"
-	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/space)
 "ce" = (
 /obj/structure/stool/bed/chair/metal{
 	dir = 4
@@ -687,6 +670,10 @@
 	},
 /turf/simulated/floor/grass,
 /area/station/civilian/hydroponics)
+"dl" = (
+/obj/machinery/cryopod,
+/turf/simulated/floor/carpet/green,
+/area/space)
 "do" = (
 /obj/machinery/computer/card,
 /turf/simulated/floor{
@@ -885,6 +872,12 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/plating,
 /area/space)
+"dV" = (
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "warnwhite"
+	},
+/area/space)
 "dW" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/requests_console/cmo{
@@ -924,8 +917,8 @@
 	},
 /obj/item/weapon/storage/briefcase/inflatable,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warning"
+	dir = 10;
+	icon_state = "warnwhite"
 	},
 /area/space)
 "en" = (
@@ -1114,22 +1107,6 @@
 /obj/structure/cable,
 /turf/simulated/floor/wood,
 /area/station/civilian/theatre)
-"fd" = (
-/obj/structure/window/reinforced/polarized{
-	dir = 4;
-	id = "Patients"
-	},
-/obj/structure/window/reinforced/polarized{
-	id = "Patients"
-	},
-/obj/structure/window/reinforced/polarized{
-	dir = 8;
-	id = "Patients"
-	},
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/space)
 "fg" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/decal/cleanable/dirt,
@@ -2104,6 +2081,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/cargo/storage)
+"jr" = (
+/obj/structure/closet/l3closet/general,
+/obj/item/clothing/mask/gas/coloured,
+/obj/structure/sign/warning/biohazard{
+	pixel_x = 32
+	},
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "warnwhite"
+	},
+/area/space)
 "jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3092,7 +3080,7 @@
 	},
 /obj/structure/drain,
 /turf/simulated/floor{
-	icon_state = "warning"
+	icon_state = "freezerfloor"
 	},
 /area/space)
 "mQ" = (
@@ -3116,6 +3104,11 @@
 	icon_state = "chapel"
 	},
 /area/station/civilian/chapel)
+"mW" = (
+/obj/structure/stool/bed,
+/obj/item/weapon/bedsheet/medical,
+/turf/simulated/floor/carpet/green,
+/area/space)
 "mY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3579,12 +3572,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/cargo)
-"oF" = (
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "whitegreencorner"
-	},
-/area/space)
 "oG" = (
 /obj/structure/grille,
 /obj/item/weapon/shard{
@@ -3604,6 +3591,10 @@
 /turf/simulated/floor/wood{
 	icon_state = "wood-broken3"
 	},
+/area/space)
+"oL" = (
+/obj/structure/stool/bed/chair/comfy/brown,
+/turf/simulated/floor/carpet/green,
 /area/space)
 "oP" = (
 /obj/machinery/door/airlock{
@@ -4028,6 +4019,23 @@
 /turf/simulated/floor{
 	icon_state = "arcade_carpet"
 	},
+/area/space)
+"qk" = (
+/obj/structure/window/reinforced/polarized{
+	dir = 1;
+	id = "Patients"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "Patients"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "Patients"
+	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
 /area/space)
 "ql" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4676,6 +4684,21 @@
 	icon_state = "bot"
 	},
 /area/station/civilian/hydroponics)
+"th" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters{
+	id = "CMO_private"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "ti" = (
 /obj/structure/window/reinforced,
 /turf/simulated/floor{
@@ -5149,15 +5172,6 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/space)
-"uK" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/fancy/donut_box,
-/obj/machinery/windowtint{
-	id = "Patients";
-	pixel_y = 27
-	},
-/turf/simulated/floor/carpet/green,
-/area/space)
 "uL" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5174,21 +5188,6 @@
 	},
 /obj/machinery/atmospherics/components/binary/valve/open,
 /turf/simulated/floor,
-/area/space)
-"uN" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/shutters{
-	id = "CMO_private"
-	},
-/turf/simulated/floor/plating,
 /area/space)
 "uO" = (
 /turf/simulated/floor{
@@ -5738,6 +5737,12 @@
 	icon_state = "dark"
 	},
 /area/station/civilian/chapel/office)
+"wX" = (
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "whitegreencorner"
+	},
+/area/space)
 "wY" = (
 /obj/item/weapon/reagent_containers/syringe/antiviral,
 /obj/structure/table/glass,
@@ -6232,6 +6237,15 @@
 	icon_state = "panelscorched"
 	},
 /area/station/maintenance/chapel)
+"yE" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/fancy/donut_box,
+/obj/machinery/windowtint{
+	id = "Patients";
+	pixel_y = 27
+	},
+/turf/simulated/floor/carpet/green,
+/area/space)
 "yH" = (
 /obj/structure/stool/bed/roller,
 /obj/machinery/iv_drip,
@@ -7681,9 +7695,11 @@
 "EH" = (
 /obj/structure/closet/l3closet/general,
 /obj/item/clothing/mask/gas/coloured,
+/obj/structure/sign/warning/detailed{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "warning"
+	icon_state = "warnwhite"
 	},
 /area/space)
 "EK" = (
@@ -8498,7 +8514,7 @@
 	pixel_x = -6
 	},
 /turf/simulated/floor{
-	icon_state = "warning"
+	icon_state = "freezerfloor"
 	},
 /area/space)
 "Ia" = (
@@ -8846,11 +8862,6 @@
 	icon_state = "green"
 	},
 /area/station/civilian/hydroponics)
-"JN" = (
-/obj/structure/stool/bed,
-/obj/item/weapon/bedsheet/medical,
-/turf/simulated/floor/carpet/green,
-/area/space)
 "JR" = (
 /obj/item/weapon/reagent_containers/spray/plantbgone{
 	pixel_y = 3
@@ -9307,9 +9318,8 @@
 /obj/machinery/shower{
 	pixel_y = 24
 	},
-/obj/structure/drain,
 /turf/simulated/floor{
-	icon_state = "warning"
+	icon_state = "freezerfloor"
 	},
 /area/space)
 "LP" = (
@@ -9794,6 +9804,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/asteroid/mine/dwarf)
+"Ns" = (
+/obj/structure/window/reinforced/polarized{
+	dir = 4;
+	id = "Patients"
+	},
+/obj/structure/window/reinforced/polarized{
+	id = "Patients"
+	},
+/obj/structure/window/reinforced/polarized{
+	dir = 8;
+	id = "Patients"
+	},
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/space)
 "Nt" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor{
@@ -10253,10 +10279,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/wood,
 /area/space)
-"PU" = (
-/obj/machinery/cryopod,
-/turf/simulated/floor/carpet/green,
-/area/space)
 "PW" = (
 /obj/machinery/door/airlock/virology/glass{
 	name = "Monkey Pen";
@@ -10596,6 +10618,12 @@
 	},
 /turf/simulated/floor/plating{
 	icon_state = "warnplate"
+	},
+/area/space)
+"Rv" = (
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "warnwhite"
 	},
 /area/space)
 "Rw" = (
@@ -11010,10 +11038,6 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/space)
-"Td" = (
-/obj/structure/stool/bed/chair/comfy/brown,
-/turf/simulated/floor/carpet/green,
 /area/space)
 "Tg" = (
 /obj/effect/decal/cleanable/generic,
@@ -12222,6 +12246,12 @@
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "darkgreen"
+	},
+/area/space)
+"Yo" = (
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "warnwhite"
 	},
 /area/space)
 "Yp" = (
@@ -20568,10 +20598,10 @@ pO
 pO
 pO
 pO
-cc
+qk
 Np
 Np
-fd
+Ns
 rH
 rH
 rH
@@ -20935,7 +20965,7 @@ pO
 jn
 qy
 qy
-JN
+mW
 rH
 aB
 aB
@@ -21114,10 +21144,10 @@ eQ
 FW
 Xh
 pO
-uK
+yE
 qy
 qy
-JN
+mW
 rH
 aB
 aB
@@ -21296,10 +21326,10 @@ FT
 FO
 XK
 pO
-Td
+oL
 qy
 qy
-JN
+mW
 rH
 aB
 aB
@@ -21478,10 +21508,10 @@ Nf
 Da
 Ym
 pO
-PU
+dl
 qy
 jn
-JN
+mW
 rH
 aB
 aB
@@ -21658,7 +21688,7 @@ pO
 Mo
 pO
 oR
-uN
+th
 pO
 YJ
 Rj
@@ -22026,7 +22056,7 @@ lQ
 fE
 IO
 qf
-oF
+wX
 rH
 aB
 aB
@@ -22389,7 +22419,7 @@ Ta
 wD
 pO
 HZ
-ll
+Rv
 ej
 pO
 aB
@@ -22571,7 +22601,7 @@ lQ
 oQ
 pO
 mP
-lQ
+dV
 EH
 pO
 aB
@@ -22753,8 +22783,8 @@ WJ
 AP
 pO
 LN
-qf
-EH
+Yo
+jr
 pO
 aB
 aB
