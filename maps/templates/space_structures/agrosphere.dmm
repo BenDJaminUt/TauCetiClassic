@@ -603,8 +603,9 @@
 /turf/simulated/floor,
 /area/space)
 "bM" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/space,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space)
 "bN" = (
 /obj/structure/sign/warning/vacuum/external{
@@ -639,7 +640,6 @@ aa
 aa
 aa
 aa
-aA
 aa
 aa
 aa
@@ -655,7 +655,8 @@ aa
 aa
 aa
 aa
-aA
+aa
+aa
 aA
 aa
 aa
@@ -680,13 +681,13 @@ aa
 aa
 aa
 aa
+aa
 ad
-au
 ac
 ac
 ac
-au
 bu
+aa
 aa
 aa
 aa
@@ -714,8 +715,8 @@ aA
 aa
 aa
 aa
+aa
 ad
-au
 ac
 au
 ar
@@ -723,8 +724,8 @@ aD
 bf
 au
 au
-au
 bu
+aa
 aa
 aa
 aa
@@ -784,9 +785,9 @@ aa
 aa
 aa
 aa
-ad
+aa
 au
-au
+bx
 aQ
 ab
 am
@@ -798,7 +799,7 @@ ab
 bD
 au
 au
-bu
+aa
 aa
 aa
 aa
@@ -820,7 +821,7 @@ aA
 aa
 aa
 aa
-au
+ad
 au
 aJ
 aR
@@ -834,7 +835,7 @@ bw
 bE
 au
 au
-bM
+bu
 aa
 aa
 aa
@@ -855,7 +856,7 @@ aA
 aA
 aa
 aa
-ad
+aa
 au
 aw
 ay
@@ -871,7 +872,7 @@ au
 au
 bJ
 au
-bu
+aa
 aa
 aA
 aA
@@ -891,7 +892,7 @@ aA
 aa
 aa
 aa
-au
+ad
 au
 aw
 aK
@@ -907,7 +908,7 @@ au
 bH
 aN
 au
-au
+bu
 aa
 aA
 aA
@@ -1035,7 +1036,7 @@ aa
 aa
 aa
 aa
-au
+aB
 au
 aH
 aL
@@ -1051,7 +1052,7 @@ au
 bI
 bc
 au
-au
+bC
 aa
 aa
 aA
@@ -1071,7 +1072,7 @@ aa
 aA
 aa
 aa
-aB
+aa
 au
 aI
 aP
@@ -1087,7 +1088,7 @@ au
 au
 bL
 au
-bC
+aa
 aa
 aa
 aa
@@ -1108,7 +1109,7 @@ aA
 aA
 aa
 aa
-au
+aB
 au
 aI
 aX
@@ -1122,7 +1123,7 @@ bw
 bG
 au
 au
-bM
+bC
 aa
 aa
 aa
@@ -1144,9 +1145,9 @@ aA
 aA
 aa
 aa
-aB
+aa
 au
-au
+bM
 aY
 aP
 aW
@@ -1158,7 +1159,7 @@ bx
 ab
 au
 au
-bC
+aa
 aa
 aa
 aA
@@ -1215,11 +1216,11 @@ aA
 aA
 aa
 aa
-aA
+aa
+aa
 aa
 aa
 aB
-au
 ac
 au
 az
@@ -1227,8 +1228,8 @@ aD
 bl
 au
 au
-au
 bC
+aa
 aa
 aa
 aa
@@ -1256,18 +1257,18 @@ aa
 aa
 aa
 aa
+aa
 aB
-au
 ac
 ac
 ac
-au
 bC
 aa
 aa
 aa
 aa
-aA
+aa
+aa
 aA
 aa
 aa
@@ -1301,7 +1302,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
