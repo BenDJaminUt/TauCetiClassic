@@ -7,56 +7,59 @@
 /turf/simulated/wall,
 /area/space)
 "c" = (
+/turf/simulated/wall,
+/area/space)
+"d" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/airless,
 /area/space)
-"d" = (
+"e" = (
 /obj/structure/toilet{
 	pixel_y = 8
 	},
 /obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/airless,
 /area/space)
-"e" = (
+"f" = (
+/obj/structure/stool,
+/obj/effect/decal/remains/human,
+/turf/simulated/floor/plating/airless,
+/area/space)
+"g" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/plating,
-/area/space)
-"g" = (
-/obj/machinery/door/window/southright,
-/obj/item/weapon/disk/research_points,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/airless,
 /area/space)
 "k" = (
-/obj/structure/stool,
-/obj/effect/decal/remains/human,
-/turf/simulated/floor/plating,
+/obj/machinery/door/window/southright,
+/obj/item/weapon/disk/research_points,
+/turf/simulated/floor/plating/airless,
 /area/space)
 "l" = (
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating/airless,
 /area/space)
 
 (1,1,1) = {"
-a
 c
-c
+d
+d
 l
 a
 "}
 (2,1,1) = {"
 b
-d
-g
+e
+k
 l
 l
 "}
 (3,1,1) = {"
-a
-e
-e
-k
+c
+g
+g
+f
 a
 "}

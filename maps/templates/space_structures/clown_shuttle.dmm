@@ -1,4 +1,13 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/turf/simulated/mineral,
+/turf/space,
+/area/space)
+"ac" = (
+/turf/simulated/shuttle/floor{
+	icon_state = "floor2"
+	},
+/area/space)
 "bo" = (
 /turf/simulated/floor/airless{
 	icon_state = "wood"
@@ -84,7 +93,9 @@
 /area/space)
 "nm" = (
 /obj/item/weapon/bananapeel,
-/obj/machinery/door/airlock/clown/glass,
+/obj/machinery/door/airlock/clown/glass{
+	state_open = 1
+	},
 /turf/simulated/shuttle/floor{
 	icon_state = "floor2"
 	},
@@ -680,7 +691,7 @@ HY
 NA
 NA
 yG
-En
+ab
 NA
 NA
 NA
@@ -699,7 +710,7 @@ HY
 NA
 NA
 Cz
-HY
+NA
 NA
 NA
 NA
@@ -719,7 +730,7 @@ NA
 kZ
 kY
 En
-HY
+NA
 NA
 NA
 NA
@@ -776,7 +787,7 @@ lb
 KM
 bo
 zz
-cN
+ac
 NA
 NA
 fe
