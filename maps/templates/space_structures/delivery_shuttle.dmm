@@ -74,6 +74,14 @@
 /area/space_structures/delivery_shuttle)
 "k" = (
 /obj/structure/closet/crate/freezer/rations,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/donuts,
+/obj/random/foods/donuts,
+/obj/item/weapon/reagent_containers/food/snacks/grown/killertomato,
+/obj/item/weapon/reagent_containers/food/snacks/candy/yumbaton,
+/obj/random/foods/drink_bottle,
+/obj/random/foods/food_without_garbage,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor3"
 	},
@@ -82,8 +90,12 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/pizzabox/margherita,
 /obj/item/pizzabox/meat,
-/obj/item/pizzabox/mushroom,
-/obj/item/pizzabox/vegetable,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/donuts,
+/obj/item/weapon/reagent_containers/food/snacks/dionaroast,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/goldschlager,
+/obj/random/foods/food_without_garbage,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor3"
 	},
@@ -94,6 +106,12 @@
 /obj/item/weapon/reagent_containers/food/snacks/sushi,
 /obj/item/weapon/reagent_containers/food/snacks/sashimi,
 /obj/item/weapon/reagent_containers/food/snacks/sashimi,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/food_without_garbage,
+/obj/item/weapon/reagent_containers/food/snacks/clownburger,
+/obj/random/foods,
+/obj/random/foods/drink_bottle,
+/obj/random/foods/food_without_garbage,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor3"
 	},
@@ -120,7 +138,9 @@
 	},
 /area/space_structures/delivery_shuttle)
 "q" = (
-/obj/structure/shuttle/engine/heater,
+/obj/structure/shuttle/engine/heater{
+	icon_state = "heater1"
+	},
 /turf/simulated/shuttle/wall{
 	dir = 2;
 	icon_state = "swall3"
@@ -136,13 +156,15 @@
 	},
 /area/space_structures/delivery_shuttle)
 "s" = (
-/obj/structure/shuttle/engine/propulsion,
+/obj/structure/shuttle/engine/propulsion{
+	anchored = 0;
+	icon_state = "burst_l"
+	},
 /turf/space,
 /area/space_structures/delivery_shuttle)
 "t" = (
 /obj/structure/shuttle/engine/propulsion{
 	desc = "Looks like meteor hit the engine!";
-	dir = 4;
 	icon_state = "burst_r";
 	name = "broken propulsion"
 	},
