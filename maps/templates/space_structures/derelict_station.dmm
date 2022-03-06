@@ -42,7 +42,7 @@
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	id_tag = "solar_derelic_outer";
+	id_tag = "solar_derelic_inner";
 	locked = 1;
 	name = "Engineering External Access";
 	req_access = list(10,13)
@@ -1106,6 +1106,19 @@
 	icon_state = "solarpanel"
 	},
 /area/space_structures/derelict)
+"ct" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "cu" = (
 /obj/structure/closet/emcloset,
 /obj/item/device/radio/intercom{
@@ -1161,6 +1174,14 @@
 	icon_state = "panelscorched"
 	},
 /area/space_structures/derelict)
+"cA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "cB" = (
 /obj/structure/rack,
 /obj/item/device/radio/off,
@@ -1171,6 +1192,14 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"cD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "cE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/drip,
@@ -1645,6 +1674,17 @@
 /obj/structure/girder,
 /turf/simulated/floor/airless{
 	icon_state = "circuit"
+	},
+/area/space_structures/derelict)
+"dG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "dH" = (
@@ -2396,6 +2436,32 @@
 /obj/item/stack/sheet/metal,
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
+"fr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1379;
+	master_tag = "solar_derelic_airlock2";
+	name = "interior access button";
+	pixel_x = 32;
+	pixel_y = -26;
+	req_access = list(10,13)
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "fs" = (
 /obj/item/weapon/shard{
 	icon_state = "small"
@@ -2490,6 +2556,7 @@
 	pixel_x = -4;
 	pixel_y = 5
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "fD" = (
@@ -2637,9 +2704,6 @@
 /obj/item/ammo_casing/a12mm{
 	pixel_x = 4
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
 /turf/simulated/floor/airless{
 	icon_state = "derelict1"
 	},
@@ -2741,6 +2805,19 @@
 	icon_state = "panelscorched"
 	},
 /area/space_structures/derelict)
+"ge" = (
+/obj/machinery/power/solar_control{
+	id = "derelictsolar";
+	name = "Primary Solar Control"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/airless{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "gf" = (
 /obj/structure/stool/bed/roller,
 /turf/simulated/floor/plating/airless{
@@ -2817,6 +2894,24 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
+"gp" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "solar_derelic_inner2";
+	locked = 1;
+	name = "Engineering External Access";
+	req_access = list(10,13)
+	},
+/obj/machinery/atmospherics/components/binary/pump/on,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless{
+	icon_state = "circuit"
+	},
+/area/space_structures/derelict)
 "gq" = (
 /obj/structure/stool/bed/chair/office/light,
 /obj/effect/decal/cleanable/dirt,
@@ -2857,22 +2952,10 @@
 	},
 /area/space_structures/derelict)
 "gu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1379;
-	master_tag = "solar_derelic_airlock2";
-	name = "interior access button";
-	pixel_x = 32;
-	pixel_y = -26;
-	req_access = list(10,13)
-	},
+/obj/machinery/constructable_frame/machine_frame,
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -3089,13 +3172,7 @@
 	},
 /area/space_structures/derelict)
 "gV" = (
-/obj/machinery/power/solar_control{
-	id = "derelictsolar";
-	name = "Primary Solar Control"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
-	},
+/turf/space,
 /area/space_structures/derelict)
 "gW" = (
 /obj/structure/rack,
@@ -3198,21 +3275,24 @@
 	},
 /area/space_structures/derelict)
 "hh" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_derelic_outer2";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
-/obj/machinery/atmospherics/components/binary/pump/on,
+/obj/machinery/power/terminal{
+	dir = 8
+	},
 /obj/structure/cable{
-	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2"
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/airless{
-	icon_state = "circuit"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "hi" = (
@@ -4839,9 +4919,9 @@ fG
 fQ
 ae
 ae
-aq
-aq
-aq
+gV
+gV
+gV
 ab
 ab
 ab
@@ -4902,9 +4982,9 @@ eg
 eq
 gF
 ae
-gV
-dA
 aq
+aq
+gV
 aq
 aO
 aO
@@ -4965,9 +5045,9 @@ fH
 fR
 ff
 ae
-fv
-dA
-dA
+gu
+aq
+aq
 aq
 iQ
 jA
@@ -5028,10 +5108,10 @@ eh
 fS
 gG
 ae
-fv
-dA
-gu
 hh
+dG
+fr
+gp
 hq
 ia
 jK
@@ -5091,9 +5171,9 @@ fI
 es
 fg
 ae
-gW
+ct
 dA
-dA
+ge
 aq
 iR
 ib
@@ -5154,7 +5234,7 @@ ei
 ae
 ae
 ae
-gW
+cA
 fv
 gW
 aq
@@ -5216,8 +5296,8 @@ df
 cw
 ae
 ad
-dA
-dA
+eh
+cD
 fv
 gv
 aq

@@ -1985,7 +1985,7 @@
 "Li" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
-	id_tag = "solar_abad_outer";
+	id_tag = "solar_abad_inner";
 	locked = 1;
 	name = "Engineering External Access";
 	req_access = list(10,13)
