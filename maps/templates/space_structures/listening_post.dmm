@@ -9,11 +9,20 @@
 /turf/simulated/wall,
 /area/space_structures/listening_post)
 "ad" = (
-/obj/machinery/computer/message_monitor,
-/turf/simulated/floor{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
 	dir = 1;
-	icon_state = "dark"
+	frequency = 1379;
+	id_tag = "Listening_Post_pump";
+	name = "Listening Post Large Air Vent"
 	},
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK";
+	pixel_x = 32
+	},
+/turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "ae" = (
 /obj/structure/table,
@@ -33,28 +42,30 @@
 	},
 /area/space_structures/listening_post)
 "ag" = (
-/obj/machinery/computer/security{
-	dir = 4
+/obj/machinery/telecomms/relay/preset/ruskie{
+	id = "Listening Outpost Omega"
 	},
-/obj/machinery/newscaster{
-	layer = 3.3;
-	pixel_y = 32
-	},
-/obj/item/device/radio/intercom{
-	pixel_x = -30
+/obj/machinery/alarm{
+	pixel_y = 23
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space_structures/listening_post)
 "ah" = (
-/obj/structure/stool/bed/chair/office/dark{
-	dir = 1
+/obj/structure/table,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27
+	},
+/obj/item/device/guitar,
+/obj/item/weapon/flora/deskferntrim{
+	icon_state = "plant-34-alternative";
+	pixel_x = -8;
+	pixel_y = 10
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "ai" = (
@@ -64,71 +75,140 @@
 	},
 /area/space_structures/listening_post)
 "aj" = (
-/obj/machinery/telecomms/relay/preset/ruskie{
-	id = "Listening Outpost Omega"
+/obj/structure/closet/crate/freezer{
+	opened = 1
 	},
+/obj/item/weapon/reagent_containers/food/snacks/meatsteak,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/food_without_garbage,
+/obj/item/weapon/reagent_containers/food/snacks/kabob,
+/obj/item/pizzabox/margherita,
+/obj/item/pizzabox/meat,
+/obj/item/pizzabox/mushroom,
+/obj/item/pizzabox/vegetable,
+/obj/item/pizzabox/meat,
+/obj/item/weapon/reagent_containers/food/snacks/toastedsandwich,
+/obj/item/weapon/reagent_containers/food/snacks/syndicake,
+/obj/item/weapon/reagent_containers/food/snacks/syndicake,
+/obj/item/weapon/reagent_containers/food/snacks/soup/meatballsoup,
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/cake/orange,
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/cake/chocolate,
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/bread/meat,
+/obj/item/weapon/reagent_containers/food/snacks/muffin,
+/obj/item/weapon/reagent_containers/food/snacks/loadedbakedpotato,
+/obj/item/weapon/reagent_containers/food/snacks/fishandchips,
+/obj/item/weapon/reagent_containers/food/snacks/fortunecookie,
+/obj/item/weapon/reagent_containers/food/snacks/fortunecookie,
+/obj/item/weapon/reagent_containers/food/snacks/chinese/newdles,
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,
+/obj/random/foods/food_without_garbage,
+/obj/random/foods/food_without_garbage,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "ak" = (
-/obj/structure/table,
-/obj/item/weapon/storage/toolbox/syndicate,
-/obj/item/device/flashlight/lantern,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "al" = (
-/turf/simulated/floor/plating,
+/obj/structure/table,
+/obj/machinery/chem_dispenser/beer{
+	pixel_y = 4
+	},
+/obj/structure/sign/poster{
+	pixel_y = 32
+	},
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
 /area/space_structures/listening_post)
 "am" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/embedded_controller/radio/airlock_controller{
+	id_tag = "Listening_Post_airlock";
+	pixel_y = 26;
+	req_access = list(13);
+	tag_airpump = "Listening_Post_pump";
+	tag_chamber_sensor = "Listening_Post_sensor";
+	tag_exterior_door = "Listening_Post_outer";
+	tag_interior_door = "Listening_Post_inner"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	frequency = 1379;
+	id_tag = "Listening_Post_pump";
+	name = "DJ Large Air Vent"
+	},
 /turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "an" = (
-/obj/structure/curtain/open/shower/security,
-/obj/machinery/light/small,
-/obj/machinery/shower{
-	pixel_y = 20
-	},
-/turf/simulated/floor{
-	icon_state = "showroomfloor"
-	},
-/area/space_structures/listening_post)
-"ao" = (
 /obj/machinery/computer/med_data{
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkredfull"
+	},
+/area/space_structures/listening_post)
+"ao" = (
+/obj/structure/table,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 27
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_x = -4;
+	pixel_y = 16
+	},
+/obj/item/ashtray/bronze{
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate{
+	pixel_x = 9;
+	pixel_y = 1
+	},
+/obj/item/weapon/lighter/zippo{
+	pixel_x = -8;
+	pixel_y = -7
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space_structures/listening_post)
 "ap" = (
-/obj/structure/table,
-/obj/item/device/flashlight/lamp,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "dark"
 	},
 /area/space_structures/listening_post)
 "aq" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
-/obj/item/weapon/stock_parts/cell/high,
-/obj/machinery/light/small{
-	dir = 8
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = ""Listening_Post_inner";
+	locked = 1;
+	name = "Listening Post";
+	req_access = list(10,13)
 	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 4
 	},
+/turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "ar" = (
-/obj/structure/closet/emcloset,
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = ""Listening_Post"_outer";
+	locked = 1;
+	name = "Listening Post";
+	req_access = list(10,13)
+	},
 /turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "as" = (
@@ -140,9 +220,198 @@
 	},
 /area/space_structures/listening_post)
 "at" = (
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"au" = (
+/obj/structure/table,
+/obj/item/weapon/disk/research_points{
+	pixel_x = 6
+	},
+/obj/item/device/paicard{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"av" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"aw" = (
+/obj/structure/filingcabinet,
+/obj/item/weapon/paper/monitorkey,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"ax" = (
+/obj/structure/rack,
+/obj/item/device/geoscanner,
+/obj/item/weapon/pickaxe,
+/obj/item/device/flashlight/lantern,
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "podhatch"
+	},
+/area/space_structures/listening_post)
+"ay" = (
+/obj/structure/dispenser/oxygen,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"az" = (
+/obj/structure/table,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/beer{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/machinery/newscaster{
+	pixel_x = -30
+	},
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
+/area/space_structures/listening_post)
+"aA" = (
+/obj/machinery/computer/message_monitor,
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = 32
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"aB" = (
+/obj/structure/rack,
+/obj/item/weapon/storage/toolbox/syndicate,
+/obj/item/clothing/glasses/welding,
+/turf/simulated/floor{
+	dir = 2;
+	icon_state = "podhatch"
+	},
+/area/space_structures/listening_post)
+"aC" = (
+/obj/machinery/washing_machine,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space_structures/listening_post)
+"aD" = (
 /obj/structure/toilet{
 	pixel_y = 15
 	},
+/obj/structure/dryer{
+	dir = 8;
+	pixel_x = 6
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space_structures/listening_post)
+"aE" = (
+/obj/machinery/computer/security{
+	dir = 4
+	},
+/obj/item/device/radio/intercom{
+	pixel_x = -30
+	},
+/obj/machinery/newscaster{
+	layer = 3.3;
+	pixel_y = 32
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "darkredfull"
+	},
+/area/space_structures/listening_post)
+"aF" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"aG" = (
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = 32
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "podhatch"
+	},
+/area/space_structures/listening_post)
+"aH" = (
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"aI" = (
+/obj/machinery/airlock_sensor{
+	id_tag = "Listening_Post_sensor";
+	layer = 3.3;
+	pixel_y = 26
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	frequency = 1379;
+	id_tag = "Listening_Post_pump";
+	name = "Listening Post Large Air Vent"
+	},
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"aJ" = (
+/obj/machinery/access_button{
+	command = "cycle_exterior";
+	frequency = 1379;
+	master_tag = "Listening_Post_airlock";
+	name = "exterior access button";
+	pixel_x = -26;
+	pixel_y = 32;
+	req_access = list(10,13)
+	},
+/turf/simulated/mineral/random/caves,
+/area/space)
+"aK" = (
+/obj/structure/drain{
+	drainage = 2
+	},
+/obj/machinery/shower{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "showroomfloor"
+	},
+/area/space_structures/listening_post)
+"aL" = (
 /obj/structure/sink{
 	dir = 4;
 	pixel_x = 12
@@ -154,173 +423,68 @@
 	icon_state = "showroomfloor"
 	},
 /area/space_structures/listening_post)
-"au" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/space/syndicate/jailbreaker,
-/obj/item/clothing/head/helmet/space/syndicate/jailbreaker,
+"aM" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "dark"
 	},
 /area/space_structures/listening_post)
-"av" = (
-/obj/structure/closet/crate/bin,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aw" = (
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"ax" = (
-/obj/structure/window/reinforced{
+"aN" = (
+/obj/structure/table,
+/obj/machinery/cell_charger{
+	pixel_y = 2
+	},
+/obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/washing_machine,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"ay" = (
-/obj/structure/filingcabinet,
-/obj/item/weapon/paper/monitorkey,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+/obj/item/weapon/stock_parts/cell/high{
+	charge = 100;
+	maxcharge = 15000;
+	pixel_x = 3;
+	pixel_y = 6
+	},
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "podhatch"
 	},
 /area/space_structures/listening_post)
-"az" = (
-/obj/structure/rack,
-/obj/item/device/multitool,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+"aO" = (
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1379;
+	master_tag = "Listening_Post_airlock";
+	name = "interior access button";
+	pixel_x = 26;
+	pixel_y = -32;
+	req_access = list(10,13)
 	},
-/area/space_structures/listening_post)
-"aA" = (
-/obj/structure/rack,
-/obj/item/device/geoscanner,
-/obj/item/weapon/pickaxe,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
-	},
-/area/space_structures/listening_post)
-"aB" = (
-/obj/structure/dispenser/oxygen,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
-	},
-/area/space_structures/listening_post)
-"aC" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Telecommunications"
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
-	},
-/area/space_structures/listening_post)
-"aD" = (
-/obj/machinery/door/airlock/hatch{
-	name = "E.V.A."
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
-	},
-/area/space_structures/listening_post)
-"aE" = (
-/obj/structure/table,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/disk/research_points,
-/obj/machinery/light/small{
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "dark"
+	dir = 4;
+	icon_state = "darkred"
 	},
-/area/space_structures/listening_post)
-"aF" = (
-/obj/structure/table,
-/obj/machinery/kitchen_machine/microwave,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -30
-	},
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aG" = (
-/obj/structure/table,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/beer,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/beer,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate{
-	pixel_x = -5;
-	pixel_y = -3
-	},
-/obj/item/weapon/lighter/zippo{
-	pixel_x = 3
-	},
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_x = -30
-	},
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aH" = (
-/obj/machinery/door/airlock{
-	name = "Personal Quarters"
-	},
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aI" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aJ" = (
-/obj/random/vending/snack,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aK" = (
-/obj/structure/table,
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aL" = (
-/obj/machinery/computer/arcade,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aM" = (
-/obj/item/weapon/flora/random,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aN" = (
-/obj/structure/closet/emcloset,
-/obj/machinery/light/small,
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aO" = (
-/obj/random/vending/cola,
-/turf/simulated/floor,
 /area/space_structures/listening_post)
 "aP" = (
-/obj/machinery/door/airlock{
-	name = "Cabin"
-	},
-/turf/simulated/floor{
-	icon_state = "grimy"
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/visible,
+/turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "aQ" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "aR" = (
-/obj/machinery/door/airlock/medical{
-	name = "Infirmary"
+/obj/machinery/light/small{
+	dir = 8
 	},
+/obj/item/weapon/flora/pottedplant/ficus,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "white"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space_structures/listening_post)
 "aS" = (
@@ -330,34 +494,50 @@
 	},
 /area/space_structures/listening_post)
 "aT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor{
-	icon_state = "grimy"
+	dir = 1;
+	icon_state = "dark"
 	},
 /area/space_structures/listening_post)
 "aU" = (
-/obj/item/weapon/bedsheet/syndie,
-/obj/structure/stool/bed,
-/turf/simulated/floor{
-	icon_state = "grimy"
-	},
-/area/space_structures/listening_post)
-"aV" = (
+/obj/structure/table,
+/obj/item/weapon/paper_bin,
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor,
+/obj/item/weapon/pen,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
+	},
+/area/space_structures/listening_post)
+"aV" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/space/syndicate/jailbreaker,
+/obj/item/clothing/head/helmet/space/syndicate/jailbreaker,
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "podhatch"
+	},
 /area/space_structures/listening_post)
 "aW" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
 	},
-/turf/simulated/floor,
-/area/space_structures/listening_post)
-"aX" = (
-/obj/machinery/sleeper/upgraded,
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "white"
+	icon_state = "dark"
+	},
+/area/space_structures/listening_post)
+"aX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/item/weapon/flora/pottedplant/tropicalfern,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkred"
 	},
 /area/space_structures/listening_post)
 "aY" = (
@@ -367,64 +547,53 @@
 	},
 /area/space_structures/listening_post)
 "aZ" = (
-/obj/structure/closet/secure_closet/medical1,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "white"
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
 	},
+/turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 "ba" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "Listening Post APC";
-	pixel_y = 26
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 8
 	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/plating{
-	icon_state = "platebot";
-	nitrogen = 0.01;
-	oxygen = 0.01
+/turf/simulated/floor{
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "bb" = (
-/obj/structure/table/holotable/wooden,
-/obj/item/weapon/book/manual/nuclear,
-/obj/item/device/flashlight/lamp/green,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
-	icon_state = "grimy"
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "bc" = (
-/obj/structure/reagent_dispensers/fueltank,
-/obj/item/weapon/weldingtool/largetank,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/light/small{
+	dir = 4
 	},
-/turf/simulated/floor/plating{
-	icon_state = "platebot";
-	nitrogen = 0.01;
-	oxygen = 0.01
+/obj/structure/table,
+/obj/machinery/chem_dispenser/soda{
+	pixel_y = 4
+	},
+/turf/simulated/floor{
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "bd" = (
-/obj/structure/table,
-/obj/item/weapon/storage/firstaid/tactical,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/machinery/door/airlock/hatch{
+	name = "Telecommunications"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "white"
+	icon_state = "dark"
 	},
 /area/space_structures/listening_post)
 "be" = (
-/obj/machinery/light/small{
-	dir = 8
+/obj/machinery/door/airlock/hatch{
+	name = "E.V.A."
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "dark"
@@ -440,10 +609,22 @@
 	},
 /area/space_structures/listening_post)
 "bg" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/table,
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_x = -30
 	},
-/turf/simulated/floor/plating,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/random/foods/drink_bottle,
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
 /area/space_structures/listening_post)
 "bh" = (
 /obj/structure/closet/crate,
@@ -463,50 +644,423 @@
 	},
 /area/space_structures/listening_post)
 "bi" = (
-/obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
 /area/space_structures/listening_post)
 "bj" = (
-/obj/structure/sign/poster{
-	pixel_y = 32
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
 /area/space_structures/listening_post)
 "bk" = (
-/obj/structure/closet/wardrobe/black,
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor{
-	icon_state = "grimy"
+	icon_state = "bar"
 	},
 /area/space_structures/listening_post)
 "bl" = (
+/obj/machinery/door/airlock{
+	name = "Personal Quarters"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/space_structures/listening_post)
+"bm" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bn" = (
+/obj/structure/sign/poster{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bo" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bp" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bq" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"br" = (
+/obj/machinery/vending/snack{
+	name = "hacked Getmore Chocolate Corp";
+	prices = list()
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bs" = (
+/obj/machinery/computer/arcade,
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
+/area/space_structures/listening_post)
+"bt" = (
+/obj/structure/closet/crate/bin,
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
+/area/space_structures/listening_post)
+"bu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
+/area/space_structures/listening_post)
+"bv" = (
+/obj/machinery/vending/coffee{
+	name = "hacked Hot Drinks machine";
+	prices = list()
+	},
+/turf/simulated/floor{
+	icon_state = "bar"
+	},
+/area/space_structures/listening_post)
+"bw" = (
+/obj/structure/closet/emcloset,
 /obj/machinery/light/small,
+/turf/simulated/floor{
+	dir = 10;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor{
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"by" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 5;
+	pixel_y = -32
+	},
+/obj/item/weapon/flora/pottedplant/palm,
+/turf/simulated/floor{
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bz" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bA" = (
+/obj/machinery/vending/cola{
+	name = "hacked Robust Softdrinks";
+	prices = list()
+	},
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "neutral"
+	},
+/area/space_structures/listening_post)
+"bB" = (
+/obj/machinery/door/airlock{
+	name = "Cabin"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor{
 	icon_state = "grimy"
 	},
 /area/space_structures/listening_post)
-"bm" = (
-/obj/machinery/light/small,
+"bC" = (
+/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"bD" = (
+/obj/machinery/door/airlock/medical{
+	name = "Infirmary"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "white"
+	icon_state = "whitebluefull"
 	},
 /area/space_structures/listening_post)
-"bn" = (
+"bE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bF" = (
+/obj/structure/table/holotable/wooden,
+/obj/machinery/computer/libraryconsole/bookmanagement/old,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bG" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Listening Post APC";
+	pixel_y = 26
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/plating{
+	icon_state = "platebot";
+	nitrogen = 0.01;
+	oxygen = 0.01
+	},
+/area/space_structures/listening_post)
+"bH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"bI" = (
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/obj/machinery/sleeper/upgraded{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 9;
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bK" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/item/weapon/flora/pottedplant/thinbush,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bL" = (
+/obj/structure/sign/poster{
+	pixel_y = 32
+	},
+/obj/machinery/life_assist/artificial_ventilation,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bM" = (
+/obj/structure/closet/wardrobe/black,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -22
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bN" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bO" = (
+/obj/structure/table/holotable/wooden,
+/obj/item/device/flashlight/lamp/green{
+	on = 0;
+	pixel_x = -7;
+	pixel_y = 16
+	},
+/obj/item/weapon/book/manual/nuclear,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bP" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/item/weapon/weldingtool/largetank,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platebot";
+	nitrogen = 0.01;
+	oxygen = 0.01
+	},
+/area/space_structures/listening_post)
+"bQ" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"bR" = (
+/obj/machinery/light/small,
+/obj/structure/stool/bed/roller,
 /obj/machinery/iv_drip,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bS" = (
 /obj/structure/sink{
 	dir = 4;
 	pixel_x = 12
 	},
+/obj/machinery/light/small,
 /turf/simulated/floor{
-	dir = 1;
-	icon_state = "white"
+	dir = 4;
+	icon_state = "whiteblue"
 	},
 /area/space_structures/listening_post)
-"bo" = (
+"bT" = (
 /obj/structure/sign/poster/contraband/random{
-	pixel_y = 32
+	pixel_y = -32
 	},
-/turf/simulated/floor,
+/obj/machinery/light/small,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bU" = (
+/obj/structure/stool/bed,
+/obj/item/weapon/bedsheet/syndie,
+/turf/simulated/floor{
+	icon_state = "grimy"
+	},
+/area/space_structures/listening_post)
+"bV" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"bW" = (
+/obj/structure/table,
+/obj/item/weapon/storage/firstaid/tactical,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor{
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bX" = (
+/obj/structure/closet/secure_closet/medical1,
+/obj/item/clothing/accessory/stethoscope,
+/turf/simulated/floor{
+	icon_state = "whiteblue"
+	},
+/area/space_structures/listening_post)
+"bY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"bZ" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"ca" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"cb" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"cc" = (
+/obj/structure/rack,
+/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/device/multitool,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/turf/simulated/floor/plating,
+/area/space_structures/listening_post)
+"cd" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
 /area/space_structures/listening_post)
 
 (1,1,1) = {"
@@ -524,9 +1078,9 @@ aa
 aa
 aa
 aa
-ab
-ab
-ab
+aa
+aa
+aa
 aa
 aa
 aa
@@ -552,12 +1106,12 @@ aa
 aa
 aa
 aa
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -580,17 +1134,17 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
 ab
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
 aa
 aa
 aa
@@ -609,9 +1163,9 @@ aa
 aa
 aa
 aa
-ab
-ab
-ab
+aa
+aa
+aa
 ab
 ab
 ab
@@ -639,8 +1193,8 @@ aa
 aa
 aa
 aa
-ab
-ab
+aa
+aa
 ab
 ab
 ab
@@ -669,6 +1223,7 @@ aa
 aa
 aa
 aa
+aa
 ab
 ab
 ab
@@ -687,8 +1242,7 @@ ab
 ab
 ab
 ab
-ab
-ab
+aa
 aa
 aa
 aa
@@ -699,6 +1253,7 @@ aa
 aa
 aa
 aa
+aa
 ab
 ab
 ab
@@ -718,8 +1273,7 @@ ab
 ab
 ab
 ab
-ab
-ab
+aa
 aa
 aa
 aa
@@ -729,6 +1283,8 @@ aa
 (8,1,1) = {"
 aa
 aa
+aa
+aa
 ab
 ab
 ab
@@ -748,10 +1304,8 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
 aa
 aa
 aa
@@ -760,6 +1314,7 @@ aa
 (9,1,1) = {"
 aa
 aa
+aa
 ab
 ab
 ab
@@ -781,15 +1336,16 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
 aa
 aa
 "}
 (10,1,1) = {"
 aa
+aa
+aa
 ab
 ab
 ab
@@ -811,16 +1367,15 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
 aa
 "}
 (11,1,1) = {"
 aa
+aa
 ab
 ab
 ab
@@ -843,15 +1398,15 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
 aa
 "}
 (12,1,1) = {"
 aa
+aa
 ab
 ab
 ab
@@ -876,12 +1431,13 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
+aa
+aa
 aa
 "}
 (13,1,1) = {"
+aa
+aa
 ab
 ab
 ab
@@ -907,43 +1463,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
 "}
 (14,1,1) = {"
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-"}
-(15,1,1) = {"
+aa
 aa
 ab
 ab
@@ -971,8 +1495,38 @@ ab
 ab
 ab
 ab
+aa
+"}
+(15,1,1) = {"
+aa
+aa
 ab
 ab
+ab
+ab
+ab
+ab
+ab
+ab
+ac
+ac
+ac
+ac
+ac
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+aa
 "}
 (16,1,1) = {"
 aa
@@ -982,6 +1536,15 @@ ab
 ab
 ab
 ab
+ac
+ac
+ac
+ac
+ah
+az
+bg
+ac
+ac
 ab
 ab
 ab
@@ -994,16 +1557,7 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
 "}
 (17,1,1) = {"
 aa
@@ -1013,18 +1567,18 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+ac
+aC
+aK
+ac
+aj
+ba
+ak
+bs
+ac
+ac
+ac
+ac
 ab
 ab
 ab
@@ -1044,19 +1598,19 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+ac
+aD
+aL
+as
+ak
+bb
+bi
+bt
+av
+aS
+bM
+ac
+ac
 ab
 ab
 ab
@@ -1075,19 +1629,19 @@ ab
 ab
 ab
 ab
-ab
 ac
 ac
 ac
 ac
+al
+bc
+bj
+bu
+bB
+bE
+bN
+bT
 ac
-ac
-ac
-ac
-ab
-ab
-ab
-ab
 ab
 ab
 ab
@@ -1105,20 +1659,20 @@ ab
 ab
 ab
 ab
-ab
-ab
 ac
+ac
+aE
 an
 ac
 av
-aF
-aG
-aK
 ac
+bk
+bv
+av
+bF
+bO
+bU
 ac
-ac
-ac
-ab
 ab
 ab
 ab
@@ -1136,21 +1690,21 @@ ab
 ab
 ab
 ab
-ab
-ab
 ac
+aA
+aF
 at
-as
+aR
 aw
-aw
-aw
-aL
 ac
-aS
-bk
+bl
+av
 ac
-ab
-ab
+ac
+ac
+ac
+ac
+ac
 ab
 ab
 ab
@@ -1167,33 +1721,33 @@ ab
 ab
 ab
 ab
-ab
 ac
-ac
-ac
-ac
-ax
-aV
-aw
-aw
-aP
+ae
+ai
+aM
 aT
-bl
+aT
+bd
+bm
+bw
+ac
+bG
+bP
+bf
+bh
+ac
+ac
 ac
 ab
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+aa
 "}
 (23,1,1) = {"
 aa
-ab
+aa
 ab
 ab
 ab
@@ -1202,27 +1756,28 @@ ac
 ac
 ag
 ao
-ac
-ac
-ac
-bo
-aM
-ac
 aU
-bb
+au
+av
+bo
+bx
+bC
+bH
+bQ
+bV
+bY
+ca
+cc
 ac
 ab
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+aa
 "}
 (24,1,1) = {"
+aa
 aa
 ab
 ab
@@ -1230,28 +1785,27 @@ ab
 ab
 ab
 ac
-ad
-ah
-ai
-be
-ay
-ac
-aH
 ac
 ac
 ac
 ac
 ac
+bn
+by
 ac
 ac
+ac
+ac
+bZ
+aP
+aZ
+ac
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
 "}
 (25,1,1) = {"
 aa
@@ -1261,28 +1815,28 @@ ab
 ab
 ab
 ac
-ae
-ai
-ai
-ai
-ai
-aC
-aw
+ac
+aG
 aN
+aV
+ax
 ac
-ba
-bc
-bf
-bh
+bp
+bz
+ac
+bI
+bR
+ac
+ac
+cb
+cd
 ac
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
 "}
 (26,1,1) = {"
 aa
@@ -1292,87 +1846,87 @@ ab
 ab
 ab
 ac
-ac
-aj
+af
+ai
 ap
-aE
-az
+aW
+aT
+be
+bq
+bx
+bD
+bJ
+aY
+bW
 ac
-aw
-aw
-aQ
-al
-al
-bg
-bi
+ac
+ac
 ac
 ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+aa
+aa
 "}
 (27,1,1) = {"
 aa
 aa
 aa
+ab
+ab
+ab
+ac
+aB
+aH
+aO
+aX
+ay
+av
+br
+bA
+av
+bK
+aY
+bX
+ac
+ab
+ab
+ab
+ab
+ab
+ab
 aa
-ab
-ab
-ab
-ac
-ac
-ac
-ac
-ac
-ac
-bj
-aW
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
 aa
 "}
 (28,1,1) = {"
 aa
 aa
 aa
-aa
+ab
 ab
 ab
 ac
 ac
-ak
+ac
 aq
-au
-aA
 ac
-aI
-aw
 ac
-aX
-bd
+ac
+ac
+ac
+ac
+bL
+bS
+ac
 ac
 ab
 ab
 ab
 ab
 ab
-ab
-ab
+aa
 aa
 aa
 aa
@@ -1381,29 +1935,29 @@ aa
 aa
 aa
 aa
+ab
+ab
+ab
+ab
+ac
+aI
+aP
+aZ
+ac
+ab
+ab
+ab
+ac
+ac
+ac
+ac
+ab
+ab
+ab
+ab
 aa
-ab
-ab
-ac
-af
-ai
-ai
-ai
-ai
-aD
-aw
-aw
-aR
-aY
-bm
-ac
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
 aa
 aa
 aa
@@ -1413,20 +1967,13 @@ aa
 aa
 aa
 aa
-aa
 ab
-ac
+ab
+ab
 ac
 am
-ac
-ac
-aB
-ac
-aJ
-aO
-ac
-aZ
-bn
+aQ
+ad
 ac
 ab
 ab
@@ -1435,6 +1982,13 @@ ab
 ab
 ab
 ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1444,23 +1998,23 @@ aa
 aa
 aa
 aa
-aa
+ab
 ab
 ab
 ac
-al
+ac
 ar
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
 ab
 ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1476,21 +2030,21 @@ aa
 aa
 aa
 aa
+ab
+ab
+ab
+aJ
+ab
+ab
+ab
+ab
 aa
-ab
-ac
-am
-ac
-ac
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1508,16 +2062,16 @@ aa
 aa
 aa
 aa
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1540,11 +2094,11 @@ aa
 aa
 aa
 aa
-ab
-ab
-ab
-ab
-ab
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
