@@ -1062,9 +1062,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/space_structures/listening_post)
-"ce" = (
-/turf/space,
-/area/space)
 
 (1,1,1) = {"
 aa
@@ -1081,9 +1078,9 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1109,12 +1106,12 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1137,17 +1134,17 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
 ab
 ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 aa
 aa
 aa
@@ -1166,9 +1163,9 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
+aa
+aa
+aa
 ab
 ab
 ab
@@ -1196,8 +1193,8 @@ aa
 aa
 aa
 aa
-ce
-ce
+aa
+aa
 ab
 ab
 ab
@@ -1226,7 +1223,7 @@ aa
 aa
 aa
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1245,7 +1242,7 @@ ab
 ab
 ab
 ab
-ce
+aa
 aa
 aa
 aa
@@ -1256,7 +1253,7 @@ aa
 aa
 aa
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1276,7 +1273,7 @@ ab
 ab
 ab
 ab
-ce
+aa
 aa
 aa
 aa
@@ -1286,8 +1283,8 @@ aa
 (8,1,1) = {"
 aa
 aa
-ce
-ce
+aa
+aa
 ab
 ab
 ab
@@ -1307,8 +1304,8 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 aa
 aa
 aa
@@ -1317,7 +1314,7 @@ aa
 (9,1,1) = {"
 aa
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1339,16 +1336,16 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
+aa
+aa
+aa
 aa
 aa
 "}
 (10,1,1) = {"
 aa
-ce
-ce
+aa
+aa
 ab
 ab
 ab
@@ -1370,15 +1367,15 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
 aa
 "}
 (11,1,1) = {"
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1401,15 +1398,15 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
 aa
 "}
 (12,1,1) = {"
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1434,13 +1431,13 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 aa
 "}
 (13,1,1) = {"
-ce
-ce
+aa
+aa
 ab
 ab
 ab
@@ -1466,12 +1463,12 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 "}
 (14,1,1) = {"
-ce
-ce
+aa
+aa
 ab
 ab
 ab
@@ -1498,11 +1495,11 @@ ab
 ab
 ab
 ab
-ce
+aa
 "}
 (15,1,1) = {"
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1529,7 +1526,7 @@ ab
 ab
 ab
 ab
-ce
+aa
 "}
 (16,1,1) = {"
 aa
@@ -1560,7 +1557,7 @@ ab
 ab
 ab
 ab
-ce
+aa
 "}
 (17,1,1) = {"
 aa
@@ -1746,11 +1743,11 @@ ab
 ab
 ab
 ab
-ce
+aa
 "}
 (23,1,1) = {"
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1777,11 +1774,11 @@ ab
 ab
 ab
 ab
-ce
+aa
 "}
 (24,1,1) = {"
 aa
-ce
+aa
 ab
 ab
 ab
@@ -1807,8 +1804,8 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 "}
 (25,1,1) = {"
 aa
@@ -1838,8 +1835,8 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 "}
 (26,1,1) = {"
 aa
@@ -1869,8 +1866,8 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 "}
 (27,1,1) = {"
 aa
@@ -1899,8 +1896,8 @@ ab
 ab
 ab
 ab
-ce
-ce
+aa
+aa
 aa
 "}
 (28,1,1) = {"
@@ -1929,7 +1926,7 @@ ab
 ab
 ab
 ab
-ce
+aa
 aa
 aa
 aa
@@ -1958,9 +1955,9 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1987,11 +1984,11 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -2013,11 +2010,11 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -2041,13 +2038,13 @@ ab
 ab
 ab
 ab
-ce
-ce
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -2065,16 +2062,16 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -2097,11 +2094,11 @@ aa
 aa
 aa
 aa
-ce
-ce
-ce
-ce
-ce
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa

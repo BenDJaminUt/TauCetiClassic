@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ab" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -964,12 +964,12 @@
 /obj/item/weapon/shard{
 	icon_state = "small"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "nI" = (
 /obj/structure/lattice,
 /obj/item/trash/popcorn,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "nN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1188,7 +1188,7 @@
 /area/space_structures/derelict_lab)
 "rR" = (
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "sp" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -1287,7 +1287,7 @@
 "tX" = (
 /obj/structure/lattice,
 /obj/item/weapon/shard,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "um" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -1440,7 +1440,7 @@
 /area/space_structures/derelict_lab)
 "wW" = (
 /obj/effect/landmark/corpse/doctor,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "xe" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -1495,7 +1495,7 @@
 "xP" = (
 /obj/structure/lattice,
 /obj/effect/decal/cleanable/blood,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "yc" = (
 /obj/structure/cable{
@@ -1519,7 +1519,7 @@
 "Al" = (
 /obj/structure/lattice,
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Ao" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
@@ -1689,7 +1689,7 @@
 "DU" = (
 /obj/structure/lattice,
 /obj/random/foods/food_without_garbage,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Ee" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1707,7 +1707,7 @@
 "Ew" = (
 /obj/structure/lattice,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Ex" = (
 /obj/structure/disposalpipe/trunk{
@@ -1756,11 +1756,11 @@
 "FF" = (
 /obj/structure/lattice,
 /obj/random/randomfigure,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "FN" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "FO" = (
 /obj/structure/closet/l3closet/security,
@@ -1870,7 +1870,7 @@
 /area/space_structures/derelict_lab)
 "HT" = (
 /obj/item/stack/cable_coil/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "HY" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -2100,7 +2100,7 @@
 "Np" = (
 /obj/structure/lattice,
 /obj/structure/grille,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Nw" = (
 /obj/structure/table/glass,
@@ -2174,7 +2174,7 @@
 /area/space_structures/derelict_lab)
 "PI" = (
 /mob/living/simple_animal/hostile/carp,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Qm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2305,7 +2305,7 @@
 "SF" = (
 /obj/structure/lattice,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "SG" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
@@ -2356,7 +2356,7 @@
 /area/space_structures/derelict_lab)
 "TY" = (
 /obj/item/weapon/storage/firstaid/regular,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Un" = (
 /obj/structure/stool/bed/chair/comfy/brown{
@@ -2371,7 +2371,7 @@
 /obj/structure/grille{
 	destroyed = 1
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Uy" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
@@ -2407,7 +2407,7 @@
 "Vg" = (
 /obj/structure/lattice,
 /obj/item/weapon/flora/random,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Vn" = (
 /obj/structure/table/glass,
@@ -2439,7 +2439,7 @@
 /area/space_structures/derelict_lab)
 "VN" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "VT" = (
 /obj/machinery/computer/rdconsole/core,
@@ -2515,7 +2515,7 @@
 /area/space_structures/derelict_lab)
 "Zf" = (
 /obj/random/foods/food_without_garbage,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Zu" = (
 /obj/machinery/computer/centrifuge,

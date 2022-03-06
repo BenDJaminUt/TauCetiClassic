@@ -160,7 +160,7 @@
 	anchored = 0;
 	icon_state = "burst_l"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space_structures/delivery_shuttle)
 "t" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -168,7 +168,7 @@
 	icon_state = "burst_r";
 	name = "broken propulsion"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space_structures/delivery_shuttle)
 
 (1,1,1) = {"

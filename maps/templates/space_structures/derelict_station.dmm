@@ -1,10 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ab" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ac" = (
 /turf/simulated/floor/plating/airless,
@@ -113,7 +113,7 @@
 	name = "Hull Door Control"
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ao" = (
 /obj/item/weapon/table_parts,
@@ -217,7 +217,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "aA" = (
 /obj/structure/cable{
@@ -324,7 +324,7 @@
 "aI" = (
 /obj/item/stack/cable_coil/cut/red,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "aJ" = (
 /obj/structure/cable,
@@ -349,7 +349,7 @@
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "aM" = (
 /obj/machinery/door/airlock/external,
@@ -423,7 +423,7 @@
 "aU" = (
 /obj/structure/lattice,
 /obj/item/weapon/shard,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "aV" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
@@ -474,7 +474,7 @@
 /area/space_structures/derelict)
 "aY" = (
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "aZ" = (
 /obj/structure/stool/bed/chair/metal/red{
@@ -495,7 +495,7 @@
 "bb" = (
 /obj/machinery/suit_storage_unit/science,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "bc" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -644,7 +644,7 @@
 /area/space_structures/derelict)
 "bu" = (
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "bv" = (
 /obj/item/ammo_box/magazine/m9pmm,
@@ -860,12 +860,12 @@
 "bP" = (
 /obj/item/stack/rods,
 /obj/effect/decal/cleanable/blood/gibs/down,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "bQ" = (
 /obj/structure/lattice,
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "bR" = (
 /obj/structure/cable{
@@ -958,7 +958,7 @@
 "ca" = (
 /obj/structure/stool,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "cb" = (
 /obj/structure/dresser,
@@ -997,7 +997,7 @@
 "cg" = (
 /obj/item/weapon/shard,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ch" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -1051,7 +1051,7 @@
 "cn" = (
 /obj/item/ammo_casing/a74,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "co" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1190,7 +1190,7 @@
 "cC" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "cD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1275,7 +1275,7 @@
 /area/space_structures/derelict)
 "cM" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "cN" = (
 /obj/item/ammo_casing/a74,
@@ -1467,7 +1467,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/weapon/disk/research_points,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "di" = (
 /obj/item/stack/rods,
@@ -1483,7 +1483,7 @@
 /obj/machinery/alarm{
 	pixel_y = 21
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dk" = (
 /obj/item/stack/sheet/metal,
@@ -1498,12 +1498,12 @@
 	pixel_y = 4
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dm" = (
 /obj/machinery/vending/junkfood,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dn" = (
 /obj/structure/stool/bed/chair/comfy/brown{
@@ -1599,7 +1599,7 @@
 "du" = (
 /obj/structure/lattice,
 /obj/item/ammo_casing/a74,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dv" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -1691,12 +1691,12 @@
 /obj/structure/lattice,
 /obj/item/stack/sheet/metal,
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dI" = (
 /obj/structure/lattice,
 /obj/item/weapon/table_parts/wood,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dJ" = (
 /obj/structure/closet/crate/freezer{
@@ -1751,7 +1751,7 @@
 "dP" = (
 /obj/structure/lattice,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1814,14 +1814,14 @@
 /area/space_structures/derelict)
 "dU" = (
 /obj/structure/scrap_cube,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dV" = (
 /obj/structure/lattice,
 /obj/item/weapon/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dW" = (
 /obj/item/ammo_casing/a12mm{
@@ -1850,7 +1850,7 @@
 "dZ" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ea" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2113,7 +2113,7 @@
 	pixel_x = 27;
 	pixel_y = 2
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "eE" = (
 /obj/effect/decal/remains/human,
@@ -2160,7 +2160,7 @@
 "eJ" = (
 /obj/structure/lattice,
 /obj/item/weapon/reagent_containers/food/snacks/waffles,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "eK" = (
 /turf/simulated/floor/plating,
@@ -2177,7 +2177,7 @@
 "eM" = (
 /obj/structure/lattice,
 /obj/random/foods/drink_can,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "eN" = (
 /obj/item/ammo_casing/a74,
@@ -2244,7 +2244,7 @@
 /area/space_structures/derelict)
 "eR" = (
 /obj/item/weapon/shard,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "eS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2266,7 +2266,7 @@
 /area/space_structures/derelict)
 "eV" = (
 /obj/structure/girder,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "eW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2304,14 +2304,14 @@
 	name = "Syndicate agent remains"
 	},
 /obj/effect/decal/cleanable/blood,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fb" = (
 /obj/structure/lattice,
 /obj/item/weapon/shard{
 	icon_state = "small"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2372,7 +2372,7 @@
 "fj" = (
 /obj/structure/girder,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fk" = (
 /obj/effect/decal/mecha_wreckage/mauler,
@@ -2475,7 +2475,7 @@
 /obj/machinery/light_construct{
 	dir = 4
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fu" = (
 /obj/structure/morgue{
@@ -2750,7 +2750,7 @@
 /obj/item/weapon/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fY" = (
 /obj/structure/cable{
@@ -2843,7 +2843,7 @@
 	locked = 0;
 	opened = 1
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gj" = (
 /obj/structure/rack,
@@ -2869,12 +2869,12 @@
 	},
 /obj/structure/lattice,
 /obj/item/weapon/table_parts,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gl" = (
 /obj/structure/lattice,
 /obj/item/device/megaphone,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gm" = (
 /turf/simulated/floor/plating/airless/catwalk,
@@ -2927,7 +2927,7 @@
 "gr" = (
 /obj/item/weapon/FixOVein,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gs" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
@@ -2992,7 +2992,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/stack/rods,
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3019,7 +3019,7 @@
 "gC" = (
 /obj/item/stack/rods,
 /obj/item/ammo_casing/a74,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "gD" = (
 /obj/item/ammo_casing/a74,
@@ -3172,7 +3172,7 @@
 	},
 /area/space_structures/derelict)
 "gV" = (
-/turf/space,
+/turf/environment/space,
 /area/space_structures/derelict)
 "gW" = (
 /obj/structure/rack,
@@ -3223,7 +3223,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/structure/lattice,
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3251,7 +3251,7 @@
 	},
 /obj/structure/lattice,
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hf" = (
 /obj/item/device/radio/intercom{
@@ -3311,7 +3311,7 @@
 "hj" = (
 /obj/structure/lattice,
 /obj/structure/grille,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hk" = (
 /obj/item/device/flashlight/seclite,
@@ -3350,7 +3350,7 @@
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/medical,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hq" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
@@ -3393,7 +3393,7 @@
 "ht" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hu" = (
 /obj/machinery/door/airlock/security{
@@ -3409,7 +3409,7 @@
 /obj/item/weapon/disk/research_points/rare{
 	pixel_y = 3
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3442,14 +3442,14 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hA" = (
 /obj/structure/lattice,
 /obj/item/ammo_casing/a12mm{
 	pixel_x = 4
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hB" = (
 /obj/structure/stacklifter,
@@ -3483,13 +3483,13 @@
 "hF" = (
 /obj/machinery/autolathe,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hG" = (
 /obj/item/roller,
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3599,7 +3599,7 @@
 /obj/item/weapon/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "hT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3751,12 +3751,12 @@
 /area/space_structures/derelict)
 "ih" = (
 /obj/item/weapon/paper_bin,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ii" = (
 /obj/machinery/body_scanconsole,
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "ij" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3769,7 +3769,7 @@
 "ik" = (
 /obj/structure/lattice,
 /obj/item/stack/cable_coil/cut/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "il" = (
 /obj/structure/stool/bed/chair/office/dark{
@@ -3806,7 +3806,7 @@
 	icon_state = "small"
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "iq" = (
 /obj/structure/window/reinforced,
@@ -3888,7 +3888,7 @@
 /area/space_structures/derelict)
 "iy" = (
 /obj/item/ammo_casing/a74,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "iz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3928,7 +3928,7 @@
 /obj/item/weapon/disk/design_disk{
 	pixel_y = 6
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "iE" = (
 /obj/effect/decal/remains/human,
@@ -4160,7 +4160,7 @@
 	id = "derelict_gun";
 	name = "Derelict Mass Driver"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jd" = (
 /obj/structure/stool/bed/chair/pew/left,
@@ -4202,7 +4202,7 @@
 	pixel_x = -12
 	},
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jj" = (
 /obj/item/weapon/shard,
@@ -4293,7 +4293,7 @@
 "jy" = (
 /obj/item/weapon/bonesetter,
 /obj/effect/decal/cleanable/blood/drip,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jz" = (
 /obj/structure/stool,
@@ -4368,7 +4368,7 @@
 "jH" = (
 /obj/structure/lattice,
 /obj/effect/landmark/corpse/scientist,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jI" = (
 /obj/machinery/bodyscanner,
@@ -4379,7 +4379,7 @@
 "jJ" = (
 /obj/machinery/optable,
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jK" = (
 /obj/machinery/door/airlock/external{
@@ -4443,7 +4443,7 @@
 /area/space_structures/derelict)
 "jR" = (
 /obj/item/weapon/bedsheet/medical,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jS" = (
 /obj/structure/table,

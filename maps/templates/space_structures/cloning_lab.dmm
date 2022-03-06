@@ -14,7 +14,7 @@
 	},
 /area/space_structures/cloning_lab)
 "cj" = (
-/turf/space,
+/turf/environment/space,
 /area/space)
 "dd" = (
 /obj/structure/disposalpipe/segment{
@@ -50,7 +50,7 @@
 /area/space_structures/cloning_lab)
 "fd" = (
 /obj/item/trash/chinese4,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "fZ" = (
 /obj/structure/closet/secure_closet/personal/patient,
@@ -73,7 +73,7 @@
 /obj/effect/decal/remains/human,
 /obj/item/clothing/suit/storage/labcoat/genetics,
 /obj/item/weapon/paper/cloning_lab,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "jm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -263,7 +263,7 @@
 /area/space_structures/cloning_lab)
 "xY" = (
 /obj/structure/lattice,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "xZ" = (
 /obj/machinery/computer/scan_consolenew,
@@ -285,7 +285,7 @@
 /area/space_structures/cloning_lab)
 "AZ" = (
 /obj/structure/grille,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Cu" = (
 /obj/structure/disposalpipe/broken{
@@ -319,7 +319,7 @@
 /area/space_structures/cloning_lab)
 "CZ" = (
 /obj/item/stack/rods,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "EF" = (
 /obj/item/trash/pistachios,
@@ -347,7 +347,7 @@
 /area/space_structures/cloning_lab)
 "HY" = (
 /obj/item/stack/cable_coil/red,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "Ix" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -382,7 +382,7 @@
 /obj/structure/grille{
 	destroyed = 1
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "NI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -405,7 +405,7 @@
 /obj/item/weapon/shard{
 	icon_state = "small"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "QT" = (
 /obj/structure/closet/l3closet/general,
@@ -512,16 +512,16 @@
 /obj/item/weapon/shard{
 	icon_state = "medium"
 	},
-/turf/space,
+/turf/environment/space,
 /area/space)
 "WU" = (
 /obj/structure/lattice,
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "WW" = (
 /obj/item/stack/sheet/metal,
-/turf/space,
+/turf/environment/space,
 /area/space)
 "XK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
