@@ -24,6 +24,7 @@
 "ae" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/mask/gas/poltergeist,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -55,6 +56,7 @@
 /area/space)
 "aj" = (
 /obj/structure/flora/ausbushes/stalkybush,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -176,7 +178,11 @@
 /turf/simulated/floor/grass,
 /area/space)
 "aA" = (
-/turf/simulated/mineral,
+/obj/structure/table/glass,
+/obj/item/clothing/head/cakehat,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
 /area/space)
 "aB" = (
 /turf/simulated/shuttle/wall{
@@ -322,7 +328,6 @@
 	},
 /obj/effect/decal/remains/human,
 /obj/item/clothing/suit/storage/labcoat/mad,
-/obj/item/clothing/head/cakehat,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -353,6 +358,7 @@
 /area/space)
 "aX" = (
 /obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -389,8 +395,11 @@
 /turf/simulated/floor/grass,
 /area/space)
 "be" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/grass,
 /area/space)
 "bf" = (
 /obj/structure/window/reinforced,
@@ -409,7 +418,9 @@
 /turf/simulated/floor/grass,
 /area/space)
 "bi" = (
-/obj/structure/flora/ausbushes/stalkybush,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/space)
 "bj" = (
@@ -548,10 +559,8 @@
 	},
 /area/space)
 "bF" = (
-/obj/machinery/door/airlock/external,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/grass,
 /area/space)
 "bG" = (
 /obj/structure/stool/bed/roller,
@@ -561,14 +570,14 @@
 	},
 /area/space)
 "bH" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/grass,
 /area/space)
 "bI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/mask/gas/poltergeist,
-/obj/structure/rack,
-/turf/simulated/floor,
+/obj/structure/flora/junglebush/b,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/grass,
 /area/space)
 "bJ" = (
 /obj/structure/rack,
@@ -614,9 +623,195 @@
 /turf/simulated/floor,
 /area/space)
 "bO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/emcloset/legacy,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
 /turf/simulated/floor,
+/area/space)
+"bP" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/space)
+"bQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/space)
+"bR" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/space)
+"bS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/space)
+"bT" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor,
+/area/space)
+"bU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/grass,
+/area/space)
+"bV" = (
+/obj/structure/flora/ausbushes/stalkybush,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/space)
+"bW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/grass,
+/area/space)
+"bX" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/grass,
+/area/space)
+"bY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor,
+/area/space)
+"bZ" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/space)
+"ca" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1380;
+	master_tag = "agrosphere_airlock";
+	name = "interior access button";
+	pixel_x = 20;
+	pixel_y = -20
+	},
+/turf/simulated/floor/grass,
+/area/space)
+"cb" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "agrosphere_inner";
+	locked = 1;
+	name = "Agrosphere External Access"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"cc" = (
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/mineral/phoron{
+	amount = 25
+	},
+/turf/simulated/floor,
+/area/space)
+"cd" = (
+/obj/machinery/power/port_gen/pacman,
+/turf/simulated/floor,
+/area/space)
+"ce" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/space)
+"cf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector,
+/turf/simulated/floor,
+/area/space)
+"cg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor,
+/area/space)
+"ch" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 1;
+	frequency = 1380;
+	id_tag = "agrosphere_pump";
+	name = "Agrosphere Large Air Vent"
+	},
+/turf/simulated/floor,
+/area/space)
+"ci" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/embedded_controller/radio/airlock_controller{
+	frequency = 1380;
+	id_tag = "agrosphere_airlock";
+	pixel_x = 25;
+	tag_airpump = "agrosphere_pump";
+	tag_chamber_sensor = "agrosphere_sensor";
+	tag_exterior_door = "agrosphere_outer";
+	tag_interior_door = "agrosphere_inner"
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1380;
+	id_tag = "agrosphere_sensor";
+	pixel_x = 25;
+	pixel_y = 12
+	},
+/turf/simulated/floor,
+/area/space)
+"cj" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "agrosphere_outer";
+	locked = 1
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space)
+"ck" = (
+/obj/machinery/access_button{
+	command = "cycle_exterior";
+	frequency = 1380;
+	master_tag = "agrosphere_airlock";
+	name = "exterior access button";
+	pixel_x = 20;
+	pixel_y = 20
+	},
+/turf/space,
 /area/space)
 "fK" = (
 /obj/structure/window/reinforced{
@@ -657,7 +852,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -672,7 +867,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -705,13 +900,13 @@ aa
 (3,1,1) = {"
 aa
 aa
-aA
 aa
-aA
-aA
-aA
 aa
-aA
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -729,9 +924,9 @@ aa
 aa
 aa
 aa
-aA
 aa
-aA
+aa
+aa
 aa
 aa
 aa
@@ -743,8 +938,8 @@ aa
 aa
 aa
 aa
-aA
-aA
+aa
+aa
 aa
 aa
 aa
@@ -765,7 +960,7 @@ au
 bu
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -777,7 +972,7 @@ aa
 (5,1,1) = {"
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -787,7 +982,7 @@ aa
 aa
 aa
 au
-bx
+aA
 aQ
 ab
 am
@@ -803,21 +998,21 @@ aa
 aa
 aa
 aa
-aA
 aa
-aA
+aa
+aa
 aa
 aa
 aa
 "}
 (6,1,1) = {"
 aa
-aA
-aA
 aa
 aa
-aA
-aA
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -826,11 +1021,11 @@ au
 aJ
 aR
 ae
-an
-av
-ag
-an
-aS
+bF
+bI
+bO
+bU
+bX
 bw
 bE
 au
@@ -841,19 +1036,19 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
 "}
 (7,1,1) = {"
 aa
-aA
 aa
 aa
-aA
-aA
-aA
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -864,7 +1059,7 @@ aS
 as
 ao
 ba
-aL
+be
 bh
 bo
 bx
@@ -874,12 +1069,12 @@ bJ
 au
 aa
 aa
-aA
-aA
 aa
 aa
 aa
-aA
+aa
+aa
+aa
 aa
 "}
 (8,1,1) = {"
@@ -887,8 +1082,8 @@ aa
 aa
 aa
 aa
-aA
-aA
+aa
+aa
 aa
 aa
 aa
@@ -900,33 +1095,33 @@ aT
 af
 au
 bb
-bc
+bi
 aU
 bp
 by
 au
-bH
+cc
 aN
 au
 bu
 aa
-aA
-aA
 aa
 aa
 aa
-aA
+aa
+aa
+aa
 aa
 "}
 (9,1,1) = {"
 aa
 aa
-aA
 aa
 aa
-aA
-aA
-aA
+aa
+aa
+aa
+aa
 aa
 ac
 aC
@@ -936,32 +1131,32 @@ aU
 fK
 aL
 aV
-aD
+bP
 aS
 bq
 bz
 au
-bc
+cd
 bK
 bN
 au
 aa
-aA
 aa
 aa
-aA
+aa
+aa
 aa
 aa
 aa
 "}
 (10,1,1) = {"
-aA
 aa
 aa
 aa
 aa
 aa
-aA
+aa
+aa
 aa
 aa
 ac
@@ -972,29 +1167,29 @@ aN
 ag
 aN
 bc
-aN
-bi
-aN
-aL
-bF
-aN
+bQ
+bV
+bY
+ca
+cb
+ce
+cg
 bc
-bc
-bF
+cj
+ck
 aa
 aa
 aa
 aa
 aa
-aA
 aa
 aa
 "}
 (11,1,1) = {"
 aa
 aa
-aA
-aA
+aa
+aa
 aa
 aa
 aa
@@ -1008,14 +1203,14 @@ aV
 ah
 ap
 bd
-be
+bR
 an
 aS
 av
 au
 an
 bc
-bO
+ci
 au
 aa
 aa
@@ -1029,9 +1224,9 @@ aa
 (12,1,1) = {"
 aa
 aa
-aA
-aA
-aA
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1044,18 +1239,18 @@ aW
 aY
 au
 aV
-bc
+bi
 bj
 br
 bA
 au
-bI
-bc
+cf
+ch
 au
 bC
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -1063,13 +1258,13 @@ aa
 aa
 "}
 (13,1,1) = {"
-aA
 aa
 aa
-aA
-aA
 aa
-aA
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1080,7 +1275,7 @@ aP
 ai
 aq
 ba
-aN
+bS
 bk
 bs
 bt
@@ -1093,7 +1288,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -1105,8 +1300,8 @@ aa
 aa
 aa
 aa
-aA
-aA
+aa
+aa
 aa
 aa
 aB
@@ -1114,11 +1309,11 @@ au
 aI
 aX
 aj
-aL
+bH
 an
-ag
-aK
-ab
+bT
+bW
+bZ
 bw
 bG
 au
@@ -1131,24 +1326,24 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 "}
 (15,1,1) = {"
 aa
 aa
-aA
 aa
 aa
 aa
-aA
-aA
+aa
+aa
+aa
 aa
 aa
 aa
 au
-bM
 aY
+bM
 aP
 aW
 OZ
@@ -1162,10 +1357,10 @@ au
 aa
 aa
 aa
-aA
 aa
-aA
-aA
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1176,8 +1371,8 @@ aa
 aa
 aa
 aa
-aA
-aA
+aa
+aa
 aa
 aa
 aa
@@ -1200,7 +1395,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -1208,12 +1403,12 @@ aa
 "}
 (17,1,1) = {"
 aa
-aA
 aa
 aa
 aa
-aA
-aA
+aa
+aa
+aa
 aa
 aa
 aa
@@ -1233,7 +1428,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -1246,7 +1441,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
@@ -1269,11 +1464,11 @@ aa
 aa
 aa
 aa
-aA
 aa
 aa
 aa
-aA
+aa
+aa
 aa
 aa
 aa
@@ -1287,7 +1482,7 @@ aa
 aa
 aa
 aa
-aA
+aa
 aa
 aa
 aa
