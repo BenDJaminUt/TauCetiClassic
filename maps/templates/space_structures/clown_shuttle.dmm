@@ -1,22 +1,20 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5"
-	},
-/area/space)
 "bo" = (
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "bu" = (
 /obj/item/weapon/bananapeel,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken3"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "cN" = (
-/obj/machinery/door/unpowered/shuttle,
-/turf/simulated/floor/wood,
+/obj/machinery/door/airlock/clown/glass,
+/turf/simulated/shuttle/floor{
+	icon_state = "floor2"
+	},
 /area/space)
 "di" = (
 /obj/item/weapon/shard{
@@ -25,28 +23,13 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/plating/airless/asteroid,
 /area/space)
-"fd" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_s5"
-	},
-/area/space)
 "fe" = (
 /turf/space,
 /area/space)
-"fE" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_s10"
-	},
-/area/space)
-"gh" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_s9"
-	},
-/area/space)
 "gL" = (
 /obj/machinery/mining/brace,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken7"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "gS" = (
@@ -56,25 +39,24 @@
 	pixel_y = 26
 	},
 /obj/item/weapon/reagent_containers/food/snacks/grown/banana/honk,
-/turf/simulated/floor/wood,
-/area/space)
-"hb" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall12"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "iN" = (
 /obj/effect/landmark/corpse/clown{
 	name = "Clown Pilot"
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "kY" = (
 /obj/item/weapon/shard,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken3"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "kZ" = (
@@ -86,7 +68,9 @@
 "lb" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/weapon/reagent_containers/food/snacks/grown/banana,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "mX" = (
 /obj/structure/window/reinforced{
@@ -99,9 +83,11 @@
 /turf/simulated/floor/plating/airless,
 /area/space)
 "nm" = (
-/obj/machinery/door/unpowered/shuttle,
 /obj/item/weapon/bananapeel,
-/turf/simulated/floor/wood,
+/obj/machinery/door/airlock/clown/glass,
+/turf/simulated/shuttle/floor{
+	icon_state = "floor2"
+	},
 /area/space)
 "nD" = (
 /obj/structure/closet/crate,
@@ -115,45 +101,49 @@
 /obj/structure/sign/poster/contraband/clown{
 	pixel_y = -32
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "nT" = (
 /obj/machinery/computer/arcade,
 /obj/structure/sign/poster/contraband/clown{
 	pixel_y = 32
 	},
-/turf/simulated/floor/wood,
-/area/space)
-"pu" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_s6"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "qF" = (
 /obj/random/randomfigure,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "tF" = (
 /obj/machinery/mining/drill,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "wc" = (
 /obj/item/weapon/ore/clown,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "wE" = (
 /obj/item/clothing/head/helmet/space/clown,
-/turf/simulated/floor/carpet/purple,
-/area/space)
-"xa" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall8"
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
 	},
 /area/space)
 "xk" = (
 /obj/item/weapon/ore/clown,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "yG" = (
 /obj/structure/grille,
@@ -178,20 +168,26 @@
 /obj/item/weapon/ore/clown,
 /obj/random/randomtoy,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "zz" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/weapon/ore/clown,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "zM" = (
 /obj/item/weapon/ore/clown,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/bananapeel,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "Bu" = (
 /obj/structure/closet/crate/freezer,
@@ -208,7 +204,9 @@
 /area/space)
 "Cc" = (
 /obj/structure/ore_box,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "Cz" = (
 /obj/item/weapon/reagent_containers/food/snacks/grown/banana,
@@ -216,20 +214,14 @@
 /turf/simulated/floor/plating/airless/asteroid,
 /area/space)
 "En" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swallc4"
-	},
 /turf/space,
-/area/space)
-"Fl" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swallc1"
-	},
+/turf/simulated/wall/mineral/bananium,
 /area/space)
 "FG" = (
 /obj/machinery/vending/theater,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "FQ" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -249,37 +241,45 @@
 /obj/item/weapon/ore/clown,
 /obj/item/weapon/ore/clown,
 /obj/item/weapon/wrench,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "HQ" = (
 /obj/item/weapon/ore/clown,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "HY" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall14"
-	},
+/turf/simulated/wall/mineral/bananium,
 /area/space)
 "IU" = (
 /turf/simulated/floor/plating/airless/asteroid,
 /area/space)
 "Kd" = (
 /obj/item/device/guitar/electric,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "KM" = (
 /obj/item/weapon/paper{
 	info = "The call has gone out! Our ancestral home has been rediscovered! Not a small patch of land, but a true clown nation, a true Clown Planet! We're on our way home at last!"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "LE" = (
 /obj/item/weapon/ore/clown,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "LT" = (
 /obj/item/clothing/suit/space/clown,
@@ -291,11 +291,6 @@
 	},
 /turf/space,
 /area/space)
-"MW" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall13"
-	},
-/area/space)
 "Ns" = (
 /obj/item/weapon/pickaxe,
 /obj/structure/table/woodentable,
@@ -306,11 +301,15 @@
 	pixel_y = -3
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "Nw" = (
 /obj/effect/landmark/corpse/clown,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "NA" = (
 /turf/simulated/mineral,
@@ -327,11 +326,8 @@
 	pixel_y = 5
 	},
 /obj/random/randomtoy,
-/turf/simulated/floor/wood,
-/area/space)
-"NX" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "swall4"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "RH" = (
@@ -343,31 +339,39 @@
 /area/space)
 "Su" = (
 /obj/effect/decal/cleanable/blood/drip,
-/turf/simulated/floor/wood{
-	icon_state = "wood-broken4"
+/turf/simulated/floor/airless{
+	icon_state = "wood"
 	},
 /area/space)
 "UP" = (
 /obj/machinery/mining/brace,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "Vw" = (
 /obj/machinery/cell_charger,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "Ya" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/weapon/reagent_containers/food/snacks/grown/banana,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 "YX" = (
 /obj/item/weapon/shard{
 	icon_state = "medium"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
 /area/space)
 "Za" = (
 /obj/structure/stool/bed/chair/wood/normal,
@@ -376,7 +380,9 @@
 /area/space)
 "ZH" = (
 /obj/item/weapon/stock_parts/cell,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "grimy"
+	},
 /area/space)
 
 (1,1,1) = {"
@@ -670,11 +676,11 @@ NA
 fe
 fe
 fe
-pu
+HY
 NA
 NA
 yG
-aa
+En
 NA
 NA
 NA
@@ -688,13 +694,13 @@ fe
 fe
 fe
 fe
-pu
-MW
+fe
+HY
 NA
 NA
 Cz
 HY
-fd
+NA
 NA
 NA
 NA
@@ -712,8 +718,8 @@ En
 NA
 kZ
 kY
-Fl
-MW
+En
+HY
 NA
 NA
 NA
@@ -726,13 +732,13 @@ fe
 fe
 fe
 fe
-hb
+HY
 Bu
 di
 iN
 LT
 NJ
-hb
+HY
 NA
 NA
 NA
@@ -745,13 +751,13 @@ fe
 fe
 fe
 fe
-xa
+HY
 Za
 LE
 qF
 YX
 Ns
-xa
+HY
 NA
 NA
 NA
@@ -802,13 +808,13 @@ fe
 fe
 fe
 fe
-NX
+HY
 nT
 Nw
 Vw
 Ya
 nD
-NX
+HY
 NA
 fe
 fe
@@ -821,13 +827,13 @@ fe
 fe
 fe
 fe
-hb
+HY
 gS
 wE
 xk
 HQ
 yZ
-hb
+HY
 NA
 fe
 fe
@@ -840,13 +846,13 @@ fe
 fe
 fe
 fe
-hb
+HY
 FG
 zM
 wc
 ZH
 HA
-hb
+HY
 NA
 fe
 fe
@@ -859,13 +865,13 @@ fe
 fe
 fe
 fe
-hb
+HY
 tF
 gL
 UP
 qF
 Cc
-hb
+HY
 fe
 fe
 fe
@@ -878,13 +884,13 @@ fe
 fe
 fe
 fe
-hb
+HY
 mX
 mX
 mX
 mX
 mX
-hb
+HY
 fe
 fe
 fe
@@ -897,13 +903,13 @@ fe
 fe
 fe
 fe
-fE
+fe
 RH
 Mo
 Mo
 Mo
 FQ
-gh
+fe
 fe
 fe
 fe
