@@ -2,6 +2,24 @@
 "aa" = (
 /turf/environment/space,
 /area/space)
+"ab" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/media/jukebox/dj,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "darkred"
+	},
+/area/space_structures/djstation)
 "ae" = (
 /obj/structure/lattice,
 /turf/environment/space,
@@ -367,7 +385,7 @@
 /area/space_structures/djstation/solars)
 "aS" = (
 /obj/structure/table/woodentable,
-/obj/item/ashtray/plastic,
+/obj/item/weapon/gun/projectile/revolver/russian,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkred"
@@ -375,7 +393,14 @@
 /area/space_structures/djstation)
 "aT" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/head/cakehat,
+/obj/item/clothing/head/cakehat{
+	pixel_y = 10
+	},
+/obj/item/ashtray/plastic,
+/obj/item/weapon/disk/research_points{
+	pixel_x = -11;
+	pixel_y = -2
+	},
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "darkred"
@@ -443,10 +468,14 @@
 	},
 /obj/item/ammo_box/shotgun/beanbag,
 /obj/item/weapon/gun/projectile/shotgun/classic,
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/obj/item/clothing/suit/armor/syndilight,
 /obj/item/weapon/storage/firstaid/regular,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
 "bc" = (
@@ -710,6 +739,9 @@
 /area/space_structures/djstation/solars)
 "fy" = (
 /obj/structure/device/piano/royal,
+/obj/structure/sign/poster/contraband/communist_state{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
 /area/space_structures/djstation)
 "fP" = (
@@ -783,6 +815,9 @@
 "hS" = (
 /obj/structure/table/woodentable,
 /obj/item/device/harmonica,
+/obj/structure/sign/poster/contraband/communist_state{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
 /area/space_structures/djstation)
 "ii" = (
@@ -801,16 +836,13 @@
 /turf/simulated/wall,
 /area/space_structures/djstation)
 "jq" = (
-/obj/structure/table/woodentable,
-/obj/machinery/chem_dispenser/beer{
-	pixel_y = 4
+/obj/machinery/vending/boozeomat,
+/obj/machinery/light_switch{
+	pixel_x = -27
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
 "jL" = (
@@ -911,16 +943,14 @@
 /turf/simulated/floor/plating/airless,
 /area/space)
 "nw" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/table/woodentable,
+/obj/machinery/chem_dispenser/beer{
+	pixel_y = 4
 	},
-/obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/media/jukebox/dj,
 /turf/simulated/floor{
-	dir = 4;
 	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
@@ -970,28 +1000,10 @@
 /turf/simulated/wall,
 /area/space_structures/djstation)
 "qT" = (
-/obj/machinery/power/apc/mediumcell{
-	dir = 8;
-	name = "Delivery Office APC";
-	pixel_x = -28
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
 	},
-/obj/structure/cable{
-	dir = 8
-	},
-/obj/structure/closet/cabinet,
-/obj/item/weapon/storage/secure/briefcase/syndie,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
-/obj/item/clothing/head/ushanka,
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = 3;
-	pixel_y = 8
-	},
-/obj/item/weapon/reagent_containers/food/drinks/shaker,
-/obj/item/weapon/reagent_containers/glass/rag{
-	pixel_x = -6
-	},
-/obj/item/clothing/under/soviet,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
+/obj/effect/landmark/dj_start,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1205,14 +1217,32 @@
 	},
 /area/space_structures/djstation)
 "AR" = (
-/obj/machinery/vending/boozeomat,
-/obj/machinery/light_switch{
-	pixel_x = -27
+/obj/machinery/power/apc/mediumcell{
+	dir = 8;
+	name = "Delivery Office APC";
+	pixel_x = -28
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable{
+	dir = 8
+	},
+/obj/structure/closet/cabinet,
+/obj/item/weapon/storage/secure/briefcase/syndie,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/clothing/head/ushanka,
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = 3;
+	pixel_y = 8
+	},
+/obj/item/weapon/reagent_containers/food/drinks/shaker,
+/obj/item/weapon/reagent_containers/glass/rag{
+	pixel_x = -6
+	},
+/obj/item/clothing/under/soviet,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+	dir = 8;
+	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
 "Be" = (
@@ -1656,8 +1686,7 @@
 	dir = 4
 	},
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
 "Yf" = (
@@ -2305,7 +2334,7 @@ VG
 aH
 af
 ba
-qT
+AR
 rN
 af
 ae
@@ -2353,7 +2382,7 @@ aI
 ST
 bd
 RJ
-AR
+jq
 aG
 ae
 ae
@@ -2398,9 +2427,9 @@ yv
 yv
 aL
 PE
-bc
+qT
 lk
-jq
+nw
 aG
 ae
 aa
@@ -2494,7 +2523,7 @@ aL
 aT
 al
 gA
-nw
+ab
 af
 af
 aG

@@ -309,3 +309,12 @@
 	global.espionageagent_start += loc
 	create_spawner(/datum/spawner/spy, "spy")
 	return INITIALIZE_HINT_QDEL
+
+/obj/effect/landmark/dj_start
+	name = "Russkie DJ Start"
+
+/obj/effect/landmark/dj_start/atom_init(mapload)
+	..()
+	global.dj += loc
+	create_spawner(/datum/spawner/dj, "dj")
+	return INITIALIZE_HINT_QDEL
