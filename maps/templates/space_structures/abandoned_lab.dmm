@@ -9,7 +9,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -265,7 +265,7 @@
 	},
 /area/space_structures/derelict_lab)
 "bi" = (
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -635,7 +635,7 @@
 	dir = 8;
 	pixel_x = -24
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -713,7 +713,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -797,7 +797,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -979,7 +979,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/cellular/meat/flesh,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1452,7 +1451,7 @@
 	name = "Station Intercom (Medbay)";
 	pixel_y = 22
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -1565,7 +1564,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)
@@ -1933,6 +1932,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/cellular/meat/flesh,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1944,7 +1944,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict_lab)

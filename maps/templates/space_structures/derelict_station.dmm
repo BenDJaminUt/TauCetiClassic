@@ -35,29 +35,21 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "ah" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/external{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 8;
 	frequency = 1379;
-	id_tag = "solar_derelic_inner";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
+	id_tag = "solar_derelic_pump";
+	name = "Solar Large Air Vent"
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/plating/airless,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "ai" = (
-/obj/effect/decal/cleanable/blood,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/stool/bed/chair/metal/yellow,
-/obj/machinery/alarm{
-	pixel_y = 21
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external{
+	dock_tag = "arrival_1";
+	locked = 1;
+	name = "Arrival Airlock"
 	},
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
@@ -102,9 +94,13 @@
 	},
 /area/space_structures/derelict)
 "am" = (
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/alarm{
+	pixel_y = 21
 	},
+/obj/structure/closet/firecloset,
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "an" = (
 /obj/machinery/computer/pod{
@@ -187,17 +183,16 @@
 	id = "spacebattlepod";
 	name = "Front Hull Door"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space)
 "ax" = (
-/obj/structure/table,
 /obj/item/device/radio/intercom{
 	freerange = 1;
 	name = "Station Intercom (General)";
 	pixel_x = -30
 	},
+/obj/item/weapon/table_parts,
+/obj/item/stack/sheet/metal,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -370,6 +365,16 @@
 /turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "aP" = (
+/obj/structure/lattice,
+/mob/living/simple_animal/hostile/carp,
+/turf/environment/space,
+/area/space)
+"aQ" = (
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3"
+	},
+/area/space)
+"aR" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -382,26 +387,8 @@
 	name = "Engineering External Access";
 	req_access = list(10,13)
 	},
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
-"aQ" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "wall3"
-	},
-/area/space)
-"aR" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/shuttle/engine/heater{
-	dir = 1;
-	icon_state = "heater1"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
-/area/space)
 "aS" = (
 /turf/simulated/floor/plating/airless{
 	icon_state = "podhatchfull"
@@ -410,15 +397,13 @@
 "aT" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/shuttle/engine/heater{
 	dir = 1;
 	icon_state = "heater1"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space)
 "aU" = (
 /obj/structure/lattice,
@@ -426,6 +411,17 @@
 /turf/environment/space,
 /area/space)
 "aV" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/shuttle/engine/heater{
+	dir = 1;
+	icon_state = "heater1"
+	},
+/turf/simulated/floor/plating/airless,
+/area/space)
+"aW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
 	dir = 4;
 	frequency = 1379;
@@ -437,9 +433,9 @@
 	layer = 3.3;
 	pixel_y = 26
 	},
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
-"aW" = (
+"aX" = (
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -449,28 +445,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating/airless,
-/area/space_structures/derelict)
-"aX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "solar_derelic_pump";
-	name = "Solar Large Air Vent"
-	},
-/obj/machinery/embedded_controller/radio/airlock_controller{
-	id_tag = "solar_abad_airlock";
-	pixel_y = 26;
-	req_access = list(13);
-	tag_airpump = "solar_derelic_pump";
-	tag_chamber_sensor = "solar_derelic_sensor";
-	tag_exterior_door = "solar_derelic_outer";
-	tag_interior_door = "solar_derelic_inner"
-	},
-/obj/effect/landmark/corpse/engineer/rig,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "aY" = (
 /obj/item/stack/sheet/metal,
@@ -583,11 +558,9 @@
 	},
 /area/space_structures/derelict)
 "bl" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
-/area/space_structures/derelict)
+/mob/living/simple_animal/hostile/carp,
+/turf/environment/space,
+/area/space)
 "bm" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/a12mm{
@@ -601,6 +574,10 @@
 /area/space_structures/derelict)
 "bn" = (
 /obj/item/ammo_casing/a74,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "bo" = (
@@ -613,7 +590,7 @@
 "bp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_casing/a74,
-/obj/item/stack/sheet/metal,
+/obj/effect/decal/remains/human,
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "bq" = (
@@ -628,7 +605,6 @@
 /turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "bs" = (
-/obj/item/ammo_box/magazine/m9mm_2,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -661,9 +637,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "bw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -724,21 +698,32 @@
 /area/space_structures/derelict)
 "bD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/plating/airless,
-/area/space_structures/derelict)
-"bE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
 	dir = 8;
 	frequency = 1379;
 	id_tag = "solar_derelic_pump";
 	name = "Solar Large Air Vent"
 	},
+/obj/machinery/embedded_controller/radio/airlock_controller{
+	id_tag = "solar_abad_airlock";
+	pixel_y = 26;
+	req_access = list(13);
+	tag_airpump = "solar_derelic_pump";
+	tag_chamber_sensor = "solar_derelic_sensor";
+	tag_exterior_door = "solar_derelic_outer";
+	tag_interior_door = "solar_derelic_inner"
+	},
+/obj/effect/landmark/corpse/engineer/rig,
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
+/area/space_structures/derelict)
+"bE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "bF" = (
 /obj/structure/stool/bed/chair/metal/red{
@@ -769,15 +754,22 @@
 	},
 /area/space_structures/derelict)
 "bI" = (
-/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /obj/machinery/door/airlock/external{
-	dock_tag = "arrival_1";
+	frequency = 1379;
+	id_tag = "solar_derelic_inner";
 	locked = 1;
-	name = "Arrival Airlock"
+	name = "Engineering External Access";
+	req_access = list(10,13)
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1
 	},
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "bJ" = (
 /obj/item/weapon/storage/toolbox/mechanical{
@@ -926,9 +918,7 @@
 	name = "Arrival Airlock"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "bW" = (
 /obj/structure/cable{
@@ -1081,6 +1071,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/stack/rods,
 /turf/simulated/floor/airless{
 	icon_state = "wood"
 	},
@@ -1107,13 +1098,12 @@
 	},
 /area/space_structures/derelict)
 "ct" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/engineering/glass,
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/airless{
 	icon_state = "dark"
@@ -1160,6 +1150,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/item/ammo_box/magazine/m9mm_2,
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "cy" = (
@@ -1175,30 +1166,25 @@
 	},
 /area/space_structures/derelict)
 "cA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/item/weapon/shard{
+	icon_state = "small"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
-	},
-/area/space_structures/derelict)
+/turf/environment/space,
+/area/space)
 "cB" = (
 /obj/structure/rack,
 /obj/item/device/radio/off,
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cC" = (
-/obj/machinery/power/port_gen/pacman,
 /obj/structure/lattice,
+/obj/machinery/constructable_frame/machine_frame,
 /turf/environment/space,
 /area/space)
 "cD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
-	},
+/obj/item/ammo_casing/a74,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1208,9 +1194,11 @@
 "cF" = (
 /obj/item/ammo_casing/a74,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
 	},
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cG" = (
 /obj/structure/closet/emcloset,
@@ -1234,6 +1222,9 @@
 	},
 /obj/machinery/firealarm{
 	pixel_y = 24
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
@@ -1261,6 +1252,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "cL" = (
@@ -1281,9 +1276,7 @@
 /obj/item/ammo_casing/a74,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/cable_coil/cut/red,
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1293,8 +1286,11 @@
 	},
 /area/space_structures/derelict)
 "cP" = (
-/obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -1316,6 +1312,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/stack/cable_coil/cut/red,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -1331,9 +1332,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/obj/item/stack/cable_coil/cut/red,
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cV" = (
 /obj/item/ammo_casing/a74,
@@ -1365,9 +1365,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cX" = (
 /obj/item/ammo_casing/a74,
@@ -1392,6 +1390,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -1402,6 +1404,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/stack/sheet/metal,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -1413,9 +1416,11 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "db" = (
-/obj/structure/grille,
 /obj/item/weapon/shard{
 	icon_state = "medium"
+	},
+/obj/structure/grille{
+	destroyed = 1
 	},
 /turf/simulated/floor/plating,
 /area/space_structures/derelict)
@@ -1479,12 +1484,22 @@
 	},
 /area/space_structures/derelict)
 "dj" = (
-/obj/structure/lattice,
-/obj/machinery/alarm{
-	pixel_y = 21
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/environment/space,
-/area/space)
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/toolcloset,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
+/area/space_structures/derelict)
 "dk" = (
 /obj/item/stack/sheet/metal,
 /obj/item/stack/cable_coil/cut/red,
@@ -1570,6 +1585,11 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
@@ -1671,21 +1691,21 @@
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "dF" = (
-/obj/structure/girder,
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
+/turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "dG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 8;
+	icon_state = "1-8"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
-	},
+/turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "dH" = (
 /obj/structure/lattice,
@@ -1746,7 +1766,7 @@
 	pixel_y = -7
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/airless,
+/turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "dP" = (
 /obj/structure/lattice,
@@ -1777,7 +1797,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating/airless{
+/turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
 /area/space_structures/derelict)
@@ -1859,6 +1879,11 @@
 	pixel_y = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "eb" = (
@@ -1915,6 +1940,7 @@
 /area/space_structures/derelict)
 "eh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -1943,6 +1969,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/gibs/down,
 /turf/simulated/floor/airless{
 	icon_state = "derelict12"
 	},
@@ -1952,6 +1979,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/airless{
 	icon_state = "derelict14"
 	},
@@ -1980,6 +2008,10 @@
 "eo" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2016,6 +2048,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/gibs/core,
 /turf/simulated/floor/airless{
 	icon_state = "derelict2"
 	},
@@ -2058,6 +2091,10 @@
 /area/space_structures/derelict)
 "ex" = (
 /obj/item/stack/cable_coil/cut/red,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "ey" = (
@@ -2067,6 +2104,10 @@
 	},
 /obj/machinery/alarm{
 	pixel_y = 21
+	},
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
 	},
 /turf/simulated/floor/airless{
 	icon_state = "damaged4"
@@ -2080,6 +2121,10 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
 	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
@@ -2191,6 +2236,9 @@
 	name = "Worn-out APC";
 	pixel_x = -24
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/airless{
 	dir = 8;
 	icon_state = "darkblue"
@@ -2240,6 +2288,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/item/stack/cable_coil/cut/red,
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "eR" = (
@@ -2254,8 +2303,8 @@
 	},
 /area/space_structures/derelict)
 "eT" = (
-/obj/item/clothing/head/helmet/space/syndicate,
 /obj/effect/decal/cleanable/blood/drip,
+/obj/item/clothing/head/helmet/space/syndicate/infiltrator,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2367,6 +2416,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "fj" = (
@@ -2396,20 +2449,7 @@
 	},
 /area/space_structures/derelict)
 "fn" = (
-/obj/structure/rack,
-/obj/item/weapon/gun/energy/gun,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window/brigdoor{
-	name = "Weapons locker"
-	},
+/obj/machinery/flasher/portable,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -2437,29 +2477,17 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "fr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/machinery/access_button{
-	command = "cycle_interior";
-	frequency = 1379;
-	master_tag = "solar_derelic_airlock2";
-	name = "interior access button";
-	pixel_x = 32;
-	pixel_y = -26;
-	req_access = list(10,13)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
 	},
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 8;
+	icon_state = "1-8"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkyellow"
 	},
 /area/space_structures/derelict)
 "fs" = (
@@ -2544,6 +2572,7 @@
 "fB" = (
 /obj/item/ammo_casing/a74,
 /obj/effect/decal/cleanable/blood,
+/obj/item/stack/cable_coil/cut/red,
 /turf/simulated/floor/airless{
 	icon_state = "damaged1"
 	},
@@ -2557,11 +2586,16 @@
 	pixel_y = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "fD" = (
 /obj/item/stack/cable_coil/cut/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 2;
+	pixel_y = -7
+	},
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2572,11 +2606,17 @@
 	},
 /area/space_structures/derelict)
 "fF" = (
-/obj/structure/stool/bed/chair/comfy/brown{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "panelscorched"
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/closet/firecloset,
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "fG" = (
@@ -2607,6 +2647,11 @@
 /area/space_structures/derelict)
 "fJ" = (
 /obj/item/ammo_casing/a74,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/airless{
 	icon_state = "derelict9"
 	},
@@ -2660,10 +2705,10 @@
 /area/space_structures/derelict)
 "fO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/suit/space/syndicate,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/item/clothing/suit/space/syndicate/infiltrator,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2704,6 +2749,11 @@
 /obj/item/ammo_casing/a12mm{
 	pixel_x = 4
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/airless{
 	icon_state = "derelict1"
 	},
@@ -2716,6 +2766,7 @@
 	pixel_x = -4;
 	pixel_y = 5
 	},
+/obj/machinery/light,
 /turf/simulated/floor/airless{
 	icon_state = "derelict3"
 	},
@@ -2806,15 +2857,8 @@
 	},
 /area/space_structures/derelict)
 "ge" = (
-/obj/machinery/power/solar_control{
-	id = "derelictsolar";
-	name = "Primary Solar Control"
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/airless{
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space_structures/derelict)
@@ -2846,21 +2890,10 @@
 /turf/environment/space,
 /area/space)
 "gj" = (
-/obj/structure/rack,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/item/weapon/shield/riot,
-/obj/machinery/door/window/brigdoor{
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
 	dir = 4;
-	name = "Weapons locker"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+	icon_state = "darkyellow"
 	},
 /area/space_structures/derelict)
 "gk" = (
@@ -2895,21 +2928,22 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "gp" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_derelic_inner2";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
+/obj/structure/rack,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/machinery/atmospherics/components/binary/pump/on,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
+/obj/machinery/door/window/brigdoor{
+	dir = 4;
+	name = "Weapons locker"
+	},
+/obj/item/weapon/melee/baton,
+/obj/item/weapon/shield/riot,
 /turf/simulated/floor/airless{
-	icon_state = "circuit"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "gq" = (
@@ -2956,15 +2990,21 @@
 /obj/structure/cable{
 	dir = 8
 	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+/turf/simulated/floor{
+	icon_state = "darkyellowfull"
 	},
 /area/space_structures/derelict)
 "gv" = (
-/obj/structure/rack,
-/obj/item/weapon/storage/toolbox/electrical,
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/stack/rods,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "panelscorched"
 	},
 /area/space_structures/derelict)
 "gw" = (
@@ -3114,19 +3154,7 @@
 	},
 /area/space_structures/derelict)
 "gO" = (
-/obj/structure/rack,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window/brigdoor{
-	name = "Weapons locker"
-	},
+/obj/machinery/deployable/barrier,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -3147,6 +3175,7 @@
 /area/space_structures/derelict)
 "gR" = (
 /obj/effect/decal/cleanable/blood,
+/obj/item/stack/cable_coil/cut/red,
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "gS" = (
@@ -3172,11 +3201,20 @@
 	},
 /area/space_structures/derelict)
 "gV" = (
-/turf/environment/space,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkyellow"
+	},
 /area/space_structures/derelict)
 "gW" = (
-/obj/structure/rack,
-/turf/simulated/floor/airless{
+/mob/living/simple_animal/mouse,
+/turf/simulated/floor{
 	icon_state = "dark"
 	},
 /area/space_structures/derelict)
@@ -3193,6 +3231,9 @@
 	pixel_x = -4;
 	pixel_y = 5
 	},
+/obj/machinery/light/small{
+	dir = 4
+	},
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -3200,7 +3241,6 @@
 "gZ" = (
 /obj/machinery/recharger,
 /obj/structure/table,
-/obj/item/weapon/handcuffs,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -3291,8 +3331,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkyellow"
 	},
 /area/space_structures/derelict)
 "hi" = (
@@ -3327,12 +3368,20 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "hm" = (
-/obj/structure/table,
-/obj/item/weapon/storage/pill_bottle/dice,
-/turf/simulated/floor/airless,
+/obj/machinery/power/solar_control{
+	id = "derelictsolar";
+	name = "Primary Solar Control"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor{
+	icon_state = "dark"
+	},
 /area/space_structures/derelict)
 "hn" = (
 /obj/machinery/r_n_d/circuit_imprinter,
@@ -3353,31 +3402,20 @@
 /turf/environment/space,
 /area/space)
 "hq" = (
-/obj/machinery/atmospherics/pipe/manifold4w/visible,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/obj/structure/rack,
+/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/clothing/gloves/yellow,
+/obj/item/device/multitool,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "darkyellow"
 	},
 /area/space_structures/derelict)
 "hr" = (
-/obj/structure/rack,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/brigdoor{
-	dir = 1;
-	name = "Weapons locker"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "dark"
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/glasses/hud/health,
+/turf/simulated/floor/plating/airless{
+	icon_state = "panelscorched"
 	},
 /area/space_structures/derelict)
 "hs" = (
@@ -3422,10 +3460,10 @@
 /area/space_structures/derelict)
 "hx" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/stool/bed/chair/metal/yellow,
 /obj/machinery/light_construct{
 	dir = 1
 	},
+/obj/structure/stool/bed/chair/metal/yellow,
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
@@ -3602,19 +3640,10 @@
 /turf/environment/space,
 /area/space)
 "hT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/drip,
-/obj/item/stack/rods,
-/obj/item/clothing/glasses/hud/health,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "panelscorched"
-	},
-/area/space_structures/derelict)
+/obj/structure/lattice,
+/obj/item/weapon/book/manual/wiki/security_space_law,
+/turf/environment/space,
+/area/space)
 "hU" = (
 /obj/machinery/door/airlock/medical{
 	name = "Morgue";
@@ -3689,27 +3718,15 @@
 	},
 /area/space_structures/derelict)
 "ia" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/obj/structure/table,
+/turf/simulated/floor/airless,
 /area/space_structures/derelict)
 "ib" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "solar_derelic_pump2";
-	name = "Solar Large Air Vent"
-	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
-/area/space_structures/derelict)
+/obj/structure/lattice,
+/obj/item/stack/sheet/metal,
+/mob/living/simple_animal/hostile/carp,
+/turf/environment/space,
+/area/space)
 "ic" = (
 /obj/effect/landmark/corpse/securityofficer,
 /obj/effect/decal/cleanable/blood,
@@ -3772,12 +3789,13 @@
 /turf/environment/space,
 /area/space)
 "il" = (
-/obj/structure/stool/bed/chair/office/dark{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold4w/visible,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/effect/decal/cleanable/blood,
-/obj/item/weapon/gun/projectile/shotgun/combat,
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "im" = (
 /obj/item/weapon/shard{
@@ -3994,9 +4012,31 @@
 	},
 /area/space_structures/derelict)
 "iM" = (
-/obj/structure/table,
-/obj/item/weapon/book/manual/wiki/security_space_law,
-/turf/simulated/floor/airless,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/access_button{
+	command = "cycle_interior";
+	frequency = 1379;
+	master_tag = "solar_derelic_airlock2";
+	name = "interior access button";
+	pixel_x = 32;
+	pixel_y = -26;
+	req_access = list(10,13)
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkyellow"
+	},
 /area/space_structures/derelict)
 "iN" = (
 /obj/machinery/hydroponics/constructable,
@@ -4022,37 +4062,20 @@
 	},
 /area/space_structures/derelict)
 "iQ" = (
-/obj/machinery/portable_atmospherics/canister/air,
-/obj/machinery/atmospherics/components/unary/portables_connector{
-	dir = 4
+/obj/structure/rack,
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 4
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "solar_derelic_sensor2";
-	layer = 3.3;
-	pixel_y = 26
-	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
+/turf/simulated/floor{
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "iR" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "solar_derelic_pump2";
-	name = "Solar Large Air Vent"
-	},
-/obj/machinery/embedded_controller/radio/airlock_controller{
-	id_tag = "solar_abad_airlock";
-	pixel_y = 26;
-	req_access = list(13);
-	tag_airpump = "solar_derelic_pump2";
-	tag_chamber_sensor = "solar_derelic_sensor2";
-	tag_exterior_door = "solar_derelic_outer2";
-	tag_interior_door = "solar_derelic_inner2"
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/storage/pill_bottle/dice,
 /turf/simulated/floor/airless{
-	icon_state = "circuit"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "iS" = (
@@ -4074,19 +4097,20 @@
 	},
 /area/space_structures/derelict)
 "iT" = (
-/obj/item/ammo_casing/a12mm{
-	pixel_x = 4
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "solar_derelic_inner2";
+	locked = 1;
+	name = "Engineering External Access";
+	req_access = list(10,13)
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/binary/pump/on,
 /obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "panelscorched"
-	},
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "iU" = (
 /obj/effect/decal/cleanable/blood,
@@ -4185,17 +4209,28 @@
 "jg" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/stack/cable_coil/cut/red,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
 /area/space_structures/derelict)
 "jh" = (
-/obj/item/stack/rods,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light_construct,
-/turf/simulated/floor/airless{
-	icon_state = "wood"
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "solar_derelic_pump2";
+	name = "Solar Large Air Vent"
 	},
+/obj/machinery/embedded_controller/radio/airlock_controller{
+	id_tag = "solar_abad_airlock";
+	pixel_y = 26;
+	req_access = list(13);
+	tag_airpump = "solar_derelic_pump2";
+	tag_chamber_sensor = "solar_derelic_sensor2";
+	tag_exterior_door = "solar_derelic_outer2";
+	tag_interior_door = "solar_derelic_inner2"
+	},
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "ji" = (
 /obj/item/weapon/pen{
@@ -4210,15 +4245,21 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "jk" = (
-/obj/structure/stool/bed/chair/pew/left,
-/obj/effect/decal/remains/human,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
+/obj/structure/rack,
+/obj/structure/window/reinforced{
+	dir = 8
 	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor{
+	dir = 1;
+	name = "Weapons locker"
+	},
+/obj/item/ammo_box/shotgun/beanbag,
 /turf/simulated/floor/airless{
-	icon_state = "wood"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "jl" = (
@@ -4230,10 +4271,21 @@
 	},
 /area/space_structures/derelict)
 "jm" = (
-/obj/structure/stool/bed/chair/pew/right,
-/obj/effect/decal/cleanable/blood/gibs,
+/obj/structure/rack,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor{
+	dir = 1;
+	name = "Weapons locker"
+	},
+/obj/item/weapon/gun/energy/gun,
 /turf/simulated/floor/airless{
-	icon_state = "wood"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "jn" = (
@@ -4267,11 +4319,54 @@
 "jr" = (
 /obj/structure/closet/crate/scicrate,
 /obj/random/science/manipulator,
-/obj/random/science/matter_bin,
+/obj/random/science/manipulator,
 /obj/random/science/scanning_module,
+/obj/random/science/matter_bin,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
+/area/space_structures/derelict)
+"js" = (
+/obj/item/ammo_casing/a12mm{
+	pixel_x = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/item/weapon/handcuffs,
+/turf/simulated/floor/plating/airless{
+	icon_state = "panelscorched"
+	},
+/area/space_structures/derelict)
+"jt" = (
+/obj/structure/lattice,
+/obj/item/weapon/shard{
+	icon_state = "medium"
+	},
+/mob/living/simple_animal/hostile/carp,
+/turf/environment/space,
+/area/space)
+"ju" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1379;
+	id_tag = "solar_derelic_pump2";
+	name = "Solar Large Air Vent"
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/derelict)
+"jv" = (
+/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "jw" = (
 /obj/item/weapon/reagent_containers/glass/beaker,
@@ -4303,14 +4398,11 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "jA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1379;
-	id_tag = "solar_derelic_pump2";
-	name = "Solar Large Air Vent"
+/obj/machinery/light/small{
+	dir = 4
 	},
 /turf/simulated/floor/airless{
-	icon_state = "circuit"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "jB" = (
@@ -4382,21 +4474,16 @@
 /turf/environment/space,
 /area/space)
 "jK" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "solar_derelic_outer2";
-	locked = 1;
-	name = "Engineering External Access";
-	req_access = list(10,13)
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/airlock_sensor{
+	id_tag = "solar_derelic_sensor2";
+	layer = 3.3;
+	pixel_y = 26
 	},
-/turf/simulated/floor/airless{
-	icon_state = "circuit"
-	},
+/turf/simulated/floor/plating,
 /area/space_structures/derelict)
 "jL" = (
 /obj/item/weapon/table_parts,
@@ -4499,6 +4586,86 @@
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/gibs/body,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
+/area/space_structures/derelict)
+"ka" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "solar_derelic_pump2";
+	name = "Solar Large Air Vent"
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/derelict)
+"kb" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "solar_derelic_outer2";
+	locked = 1;
+	name = "Engineering External Access";
+	req_access = list(10,13)
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/derelict)
+"kc" = (
+/obj/structure/stool/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/item/weapon/gun/projectile/shotgun/classic,
+/turf/simulated/floor/plating/airless,
+/area/space_structures/derelict)
+"kd" = (
+/obj/structure/lattice,
+/obj/item/weapon/disk/design_disk,
+/turf/environment/space,
+/area/space)
+"ke" = (
+/obj/item/stack/cable_coil/cut/red,
+/turf/simulated/floor/airless{
+	icon_state = "damaged5"
+	},
+/area/space_structures/derelict)
+"kf" = (
+/obj/machinery/light_construct,
+/turf/simulated/floor/airless{
+	icon_state = "damaged4"
+	},
+/area/space_structures/derelict)
+"kg" = (
+/obj/structure/lattice,
+/obj/item/weapon/storage/firstaid/fire,
+/turf/environment/space,
+/area/space)
+"kh" = (
+/obj/item/stack/rods,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
+/area/space_structures/derelict)
+"ki" = (
+/obj/structure/stool/bed/chair/pew/left,
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/airless{
+	icon_state = "wood"
+	},
+/area/space_structures/derelict)
+"kj" = (
+/obj/structure/stool/bed/chair/pew/right,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
 /turf/simulated/floor/airless{
 	icon_state = "wood"
 	},
@@ -4919,9 +5086,9 @@ fG
 fQ
 ae
 ae
-gV
-gV
-gV
+aa
+ab
+aa
 ab
 ab
 ab
@@ -4984,7 +5151,7 @@ gF
 ae
 aq
 aq
-gV
+ab
 aq
 aO
 aO
@@ -5049,8 +5216,8 @@ gu
 aq
 aq
 aq
-iQ
-jA
+jK
+ju
 aO
 aa
 cs
@@ -5109,12 +5276,12 @@ fS
 gG
 ae
 hh
-dG
-fr
-gp
-hq
-ia
-jK
+gV
+iM
+iT
+il
+jv
+kb
 ir
 cf
 aA
@@ -5171,12 +5338,12 @@ fI
 es
 fg
 ae
-ct
-dA
-ge
+dj
+gW
+hm
 aq
-iR
-ib
+jh
+ka
 aO
 aa
 cs
@@ -5234,9 +5401,9 @@ ei
 ae
 ae
 ae
-cA
-fv
-gW
+fF
+ge
+iQ
 aq
 aO
 aO
@@ -5295,11 +5462,11 @@ dp
 df
 cw
 ae
-ad
-eh
-cD
-fv
-gv
+dF
+ct
+fr
+gj
+hq
 aq
 aa
 aa
@@ -5358,7 +5525,7 @@ eQ
 ea
 fJ
 fT
-cT
+dG
 ae
 ae
 ae
@@ -5424,7 +5591,7 @@ et
 ae
 ae
 fw
-gj
+gp
 fw
 iI
 ae
@@ -5490,7 +5657,7 @@ gX
 dA
 hW
 fv
-hr
+jk
 ae
 ab
 ab
@@ -5553,7 +5720,7 @@ fx
 fv
 gw
 hi
-hr
+jm
 ae
 ab
 ab
@@ -5615,7 +5782,7 @@ gO
 gY
 fv
 hX
-dA
+jA
 iS
 ae
 ab
@@ -5722,8 +5889,8 @@ aa
 aa
 aa
 aa
-bI
-am
+ai
+ac
 bV
 bX
 cK
@@ -5805,11 +5972,11 @@ fz
 hL
 ha
 iJ
-iT
+js
 ic
 fs
 jS
-ae
+aO
 ab
 ab
 aa
@@ -5870,9 +6037,9 @@ iB
 iK
 ht
 ci
-il
+kc
 jT
-ae
+aO
 ab
 ab
 aa
@@ -5921,7 +6088,7 @@ cT
 bB
 ab
 fX
-dF
+dt
 cG
 en
 ex
@@ -5935,7 +6102,7 @@ iU
 jD
 jM
 it
-ae
+aO
 ab
 ab
 ab
@@ -5971,20 +6138,20 @@ gm
 aa
 aa
 aL
-aR
+aT
 aZ
 bF
 bF
 an
 cM
 fb
-bl
+eU
 cV
 dD
 aq
 bB
 bB
-dF
+dt
 ec
 ab
 fY
@@ -6046,7 +6213,7 @@ bv
 cd
 cn
 cy
-bX
+cP
 dr
 fD
 fO
@@ -6054,7 +6221,7 @@ ab
 gI
 aO
 hB
-ab
+hT
 dP
 iL
 ci
@@ -6097,7 +6264,7 @@ gm
 aa
 aa
 aL
-aT
+aV
 hI
 bG
 bG
@@ -6106,8 +6273,8 @@ aQ
 be
 bm
 cW
-cF
-bl
+cD
+eU
 dZ
 dh
 eS
@@ -6119,7 +6286,7 @@ bB
 gb
 iH
 je
-iM
+ia
 ab
 jE
 ci
@@ -6182,7 +6349,7 @@ bB
 eU
 dP
 iY
-hm
+ia
 jz
 in
 jO
@@ -6244,7 +6411,7 @@ ab
 bC
 ik
 aU
-fv
+iR
 ac
 dP
 ae
@@ -6289,8 +6456,8 @@ aa
 aa
 fX
 aa
-bI
-am
+ai
+ac
 bV
 bf
 iA
@@ -6439,7 +6606,7 @@ ae
 ae
 ci
 iu
-fE
+kf
 aq
 aq
 ab
@@ -6541,13 +6708,13 @@ ab
 ab
 ab
 aq
-ai
+am
 bP
 bY
 in
 bo
 by
-am
+ac
 ab
 ab
 aa
@@ -6562,12 +6729,12 @@ hO
 hc
 cO
 in
-bX
+fc
 dP
 iv
 jZ
 jf
-aq
+aO
 ab
 aa
 dU
@@ -6608,9 +6775,9 @@ hx
 ap
 ay
 bg
-cP
+is
 cZ
-dF
+dt
 bB
 eA
 aq
@@ -6629,8 +6796,8 @@ jF
 jP
 jW
 cO
-jh
-aq
+kh
+aO
 ab
 aa
 aa
@@ -6692,8 +6859,8 @@ if
 ip
 ab
 jB
-jk
-aq
+ki
+aO
 ab
 aa
 aa
@@ -6753,9 +6920,9 @@ gc
 jB
 bQ
 jQ
-fy
+ke
 iz
-jm
+kj
 aq
 ab
 aa
@@ -6864,7 +7031,7 @@ bq
 dA
 aq
 cp
-aq
+in
 eJ
 bX
 aa
@@ -6927,8 +7094,8 @@ bQ
 ca
 fE
 ci
-aq
-dj
+in
+ab
 in
 cM
 ab
@@ -6939,7 +7106,7 @@ hE
 gq
 ji
 dP
-dV
+jt
 aa
 aq
 aq
@@ -6979,8 +7146,8 @@ aG
 aC
 aa
 aO
-aV
-bD
+aW
+bE
 aq
 ak
 at
@@ -6990,7 +7157,7 @@ be
 cM
 cg
 bQ
-bB
+bC
 bQ
 dP
 ci
@@ -7041,10 +7208,10 @@ cf
 aA
 cf
 aK
-aP
-aW
+aR
+aX
 hl
-ah
+bI
 bL
 bU
 cC
@@ -7067,7 +7234,7 @@ in
 aq
 aq
 ih
-ab
+kd
 ab
 aa
 ab
@@ -7105,8 +7272,8 @@ bT
 aC
 aa
 aO
-aX
-bE
+bD
+ah
 aq
 al
 cM
@@ -7229,7 +7396,7 @@ ab
 cs
 bT
 aC
-ab
+aP
 ab
 ab
 ab
@@ -7237,7 +7404,7 @@ aq
 aO
 aO
 aq
-ab
+bQ
 ab
 dV
 dI
@@ -7362,7 +7529,7 @@ aa
 ab
 ab
 ab
-ab
+dP
 ab
 ab
 in
@@ -7371,14 +7538,14 @@ cr
 dc
 dl
 dw
-fF
+be
 ab
 fd
 fX
 aq
 hH
-hT
-bX
+gv
+hr
 ho
 is
 ij
@@ -7442,7 +7609,7 @@ in
 gh
 gt
 iF
-dP
+ib
 hy
 ab
 fE
@@ -7489,7 +7656,7 @@ ab
 ab
 ab
 aa
-aa
+cA
 ab
 aq
 dK
@@ -7510,7 +7677,7 @@ gB
 in
 ab
 ab
-ab
+kg
 ab
 aa
 aa
@@ -7745,7 +7912,7 @@ aa
 aa
 aa
 aa
-aa
+bl
 ab
 aa
 ab
@@ -7808,7 +7975,7 @@ aa
 aa
 aa
 aa
-aa
+cM
 ab
 aa
 ab
