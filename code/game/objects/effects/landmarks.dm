@@ -315,6 +315,6 @@
 
 /obj/effect/landmark/dj_start/atom_init(mapload)
 	..()
-	global.dj += loc
+	global.dj_start += loc
 	create_spawner(/datum/spawner/dj, "dj")
 	return INITIALIZE_HINT_QDEL
