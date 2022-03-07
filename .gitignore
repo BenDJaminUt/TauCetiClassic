@@ -11,3 +11,5 @@ data/
 cfg/
 .vscode
 **/MapFXDrawer/*.png
+code/datums/space_structures.dm
+taucetistation.dme

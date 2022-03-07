@@ -2,7 +2,6 @@
 	name = "Russkie DJ"
 	uniform = /obj/item/clothing/under/soviet
 	shoes = /obj/item/clothing/shoes/boots/combat
-	l_ear = /obj/item/device/radio/headset/syndicate/alt
 	id = /obj/item/weapon/card/id/syndicate
 	back = /obj/item/weapon/storage/backpack/satchel
 	l_hand = /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka

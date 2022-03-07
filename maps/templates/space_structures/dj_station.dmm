@@ -20,6 +20,18 @@
 	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
+"ac" = (
+/obj/machinery/access_button{
+	command = "cycle_exterior";
+	frequency = 1379;
+	master_tag = "DJ_airlock";
+	name = "exterior access button";
+	pixel_x = 32;
+	pixel_y = 26;
+	req_access = list(150)
+	},
+/turf/simulated/floor/plating/airless,
+/area/space)
 "ae" = (
 /obj/structure/lattice,
 /turf/environment/space,
@@ -77,6 +89,10 @@
 "al" = (
 /obj/structure/table/woodentable,
 /obj/random/randomfigure,
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 13
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "darkred"
@@ -258,7 +274,7 @@
 	name = "exterior access button";
 	pixel_x = 32;
 	pixel_y = -26;
-	req_access = list(10,13)
+	req_access = list(150)
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space_structures/djstation/solars)
@@ -334,7 +350,7 @@
 /obj/machinery/embedded_controller/radio/airlock_controller{
 	id_tag = "DJ_airlock2";
 	pixel_y = 26;
-	req_access = list(13);
+	req_access = list(150);
 	tag_airpump = "DJ_pump2";
 	tag_chamber_sensor = "DJ_sensor2";
 	tag_exterior_door = "DJ_outer2";
@@ -385,7 +401,18 @@
 /area/space_structures/djstation/solars)
 "aS" = (
 /obj/structure/table/woodentable,
-/obj/item/weapon/gun/projectile/revolver/russian,
+/obj/item/clothing/head/cakehat{
+	pixel_x = -9;
+	pixel_y = 11
+	},
+/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/ashtray/plastic{
+	pixel_x = -8;
+	pixel_y = -1
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "darkred"
@@ -393,13 +420,13 @@
 /area/space_structures/djstation)
 "aT" = (
 /obj/structure/table/woodentable,
-/obj/item/clothing/head/cakehat{
-	pixel_y = 10
-	},
-/obj/item/ashtray/plastic,
 /obj/item/weapon/disk/research_points{
 	pixel_x = -11;
 	pixel_y = -2
+	},
+/obj/item/device/camera{
+	pixel_x = 7;
+	pixel_y = 1
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -430,7 +457,7 @@
 	id_tag = "DJ_inner2";
 	locked = 1;
 	name = "Ruskie DJ Station";
-	req_access = list(10,13)
+	req_access = list(150)
 	},
 /turf/simulated/floor/plating,
 /area/space_structures/djstation/solars)
@@ -464,15 +491,19 @@
 /area/space_structures/djstation/solars)
 "ba" = (
 /obj/structure/closet/secure_closet/bar{
-	req_access = list()
+	req_access = list(150)
 	},
 /obj/item/ammo_box/shotgun/beanbag,
 /obj/item/weapon/gun/projectile/shotgun/classic,
 /obj/machinery/alarm{
-	pixel_y = 23
+	pixel_y = 23;
+	req_one_access = list(150)
 	},
-/obj/item/clothing/suit/armor/syndilight,
 /obj/item/weapon/storage/firstaid/regular,
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/obj/item/clothing/suit/armor/vest,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -537,7 +568,7 @@
 	name = "interior access button";
 	pixel_x = 32;
 	pixel_y = 26;
-	req_access = list(10,13)
+	req_access = list(150)
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -690,7 +721,7 @@
 	name = "interior access button";
 	pixel_x = 32;
 	pixel_y = -26;
-	req_access = list(10,13)
+	req_access = list(150)
 	},
 /turf/simulated/floor/wood,
 /area/space_structures/djstation)
@@ -699,8 +730,12 @@
 /area/space_structures/djstation)
 "dg" = (
 /obj/structure/table/woodentable/poker,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
+/obj/item/weapon/paper_bin{
+	pixel_y = 5
+	},
+/obj/item/weapon/pen{
+	pixel_y = 7
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -774,7 +809,8 @@
 "gA" = (
 /obj/machinery/door/window/southright{
 	dir = 4;
-	name = "Bar Door"
+	name = "Bar Door";
+	req_access = list(150)
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -836,7 +872,9 @@
 /turf/simulated/wall,
 /area/space_structures/djstation)
 "jq" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat{
+	req_access = list()
+	},
 /obj/machinery/light_switch{
 	pixel_x = -27
 	},
@@ -885,6 +923,9 @@
 /obj/item/weapon/reagent_containers/food/snacks/fortunecookie,
 /obj/item/weapon/reagent_containers/food/snacks/fortunecookie,
 /obj/item/weapon/reagent_containers/food/snacks/chinese/newdles,
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -906,7 +947,8 @@
 	dir = 1
 	},
 /obj/machinery/alarm{
-	pixel_y = 23
+	pixel_y = 23;
+	req_one_access = list(150)
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -920,7 +962,7 @@
 	id_tag = "DJ_inner";
 	locked = 1;
 	name = "Ruskie DJ Station";
-	req_access = list(10,13)
+	req_access = list(150)
 	},
 /turf/simulated/floor/plating,
 /area/space_structures/djstation)
@@ -931,17 +973,15 @@
 /turf/simulated/floor/light,
 /area/space_structures/djstation)
 "ms" = (
-/obj/machinery/access_button{
-	command = "cycle_exterior";
+/obj/machinery/door/airlock/external{
 	frequency = 1379;
-	master_tag = "DJ_airlock";
-	name = "exterior access button";
-	pixel_x = 32;
-	pixel_y = 26;
-	req_access = list(10,13)
+	id_tag = "DJ_outer";
+	locked = 1;
+	name = "Ruskie DJ Station";
+	req_access = list(150)
 	},
-/turf/simulated/floor/plating/airless,
-/area/space)
+/turf/simulated/floor/plating,
+/area/space_structures/djstation)
 "nw" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chem_dispenser/beer{
@@ -990,6 +1030,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /mob/living/simple_animal/walrus,
+/obj/item/device/radio/beacon,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1029,7 +1070,18 @@
 /area/space_structures/djstation)
 "sF" = (
 /obj/structure/table/woodentable,
-/obj/item/ashtray/bronze,
+/obj/item/ashtray/bronze{
+	pixel_x = 6;
+	pixel_y = -3
+	},
+/obj/item/weapon/paper_bin{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/weapon/pen{
+	pixel_x = -5;
+	pixel_y = 7
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1109,7 +1161,7 @@
 /obj/machinery/embedded_controller/radio/airlock_controller{
 	id_tag = "DJ_airlock";
 	pixel_y = 26;
-	req_access = list(13);
+	req_access = list(150);
 	tag_airpump = "DJ_pump";
 	tag_chamber_sensor = "DJ_sensor";
 	tag_exterior_door = "DJ_outer";
@@ -1220,10 +1272,8 @@
 /obj/machinery/power/apc/mediumcell{
 	dir = 8;
 	name = "Delivery Office APC";
-	pixel_x = -28
-	},
-/obj/structure/cable{
-	dir = 8
+	pixel_x = -28;
+	req_access = list(150)
 	},
 /obj/structure/closet/cabinet,
 /obj/item/weapon/storage/secure/briefcase/syndie,
@@ -1240,6 +1290,18 @@
 /obj/item/clothing/under/soviet,
 /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
 /obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate,
+/obj/item/device/camera_film,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/item/clothing/suit/hgpirate,
+/obj/item/clothing/head/ushanka/black,
+/obj/item/clothing/head/ushanka/black_white,
+/obj/item/clothing/head/ushanka/brown_white,
+/obj/item/clothing/head/ushanka/brown,
+/obj/item/clothing/under/soviet,
+/obj/item/clothing/under/soviet,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
@@ -1431,15 +1493,17 @@
 "OS" = (
 /obj/machinery/power/apc{
 	name = "Fore Port Solar APC";
-	pixel_y = -28
-	},
-/obj/structure/cable{
-	dir = 8
+	pixel_y = -28;
+	req_access = list(150)
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
 /obj/machinery/bot/medbot,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor{
 	icon_state = "darkyellow"
 	},
@@ -1467,6 +1531,9 @@
 /area/space_structures/djstation)
 "Ps" = (
 /obj/machinery/photocopier,
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1501,14 +1568,16 @@
 	},
 /area/space_structures/djstation)
 "QP" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "DJ_outer";
-	locked = 1;
-	name = "Ruskie DJ Station";
-	req_access = list(10,13)
+/obj/machinery/light{
+	dir = 4
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space_structures/djstation)
 "RJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -1543,7 +1612,11 @@
 "Sz" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/lighter/zippo{
-	pixel_x = -5;
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/item/weapon/flora/deskferntrim{
+	pixel_x = 10;
 	pixel_y = 5
 	},
 /turf/simulated/floor{
@@ -1634,7 +1707,9 @@
 "Vk" = (
 /obj/structure/table/woodentable/poker,
 /obj/item/weapon/game_kit/orange,
-/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/weapon/storage/pill_bottle/dice{
+	pixel_y = 8
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1654,7 +1729,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/maintenance{
-	req_access = list(0)
+	req_access = list(150)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor{
@@ -2318,7 +2393,7 @@ ai
 ai
 ai
 ae
-br
+ae
 aN
 aN
 aC
@@ -2622,8 +2697,8 @@ cq
 lJ
 Qh
 RX
-QP
 ms
+ac
 ae
 ae
 ae
@@ -2849,7 +2924,7 @@ Gc
 aI
 de
 aI
-Gc
+QP
 Yf
 fP
 uM
