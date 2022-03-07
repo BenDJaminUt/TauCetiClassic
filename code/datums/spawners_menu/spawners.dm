@@ -603,3 +603,35 @@ var/global/list/datum/spawners_cooldown = list()
 /datum/spawner/dj/jump(mob/dead/observer/ghost)
 	var/jump_to = pick(dj_start)
 	ghost.forceMove(get_turf(jump_to))
+
+/datum/spawner/rastaman
+	name = "Космический растаман"
+	desc = "Расслабься и получай удовольствие."
+
+	ranks = list(ROLE_GHOSTLY)
+
+/datum/spawner/rastaman/can_spawn(mob/dead/observer/ghost)
+	if(SSticker.current_state != GAME_STATE_PLAYING)
+		to_chat(ghost, "<span class='notice'>Please wait till round start!</span>")
+		return FALSE
+	return ..()
+
+/datum/spawner/rastaman/spawn_ghost(mob/dead/observer/ghost)
+	var/spawnloc = pick(rastaman_start)
+	rastaman_start -= spawnloc
+
+	var/client/C = ghost.client
+
+	var/mob/living/carbon/human/H = new(null)
+	var/new_name = sanitize_safe(input(C, "Pick a name", "Name") as null|text, MAX_LNAME_LEN)
+	C.create_human_apperance(H, new_name)
+
+	H.loc = spawnloc
+	H.key = C.key
+	H.equipOutfit(/datum/outfit/rastaman)
+
+	to_chat(H, "<B>Вы - <span class='boldwarning'>Русский Диджей</span>, к счастью неподалёку есть [station_name_ru()], может быть вам удастся привлечь к себе первых посетителей оттуда.</B>")
+
+/datum/spawner/rastaman/jump(mob/dead/observer/ghost)
+	var/jump_to = pick(rastaman_start)
+	ghost.forceMove(get_turf(jump_to))

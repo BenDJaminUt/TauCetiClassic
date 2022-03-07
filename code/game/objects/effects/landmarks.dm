@@ -318,3 +318,12 @@
 	global.dj_start += loc
 	create_spawner(/datum/spawner/dj, "dj")
 	return INITIALIZE_HINT_QDEL
+
+/obj/effect/landmark/rastaman_start
+	name = "Space Rastaman Start"
+
+/obj/effect/landmark/rastaman_start/atom_init(mapload)
+	..()
+	global.rastaman_start += loc
+	create_spawner(/datum/spawner/rastaman, "rastaman")
+	return INITIALIZE_HINT_QDEL

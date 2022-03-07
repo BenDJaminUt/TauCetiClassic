@@ -364,6 +364,7 @@
 #include "code\datums\outfits\jobs\security.dm"
 #include "code\datums\outfits\misc\arena.dm"
 #include "code\datums\outfits\misc\dj.dm"
+#include "code\datums\outfits\misc\rastaman.dm"
 #include "code\datums\outfits\misc\spy.dm"
 #include "code\datums\qualities\negativeish.dm"
 #include "code\datums\qualities\positiveish.dm"
