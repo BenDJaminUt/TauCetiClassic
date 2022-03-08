@@ -369,10 +369,15 @@
 	},
 /area/space_structures/derelict_lab)
 "bv" = (
-/obj/item/clothing/shoes/magboots,
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor{
-	icon_state = "dark"
+	icon_state = "white"
 	},
 /area/space_structures/derelict_lab)
 "bw" = (
@@ -391,6 +396,7 @@
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor{
 	icon_state = "whitepurple"
 	},
@@ -891,6 +897,7 @@
 /area/space_structures/derelict_lab)
 "lt" = (
 /obj/item/ammo_casing/a74,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor,
 /area/space_structures/derelict_lab)
 "lK" = (
@@ -996,6 +1003,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/item/ammo_casing/a74,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor{
 	icon_state = "warning"
 	},
@@ -1119,14 +1127,11 @@
 	},
 /area/space_structures/derelict_lab)
 "qI" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
+/obj/item/clothing/shoes/magboots,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor{
-	icon_state = "white"
+	icon_state = "dark"
 	},
 /area/space_structures/derelict_lab)
 "qQ" = (
@@ -1451,6 +1456,7 @@
 	name = "Station Intercom (Medbay)";
 	pixel_y = 22
 	},
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/airless{
 	icon_state = "grimy"
 	},
@@ -1571,6 +1577,7 @@
 "BN" = (
 /obj/item/ammo_casing/a74,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -1747,7 +1754,7 @@
 	},
 /area/space_structures/derelict_lab)
 "Fw" = (
-/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor{
 	icon_state = "whitepurple"
 	},
@@ -1818,6 +1825,7 @@
 /obj/structure/stool/bed/chair/office/light,
 /obj/effect/landmark/corpse/scientist,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor{
 	icon_state = "whitepurple"
 	},
@@ -1833,6 +1841,7 @@
 /area/space_structures/derelict_lab)
 "Hm" = (
 /obj/effect/landmark/corpse/doctor,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor{
 	icon_state = "warning"
 	},
@@ -2079,6 +2088,7 @@
 "MS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/under/ert,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor{
 	icon_state = "warning"
 	},
@@ -2468,6 +2478,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -3013,7 +3024,7 @@ vl
 cb
 Qy
 nN
-bv
+qI
 cb
 qS
 Yx
@@ -3068,7 +3079,7 @@ VN
 bF
 tw
 fh
-Dt
+bv
 Vn
 ce
 aN
@@ -3228,7 +3239,7 @@ bF
 cm
 LI
 Xd
-qI
+rr
 mE
 Md
 oo
@@ -3260,7 +3271,7 @@ bF
 co
 SG
 MS
-Dt
+bk
 Sm
 cb
 cb
@@ -3369,7 +3380,7 @@ bB
 Vg
 VN
 xP
-VN
+xP
 TY
 FN
 Yw
@@ -3433,7 +3444,7 @@ VN
 tX
 VN
 FN
-VN
+xP
 aa
 Zf
 VN

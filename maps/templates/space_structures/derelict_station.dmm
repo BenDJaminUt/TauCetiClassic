@@ -1213,6 +1213,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "cI" = (
@@ -1436,6 +1437,8 @@
 /obj/machinery/alarm{
 	pixel_y = 21
 	},
+/obj/item/weapon/storage/toolbox/emergency,
+/obj/item/weapon/wrench,
 /turf/simulated/floor/airless{
 	dir = 8;
 	icon_state = "darkblue"
@@ -2018,6 +2021,7 @@
 /area/space_structures/derelict)
 "ep" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2231,13 +2235,17 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "Worn-out APC";
-	pixel_x = -24
-	},
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	environ = 0;
+	equipment = 0;
+	lighting = 0;
+	locked = 0;
+	name = "Worn-out APC";
+	pixel_x = -24
 	},
 /turf/simulated/floor/airless{
 	dir = 8;
@@ -2305,6 +2313,7 @@
 "eT" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/clothing/head/helmet/space/syndicate/infiltrator,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -2389,12 +2398,16 @@
 /area/space_structures/derelict)
 "ff" = (
 /obj/machinery/computer/med_data,
+/obj/structure/closet/fireaxecabinet{
+	pixel_y = -32
+	},
 /turf/simulated/floor/airless{
 	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "fg" = (
 /obj/structure/table/glass,
+/obj/machinery/recharger,
 /turf/simulated/floor/airless{
 	dir = 4;
 	icon_state = "darkblue"
@@ -2821,6 +2834,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -3081,6 +3095,7 @@
 	pixel_x = -27;
 	pixel_y = 1
 	},
+/obj/item/weapon/storage/box/ids,
 /turf/simulated/floor/airless{
 	dir = 8;
 	icon_state = "darkblue"
@@ -3390,9 +3405,9 @@
 /area/space_structures/derelict)
 "ho" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/corpse/doctor,
-/turf/simulated/floor/plating/airless{
-	icon_state = "panelscorched"
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless{
+	icon_state = "dark"
 	},
 /area/space_structures/derelict)
 "hp" = (
@@ -3998,7 +4013,10 @@
 /turf/simulated/floor/plating/airless,
 /area/space_structures/derelict)
 "iK" = (
-/obj/effect/landmark/corpse/syndicatesoldier,
+/obj/item/weapon/shard{
+	icon_state = "small"
+	},
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/plating/airless{
 	icon_state = "panelscorched"
 	},
@@ -4458,10 +4476,14 @@
 	},
 /area/space_structures/derelict)
 "jH" = (
-/obj/structure/lattice,
-/obj/effect/landmark/corpse/scientist,
-/turf/environment/space,
-/area/space)
+/obj/effect/decal/remains/human{
+	desc = "This guy seemed to have died in terrible way! Half his remains are dust.";
+	name = "Syndicate agent remains"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "panelscorched"
+	},
+/area/space_structures/derelict)
 "jI" = (
 /obj/machinery/bodyscanner,
 /turf/simulated/floor/plating/airless{
@@ -4670,6 +4692,10 @@
 	icon_state = "wood"
 	},
 /area/space_structures/derelict)
+"kk" = (
+/obj/effect/landmark/corpse/doctor,
+/turf/environment/space,
+/area/space)
 
 (1,1,1) = {"
 aa
@@ -5197,7 +5223,7 @@ aa
 aa
 aa
 aa
-aa
+bl
 ab
 aa
 ab
@@ -5717,7 +5743,7 @@ eu
 ae
 gO
 fx
-fv
+ho
 gw
 hi
 jm
@@ -5789,7 +5815,7 @@ ab
 ab
 ab
 ab
-aa
+bl
 aa
 aa
 aa
@@ -5948,7 +5974,7 @@ ab
 gm
 aa
 aa
-aa
+bl
 aa
 aY
 aa
@@ -6034,7 +6060,7 @@ gP
 hA
 gl
 iB
-iK
+jH
 ht
 ci
 kc
@@ -6788,7 +6814,7 @@ ab
 eU
 in
 aq
-ci
+gB
 in
 aq
 aq
@@ -7170,7 +7196,7 @@ jb
 jj
 dt
 hv
-jH
+ab
 dP
 aq
 jc
@@ -7290,7 +7316,7 @@ bC
 ab
 en
 is
-fs
+iK
 gf
 hR
 jl
@@ -7470,7 +7496,7 @@ ab
 ab
 ab
 in
-ci
+gB
 dR
 ab
 eL
@@ -7490,7 +7516,7 @@ ab
 dP
 ab
 ab
-aa
+bl
 aa
 aa
 aa
@@ -7546,7 +7572,7 @@ aq
 hH
 gv
 hr
-ho
+bX
 is
 ij
 in
@@ -7926,7 +7952,7 @@ en
 iG
 in
 hz
-aa
+kk
 ab
 aa
 cM

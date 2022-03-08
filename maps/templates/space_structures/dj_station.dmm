@@ -3,21 +3,13 @@
 /turf/environment/space,
 /area/space)
 "ab" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
 	},
-/obj/machinery/light,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/media/jukebox/dj,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
+/mob/living/simple_animal/hostile/russian,
 /turf/simulated/floor{
-	dir = 6;
-	icon_state = "darkred"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/space_structures/djstation)
 "ac" = (
@@ -32,6 +24,22 @@
 	},
 /turf/simulated/floor/plating/airless,
 /area/space)
+"ad" = (
+/obj/structure/table/woodentable,
+/obj/machinery/chem_dispenser/soda{
+	pixel_y = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/simulated/floor{
+	icon_state = "darkred"
+	},
+/area/space_structures/djstation)
 "ae" = (
 /obj/structure/lattice,
 /turf/environment/space,
@@ -68,6 +76,23 @@
 	icon_state = "solarpanel"
 	},
 /area/space_structures/djstation/solars)
+"aj" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/media/jukebox/dj,
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	dir = 6;
+	icon_state = "darkred"
+	},
+/area/space_structures/djstation)
 "ak" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -111,6 +136,16 @@
 	icon_state = "solarpanel"
 	},
 /area/space_structures/djstation/solars)
+"an" = (
+/obj/machinery/light,
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/space_structures/djstation)
 "ao" = (
 /obj/structure/grille,
 /obj/structure/lattice,
@@ -147,6 +182,18 @@
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space_structures/djstation/solars)
+"ar" = (
+/obj/machinery/door_control{
+	id = "DJ blast";
+	name = "Bridge Blast Door Control";
+	pixel_y = -26;
+	req_access = list(19)
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/space_structures/djstation)
 "as" = (
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space_structures/djstation/solars)
@@ -248,6 +295,15 @@
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space_structures/djstation/solars)
+"az" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on{
+	dir = 1;
+	external_pressure_bound = 140;
+	external_pressure_bound_default = 140;
+	name = "(OUT) Space Large Air Vent"
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/djstation)
 "aA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -342,6 +398,34 @@
 /obj/structure/stool/bar,
 /turf/simulated/floor/wood,
 /area/space_structures/djstation)
+"aJ" = (
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/djstation)
+"aK" = (
+/obj/machinery/atmospherics/components/binary/pump/on,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "DJ blast";
+	name = "Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "DJ_inner";
+	locked = 1;
+	name = "Ruskie DJ Station";
+	req_access = list(150)
+	},
+/turf/simulated/floor/plating,
+/area/space_structures/djstation)
 "aL" = (
 /obj/structure/stool/bar,
 /turf/simulated/floor/light,
@@ -419,20 +503,12 @@
 	},
 /area/space_structures/djstation)
 "aT" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/disk/research_points{
-	pixel_x = -11;
-	pixel_y = -2
-	},
-/obj/item/device/camera{
-	pixel_x = 7;
-	pixel_y = 1
-	},
+/mob/living/simple_animal/hostile/russian,
 /turf/simulated/floor{
-	dir = 5;
-	icon_state = "darkred"
+	dir = 4;
+	icon_state = "dark"
 	},
-/area/space_structures/djstation)
+/area/space_structures/djstation/solars)
 "aU" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/space/syndicate,
@@ -451,6 +527,13 @@
 	},
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "DJ blast";
+	name = "Blast Doors";
+	opacity = 0
 	},
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
@@ -654,13 +737,8 @@
 	},
 /area/space_structures/djstation/solars)
 "bm" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on{
-	dir = 4;
-	external_pressure_bound = 140;
-	external_pressure_bound_default = 140;
-	name = "(OUT) Space Large Air Vent"
-	},
-/turf/simulated/floor/plating,
+/mob/living/simple_animal/hostile/russian,
+/turf/simulated/floor/light,
 /area/space_structures/djstation)
 "bn" = (
 /obj/machinery/computer/security{
@@ -956,15 +1034,14 @@
 	},
 /area/space_structures/djstation)
 "lJ" = (
-/obj/machinery/atmospherics/components/binary/pump/on,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	id_tag = "DJ_inner";
-	locked = 1;
-	name = "Ruskie DJ Station";
-	req_access = list(150)
+/obj/structure/stool/bed/chair/comfy/brown{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/mob/living/simple_animal/hostile/russian/ranged,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space_structures/djstation)
 "mm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1041,15 +1118,20 @@
 /turf/simulated/wall,
 /area/space_structures/djstation)
 "qT" = (
-/obj/structure/stool/bed/chair/comfy/brown{
-	dir = 1
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
 	},
-/obj/effect/landmark/dj_start,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "DJ blast";
+	name = "Blast Doors";
+	opacity = 0
 	},
-/area/space_structures/djstation)
+/turf/simulated/floor/plating,
+/area/space_structures/djstation/solars)
 "rH" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1063,10 +1145,13 @@
 	},
 /area/space_structures/djstation)
 "rN" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/structure/sign/poster/contraband/random{
+	pixel_y = 32
 	},
-/turf/simulated/wall,
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
 /area/space_structures/djstation)
 "sF" = (
 /obj/structure/table/woodentable,
@@ -1262,50 +1347,35 @@
 	},
 /area/space_structures/djstation/solars)
 "Aw" = (
-/obj/machinery/light,
+/obj/structure/table/woodentable,
+/obj/item/weapon/disk/research_points{
+	pixel_x = -11;
+	pixel_y = -2
+	},
+/obj/item/device/camera{
+	pixel_x = 7;
+	pixel_y = 1
+	},
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
 /turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+	dir = 5;
+	icon_state = "darkred"
 	},
 /area/space_structures/djstation)
 "AR" = (
-/obj/machinery/power/apc/mediumcell{
-	dir = 8;
-	name = "Delivery Office APC";
-	pixel_x = -28;
-	req_access = list(150)
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
 	},
-/obj/structure/closet/cabinet,
-/obj/item/weapon/storage/secure/briefcase/syndie,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
-/obj/item/clothing/head/ushanka,
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = 3;
-	pixel_y = 8
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "DJ blast";
+	name = "Blast Doors";
+	opacity = 0
 	},
-/obj/item/weapon/reagent_containers/food/drinks/shaker,
-/obj/item/weapon/reagent_containers/glass/rag{
-	pixel_x = -6
-	},
-/obj/item/clothing/under/soviet,
-/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
-/obj/item/weapon/storage/fancy/cigarettes/cigpack_syndicate,
-/obj/item/device/camera_film,
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/item/clothing/suit/hgpirate,
-/obj/item/clothing/head/ushanka/black,
-/obj/item/clothing/head/ushanka/black_white,
-/obj/item/clothing/head/ushanka/brown_white,
-/obj/item/clothing/head/ushanka/brown,
-/obj/item/clothing/under/soviet,
-/obj/item/clothing/under/soviet,
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "darkred"
-	},
+/turf/simulated/floor/plating,
 /area/space_structures/djstation)
 "Be" = (
 /obj/machinery/vending/snack{
@@ -1379,6 +1449,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/russian,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1522,13 +1593,14 @@
 	},
 /area/space_structures/djstation)
 "Pk" = (
-/obj/structure/table/woodentable,
-/obj/item/ashtray/glass,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4
 	},
-/area/space_structures/djstation)
+/mob/living/simple_animal/hostile/russian,
+/turf/simulated/floor{
+	icon_state = "darkyellow"
+	},
+/area/space_structures/djstation/solars)
 "Ps" = (
 /obj/machinery/photocopier,
 /obj/machinery/newscaster{
@@ -1603,20 +1675,25 @@
 /turf/simulated/floor/wood,
 /area/space_structures/djstation)
 "Sq" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
+/obj/structure/table/woodentable,
+/obj/item/ashtray/glass,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka{
+	pixel_x = -13;
+	pixel_y = 18
 	},
-/turf/simulated/wall,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
 /area/space_structures/djstation)
 "Sz" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/lighter/zippo{
-	pixel_x = -7;
+	pixel_x = 7;
 	pixel_y = 2
 	},
 /obj/item/weapon/flora/deskferntrim{
-	pixel_x = 10;
+	pixel_x = -10;
 	pixel_y = 5
 	},
 /turf/simulated/floor{
@@ -1671,13 +1748,41 @@
 	},
 /area/space_structures/djstation)
 "Uu" = (
-/obj/structure/disposaloutlet{
-	dir = 4
+/obj/machinery/power/apc/mediumcell{
+	dir = 8;
+	name = "Delivery Office APC";
+	pixel_x = -28;
+	req_access = list(150)
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8
+/obj/structure/closet/cabinet,
+/obj/item/weapon/storage/secure/briefcase/syndie,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/clothing/head/ushanka,
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = 3;
+	pixel_y = 8
 	},
-/turf/simulated/floor/plating,
+/obj/item/weapon/reagent_containers/food/drinks/shaker,
+/obj/item/weapon/reagent_containers/glass/rag{
+	pixel_x = -6
+	},
+/obj/item/clothing/under/soviet,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/device/camera_film,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/item/clothing/suit/hgpirate,
+/obj/item/clothing/head/ushanka/black,
+/obj/item/clothing/head/ushanka/black_white,
+/obj/item/clothing/head/ushanka/brown_white,
+/obj/item/clothing/head/ushanka/brown,
+/obj/item/clothing/under/soviet,
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "darkred"
+	},
 /area/space_structures/djstation)
 "UZ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -1732,6 +1837,7 @@
 	req_access = list(150)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1747,22 +1853,20 @@
 	pixel_x = -3
 	},
 /obj/item/weapon/reagent_containers/food/condiment/peppermill,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka{
+	pixel_x = -15;
+	pixel_y = 13
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
 	},
 /area/space_structures/djstation)
 "WX" = (
-/obj/structure/table/woodentable,
-/obj/machinery/chem_dispenser/soda{
-	pixel_y = 4
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor{
-	icon_state = "darkred"
-	},
+/turf/simulated/wall,
 /area/space_structures/djstation)
 "Yf" = (
 /turf/simulated/floor{
@@ -2222,9 +2326,9 @@ ae
 ae
 br
 br
-ae
 br
 aa
+ae
 aa
 aa
 aa
@@ -2269,8 +2373,8 @@ ae
 ae
 aa
 ae
+ae
 aa
-br
 br
 br
 aa
@@ -2316,9 +2420,9 @@ ae
 ae
 ae
 ae
-bm
 ae
 aa
+ae
 br
 br
 aa
@@ -2357,14 +2461,14 @@ af
 af
 af
 af
-aG
-aG
-aG
+AR
+AR
+AR
 af
 af
 af
-IQ
-ae
+WX
+az
 ae
 ae
 br
@@ -2396,9 +2500,9 @@ ae
 ae
 aN
 aN
-aC
-aC
-aC
+qT
+qT
+aN
 aN
 af
 Cl
@@ -2409,8 +2513,8 @@ VG
 aH
 af
 ba
-AR
-rN
+Uu
+IQ
 af
 ae
 aa
@@ -2458,7 +2562,7 @@ ST
 bd
 RJ
 jq
-aG
+AR
 ae
 ae
 ae
@@ -2487,7 +2591,7 @@ am
 am
 am
 ae
-aC
+qT
 aR
 be
 bp
@@ -2502,10 +2606,10 @@ yv
 yv
 aL
 PE
-qT
+lJ
 lk
 nw
-aG
+AR
 ae
 aa
 ae
@@ -2534,25 +2638,25 @@ aa
 ae
 ae
 ae
-aC
+qT
 aU
 be
 bp
-yk
+Pk
 UZ
 aN
-Yf
+rN
 Ir
 ii
-bc
+ab
 yv
 yv
 aL
 aS
 bd
 lk
-WX
-aG
+ad
+af
 ae
 ae
 ae
@@ -2595,10 +2699,10 @@ Ff
 yv
 yv
 aL
-aT
+Aw
 al
 gA
-ab
+aj
 af
 af
 aG
@@ -2694,7 +2798,7 @@ Tq
 gn
 Nr
 cq
-lJ
+aK
 Qh
 RX
 ms
@@ -2786,7 +2890,7 @@ yv
 Vw
 sF
 TX
-Aw
+an
 af
 af
 aG
@@ -2816,25 +2920,25 @@ aa
 ae
 ae
 ae
-aC
+qT
 aW
 bk
-bp
+aT
 Ah
 NG
 aN
-Yf
+rN
 Hq
 hE
 bc
 yv
 yv
-yv
+bm
 Fe
 Sz
 NS
-Yf
-aG
+ar
+af
 ae
 ae
 ae
@@ -2863,7 +2967,7 @@ ai
 ai
 ai
 ae
-aC
+qT
 aX
 bl
 bt
@@ -2878,10 +2982,10 @@ yv
 yv
 yv
 Vw
-Pk
+Sq
 TX
 bd
-aG
+AR
 ae
 aa
 ae
@@ -2928,7 +3032,7 @@ QP
 Yf
 fP
 uM
-aG
+AR
 ae
 ae
 ae
@@ -2957,12 +3061,12 @@ am
 am
 am
 ae
-br
+ae
 aN
 aN
-aC
-aC
-aC
+qT
+qT
+aN
 aN
 af
 Kj
@@ -3015,14 +3119,14 @@ af
 af
 af
 af
-aG
-aG
-aG
+AR
+AR
+AR
 af
 jf
 qO
-Sq
-ae
+qO
+aJ
 ae
 ae
 br
@@ -3068,9 +3172,9 @@ ae
 ae
 ae
 ae
-Uu
 ae
 aa
+ae
 ae
 br
 aa
@@ -3115,8 +3219,8 @@ ae
 ae
 aa
 ae
-aa
 ae
+aa
 br
 br
 br
@@ -3162,9 +3266,9 @@ ae
 ae
 br
 br
-ae
 br
 aa
+ae
 aa
 aa
 aa

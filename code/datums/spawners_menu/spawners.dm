@@ -629,8 +629,9 @@ var/global/list/datum/spawners_cooldown = list()
 	H.loc = spawnloc
 	H.key = C.key
 	H.equipOutfit(/datum/outfit/rastaman)
-
-	to_chat(H, "<B>Вы - <span class='boldwarning'>Русский Диджей</span>, к счастью неподалёку есть [station_name_ru()], может быть вам удастся привлечь к себе первых посетителей оттуда.</B>")
+	var/obj/item/weapon/card/id/idc = null
+	idc = new /obj/item/weapon/card/id(H)
+	idc.registered_name = H.real_name
 
 /datum/spawner/rastaman/jump(mob/dead/observer/ghost)
 	var/jump_to = pick(rastaman_start)

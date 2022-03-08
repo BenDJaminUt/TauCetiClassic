@@ -6,7 +6,9 @@
 	head = /obj/item/clothing/head/soft/rainbow
 	id = /obj/item/weapon/card/id/civ
 	backpack_contents = list(
-
+		/obj/item/weapon/storage/fancy/cigarettes/dromedaryco,
+		/obj/item/weapon/lighter/zippo,
+		/obj/item/weapon/reagent_containers/food/snacks/grown/ambrosiavulgaris,
 		)
 	survival_box = TRUE
 
