@@ -16214,6 +16214,10 @@
 /obj/item/weapon/storage/firstaid/small_firstaid_kit/space,
 /obj/item/clothing/suit/space/rig/security/hos,
 /obj/item/clothing/head/helmet/space/rig/security/hos,
+/obj/machinery/alarm{
+	dir = 1;
+	pixel_y = -21
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "darkred"
