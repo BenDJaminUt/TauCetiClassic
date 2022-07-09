@@ -18589,18 +18589,6 @@
 	},
 /turf/simulated/floor/grass,
 /area/station/civilian/kitchen)
-"jju" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/obj/structure/sign/warning/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA"
-	},
-/turf/simulated/floor/plating,
-/area/station/security/checkpoint)
 "jki" = (
 /obj/machinery/computer/telecomms/server,
 /obj/structure/cable{
@@ -20056,15 +20044,6 @@
 "kzz" = (
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/bar)
-"kzW" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/plating{
-	dir = 8;
-	icon_state = "warnplate"
-	},
-/area/station/security/checkpoint)
 "kAH" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -23037,14 +23016,6 @@
 /obj/structure/sign/departments/cargo,
 /turf/simulated/floor/plating,
 /area/station/hallway/primary/central)
-"nsB" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/turf/simulated/floor/plating,
-/area/station/security/checkpoint)
 "nsG" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/toolbox/electrical,
@@ -31402,7 +31373,7 @@
 	req_access = list(1)
 	},
 /turf/simulated/floor/plating,
-/area/station/security/checkpoint)
+/area/station/hallway/secondary/exit)
 "voe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -52371,9 +52342,9 @@ dpV
 dpV
 xbS
 gay
-nsB
+xbS
 vob
-jju
+sUp
 vrL
 vrL
 gay
@@ -52628,9 +52599,9 @@ uJN
 pmJ
 xbS
 gay
-nsB
-kzW
-nsB
+xbS
+djq
+xbS
 crv
 gay
 crv
